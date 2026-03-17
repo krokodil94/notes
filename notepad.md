@@ -1,25 +1,10 @@
 💼 SaaS & Productivity (High monetization potential)
-AI meeting notes + action items tool
-Freelancer invoice generator with tax support
-Subscription tracker with cancellation reminders
-Niche CRM (e.g., for real estate, coaches, dentists)
+
 AI cold email writer
-Resume + cover letter optimizer
-Client onboarding portal builder
-Social media scheduling tool for small businesses
-Habit tracker with accountability groups
-OKR (goals) tracking app for teams
-🤖 AI-Powered Tools (Very hot right now)
+
+
 AI blog post generator for specific niches
-AI logo + brand kit generator
-AI YouTube script writer
-AI landing page copy generator
-AI chatbot builder for websites
-AI product description generator (for e-commerce)
-AI code explainer for beginners
-AI legal document simplifier
 AI “turn idea into business plan” tool
-AI interior design visualizer
 💰 Finance & Money Tools
 Budget planner with smart insights
 Debt payoff calculator with strategy suggestions
