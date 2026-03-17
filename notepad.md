@@ -8,10 +8,6 @@ AI “turn idea into business plan” tool
 💰 Finance & Money Tools
 Budget planner with smart insights
 Debt payoff calculator with strategy suggestions
-Crypto portfolio tracker
-Stock research summarizer
-Side hustle profit tracker
-Tax estimation tool for freelancers
 Expense splitter for groups/trips
 Personal net worth dashboard
 Savings goal tracker with gamification
