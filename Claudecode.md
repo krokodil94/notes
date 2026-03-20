@@ -8,3 +8,4 @@ PDFjev nemorš premaknit vn iz map
 pdfji nimajo poravnanih strani - nevem kako je to mogoče, ampak če maš en pdf ob drugem, mata zamaknjene strani
 Created .md file in the top right; deleted .md file in the top right doesnt disapear
 When you click on the note, it could put you in the pdf directly on that page, it would scroll automatically to that page
+I want to export the pdf with notes, so that you can open it then in google/adobe, and see the notes
