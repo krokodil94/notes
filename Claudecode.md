@@ -12,3 +12,7 @@ Created .md file in the top right; deleted .md file in the top right doesnt disa
 When you click on the note, it could put you in the pdf directly on that page, it would scroll automatically to that page
 I want to export the pdf with notes, so that you can open it then in google/adobe, and see the notes
 Folders cant get deleted
+
+
+
+claude --resume fdbe9b4c-96d2-47bd-b15b-a71afa72575a --- dfm agent 
