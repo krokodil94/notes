@@ -18,3 +18,4 @@ claude --resume fdbe9b4c-96d2-47bd-b15b-a71afa72575a --- dfm agent
 
 claude --resume 3534c54b-af43-4a0b-a4c8-30a66b83a783 trading bot
 
+claude --resume 8ac6c55b-be73-4a70-bdb7-1e2bedb3a2c3
