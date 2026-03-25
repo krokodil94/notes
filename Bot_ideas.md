@@ -25,6 +25,8 @@
 
   Risk: leverage is a double-edged sword. Start at 1x–2x.
 
+  Would have to use hyperliquid for this -> is this even possible?
+
   ---
   2. Betfair Exchange — Tennis In-Play Bot
 
