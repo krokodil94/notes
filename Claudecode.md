@@ -23,3 +23,6 @@ claude --resume 8ac6c55b-be73-4a70-bdb7-1e2bedb3a2c3
 
 # -> Adding things into Claude.md file;
 @ -> Marking the file which you want Claude Code to look into
+Shit + Tab -> enable plan mode
+Enable thinking -> Ultrathink največji/najbolši
+
