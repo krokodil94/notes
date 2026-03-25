@@ -81,3 +81,5 @@ Messages are in JSON, and the fields might expand in the future without extra co
 Management Units / Edge Units act as the intermediaries to process these requests and publish responses.
 
 If you want, I can also draw a simple diagram showing the flow of messages from the field to the IoT platform, including how realignment works. It usually makes this much easier to visualize.
+
+claude --resume "hyperliquid-futures-bot-plan"
