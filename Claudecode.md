@@ -27,6 +27,8 @@ Viaducto pequeño: 519250140 - requiring PIN from me  2103
 En los tres la contraseña es:  Socotec2025!
 
 
+claude --resume c2de3021-862e-4f61-b52c-b09f8ecfe01b
+
 
 Yes of course,
  
