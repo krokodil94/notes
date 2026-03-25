@@ -48,23 +48,9 @@
 
   Real edge available: Yes, because the market is set by humans reacting to points, not algorithmic models. For the first 10–15 minutes of a match, markets are often stale.
 
-  ---
-  Tier 2 — Strong Opportunities, More Niche
 
-  3. Kalshi (CFTC-Regulated Prediction Market)
-
-  Direct architectural clone of Polymarket — CLOB-based, event contracts, REST + WebSocket API. Key differences:
-
-  - US users allowed (Polymarket blocks US)
-  - Regulated — safer long-term
-  - Markets: Fed rate decisions, CPI/NFP prints, weather, sports, political events
-  - Less sophisticated competition — smaller market, fewer quant funds
-
-  Edge source: Economic data prediction. If you model CPI prints better than market consensus (using nowcasting models, truflation data, etc.), you can have a consistent edge on economic event markets.
-
-  Recommended markets to start: FOMC rate decision (binary, predictable range), monthly jobs report direction.
-
-  API: kalshi-python client, similar to py-clob-client you already use.
+ I love this idea, but the downside in slovenia i dont have access to Betfair exchange, is there anything similar? :) 
+ 
 
   ---
   4. Polymarket Market Making (Different Mode)
@@ -81,7 +67,7 @@
   - Same infrastructure, different logic
 
   Risk: inventory risk if market moves against you. Mitigated by your existing signals.
-
+Can you explain this one a little bit more? 
   ---
   5. Sports Arbitrage (Guaranteed Edge, Account Longevity Problem)
 
@@ -97,15 +83,9 @@
 
   Exchanges (Betfair, Smarkets) don't ban winners — so exchange-vs-book arbitrage lasts longer.
 
+  Same problem as above, would love that one, but i dont have access to betfair in slovenia
+
   ---
-  Tier 3 — Interesting but More Speculative
-
-  6. DEX Arbitrage (Uniswap / Curve)
-
-  - Find price discrepancies across liquidity pools
-  - Triangle arbitrage: ETH→USDC→DAI→ETH
-  - Problem: Dominated by MEV bots with direct validator relationships
-  - Your Rust bot could compete at the edge, but this space is brutally competitive in 2025
 
   7. Crypto Funding Rate Farming
 
@@ -130,6 +110,7 @@
   ├────────────────────────────────┼──────────────┼────────────────┼───────────────┼─────────────────────┤
   │ Sports Arbitrage               │ Low-Medium   │ $200+          │ 3–5 days      │ Low (vs. exchanges) │
   └────────────────────────────────┴──────────────┴────────────────┴───────────────┴─────────────────────┘
+  Well im starting with 20$, because i dont wanna risk it
 
   ---
   My Recommendation
