@@ -26,3 +26,6 @@ claude --resume 8ac6c55b-be73-4a70-bdb7-1e2bedb3a2c3
 Shit + Tab -> enable plan mode
 Enable thinking -> Ultrathink največji/najbolši
 
+
+
+claude --resume fc5dfb09-b62e-4395-a204-e391048594b3
