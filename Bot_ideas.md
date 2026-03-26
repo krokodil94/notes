@@ -66,17 +66,3 @@
   └────────────────────────────────┴──────────────┴────────────────┴───────────────┴─────────────────────┘
   Well im starting with 20$, because i dont wanna risk it
 
-  ---
-  My Recommendation
-
-  Immediate win (1–2 days): Port your existing signal stack to Binance USDT-M futures. The code change is minimal — replace the Polymarket order placement with a Binance futures market order. Same signals, 50x
-   better fee structure, linear payoff captures the actual magnitude of moves.
-
-  Medium-term project (2–3 weeks): Betfair tennis in-play bot. The math is solid, the API is well-documented, and it's a genuinely underexplored algorithmic market compared to crypto. Point probability models
-  are the most defensible edge you can build.
-
-  Both of these are legal, API-supported, and don't require competing with billion-dollar HFT firms.
-
-  Want me to start building either of these?
-
-✻ Brewed for 1m 47s
