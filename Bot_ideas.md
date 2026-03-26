@@ -22,47 +22,4 @@
 
  I love this idea, but the downside in slovenia i dont have access to Betfair exchange, is there anything similar? :) 
  
-  ---
-  5. Sports Arbitrage (Guaranteed Edge, Account Longevity Problem)
-
-  Mathematical certainty, no prediction required:
-
-  - Scan 20+ bookmakers simultaneously for same event
-  - When odds across books imply <100% total probability, bet both sides
-  - Guaranteed profit 0.5–3% per arb
-
-  The catch: Bookmakers detect and limit/ban winning accounts within weeks. You need many accounts, or you need to limit your stakes to stay under the radar.
-
-  Tools: The Odds API (free tier available) for scanning. Can fully automate.
-
-  Exchanges (Betfair, Smarkets) don't ban winners — so exchange-vs-book arbitrage lasts longer.
-
-  Same problem as above, would love that one, but i dont have access to betfair in slovenia
-
-  ---
-
-  7. Crypto Funding Rate Farming
-
-  - Hold a spot position + short the perpetual = earn funding rate (often 20–80% APY in bull markets)
-  - Zero directional risk (delta-neutral)
-  - Requires capital management, not prediction
-  - Not really a "bot" — more a structured position
-
-  ---
-  Honest Profitability Ranking
-
-  ┌────────────────────────────────┬──────────────┬────────────────┬───────────────┬─────────────────────┐
-  │          Opportunity           │ Expected ROI │ Capital Needed │ Time to Build │  Competition Level  │
-  ├────────────────────────────────┼──────────────┼────────────────┼───────────────┼─────────────────────┤
-  │ Binance Futures (your signals) │ High         │ $500+          │ 1–2 days      │ Medium              │
-  ├────────────────────────────────┼──────────────┼────────────────┼───────────────┼─────────────────────┤
-  │ Betfair Tennis Bot             │ Medium-High  │ £200+          │ 2–3 weeks     │ Low-Medium          │
-  ├────────────────────────────────┼──────────────┼────────────────┼───────────────┼─────────────────────┤
-  │ Kalshi Economic Events         │ Medium       │ $500+          │ 1 week        │ Low                 │
-  ├────────────────────────────────┼──────────────┼────────────────┼───────────────┼─────────────────────┤
-  │ Polymarket Market Making       │ Medium       │ $1000+         │ 1 week        │ Medium              │
-  ├────────────────────────────────┼──────────────┼────────────────┼───────────────┼─────────────────────┤
-  │ Sports Arbitrage               │ Low-Medium   │ $200+          │ 3–5 days      │ Low (vs. exchanges) │
-  └────────────────────────────────┴──────────────┴────────────────┴───────────────┴─────────────────────┘
-  Well im starting with 20$, because i dont wanna risk it
 
