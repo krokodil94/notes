@@ -123,20 +123,6 @@ This is how casinos operate.
 
 Harder than funding bot, but very aligned with what you already explored.
 
-🥉 Idea #3 — Simple Range Scalping Bot (your current path)
-
-Your current trading bot could become a $5/day bot.
-
-But this path is:
-
-harder
-slower
-requires backtesting
-requires iteration
-
-Funding arbitrage is faster to profitability.
-
-Trading bot is longer-term.
 
 The honest ranking
 
@@ -149,7 +135,6 @@ Your trading bot	⭐⭐⭐
 
 Funding arbitrage is the fastest win.
 
-If I had to choose for you
 
 I would do this order:
 
