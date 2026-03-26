@@ -85,10 +85,6 @@ code Python
 run bots
 understand futures
 
-Implementation difficulty: ⭐⭐
-Profit realism: ⭐⭐⭐⭐
-Risk: ⭐⭐
-
 This is honestly the best $5/day bot idea.
 
 🥈 Idea #2 — Polymarket Market Maker Bot
@@ -124,16 +120,6 @@ This is how casinos operate.
 Harder than funding bot, but very aligned with what you already explored.
 
 
-The honest ranking
-
-For your situation:
-
-Idea	Chance of reaching $5/day soon
-Funding rate bot	⭐⭐⭐⭐⭐
-Polymarket MM bot	⭐⭐⭐⭐
-Your trading bot	⭐⭐⭐
-
-Funding arbitrage is the fastest win.
 
 
 I would do this order:
