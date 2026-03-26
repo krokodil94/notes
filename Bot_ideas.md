@@ -1,6 +1,4 @@
-
-  ---
-  2. Betfair Exchange — Tennis In-Play Bot
+ 2. Betfair Exchange — Tennis In-Play Bot
 
   Betfair is the largest betting exchange in the world (~$60B/year volume). Critically, it's a peer-to-peer exchange — no bookmaker, just a 5% commission on net winnings.
 
@@ -21,7 +19,6 @@
   Technical fit: betfairlightweight Python library, streaming API is almost identical to the WebSocket feeds you already use. Your Rust bot could handle the latency-sensitive parts.
 
   Real edge available: Yes, because the market is set by humans reacting to points, not algorithmic models. For the first 10–15 minutes of a match, markets are often stale.
-
 
  I love this idea, but the downside in slovenia i dont have access to Betfair exchange, is there anything similar? :) 
  
