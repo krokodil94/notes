@@ -3,8 +3,8 @@
   Useful commands to manage it:
 
   # View live logs
-  ssh -i "C:/Users/kleme/OneDrive/Desktop/Dokumenti/ssh-key-2026-01-26.key" ubuntu@92.4.173.164
-  "docker logs hyper_bot -f"
+
+  
 
   # Check status
   ssh -i "..." ubuntu@92.4.173.164 "docker ps --filter name=hyper_bot"
