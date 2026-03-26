@@ -1,31 +1,3 @@
- ---
-  Tier 1 — Highest Edge / Best Fit for Your Stack
-
-  1. Binance/Bybit Futures with Your Existing Signals
-
-  This is the most direct upgrade. Same signals, radically better economics:
-
-  ┌───────────────┬───────────────┬─────────────────────────────┐
-  │    Factor     │  Polymarket   │       Binance Futures       │
-  ├───────────────┼───────────────┼─────────────────────────────┤
-  │ Fee per trade │ ~2%           │ 0.04% taker                 │
-  ├───────────────┼───────────────┼─────────────────────────────┤
-  │ Payoff        │ Binary ($2–4) │ Linear (captures full move) │
-  ├───────────────┼───────────────┼─────────────────────────────┤
-  │ Liquidity     │ Thin          │ Deep                        │
-  ├───────────────┼───────────────┼─────────────────────────────┤
-  │ Sizing        │ $1–4 forced   │ You decide                  │
-  ├───────────────┼───────────────┼─────────────────────────────┤
-  │ Leverage      │ None          │ 1x–20x                      │
-  └───────────────┴───────────────┴─────────────────────────────┘
-
-  Your momentum + OB + CVD signals already work on BTC price. Just route the same UP/DOWN vote into a futures long/short instead of a Polymarket bet. The expected value math flips dramatically.
-
-  Control you gain: position sizing, stop losses, partial closes, time-in-trade, leverage selection — none of which Polymarket gives you.
-
-  Risk: leverage is a double-edged sword. Start at 1x–2x.
-
-  Would have to use hyperliquid for this -> is this even possible? API?
 
   ---
   2. Betfair Exchange — Tennis In-Play Bot
@@ -53,23 +25,6 @@
 
  I love this idea, but the downside in slovenia i dont have access to Betfair exchange, is there anything similar? :) 
  
-
-  ---
-  4. Polymarket Market Making (Different Mode)
-
-  Instead of taking directional bets, provide liquidity and earn the spread. On a 50/50 market:
-
-  - Post limit buy at $0.48, limit sell at $0.52
-  - If both fill: +$0.04 earned per $1 of volume
-  - Your signals tell you which direction to skew inventory
-
-  Why this is better than what you're doing now:
-  - You earn fees instead of paying them
-  - You're not predicting direction, you're managing risk around fair value
-  - Same infrastructure, different logic
-
-  Risk: inventory risk if market moves against you. Mitigated by your existing signals.
-Can you explain this one a little bit more? 
   ---
   5. Sports Arbitrage (Guaranteed Edge, Account Longevity Problem)
 
