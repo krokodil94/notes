@@ -21,3 +21,5 @@
   - Running in a container with --restart unless-stopped — survives server reboots
   - Logs persist at /home/ubuntu/hyper_bot/hyper_bot.log on the host
   - Running LIVE (DRY_RUN=False), 6x leverage, BTC only
+
+claude --resume "hyperliquid-quant-bot-build"
