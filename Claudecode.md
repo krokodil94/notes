@@ -30,4 +30,4 @@ Coverage:
 * Focus on testing behavior and public API's rather than implementation details
 
 
-Playwright MCP
+Playwright MCP - ability to control a browser - claude mcp add playwright npx @playwright/mcp@latest
