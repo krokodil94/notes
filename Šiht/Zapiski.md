@@ -46,11 +46,19 @@ Potrebno je urediti/dodati še to, da se lahko QoS spreminja - configurable para
     - Alert - To je pa implementirano, sam nimamo alarm levela, in intensitya - kar pa tut v standardu ni dobr zdefinirano. Polja v sporočilih se tudi kar dosti razlikujejo
 
     
+  2.) Failures - tuki imamo implementirano samo, če naprava manjka(je odklopljena) oziroma je DewesoftX ne zazna.
 
 
 
+3.1 Alarm Management
 
+Sporočila, ki jih moramo poslati na platformo:
+  - Alarm Trigger
+  - Alarm Reset
 
+Sporočila, ki jih oni pošlejo nam:
+  - Alarm acknowledged
+  - Alarm closure
 
 
 
