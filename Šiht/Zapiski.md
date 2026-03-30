@@ -19,6 +19,7 @@ Standard pokriva:
 
 2.1.1 JWT Token 
 
+Oauth - keycloak
 JWT Authentication token must be included in the HTTP header.
 
 The process for creating the JWT token is as follows:
