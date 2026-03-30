@@ -109,6 +109,7 @@ Proces:
     b.) startTimestamp: Start timestamp of the period to be analyzed
     c.)endTimestamp: End timestamp of the requested period
     d.)ValueStatus: Alarm status. Value (0,1,2,3 as described). Blank if all.
+  2. Request processing: The management/edge unit receives the request and retrieves the alarm information stored for the specified period.
 
 
 
