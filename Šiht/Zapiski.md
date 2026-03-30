@@ -63,6 +63,7 @@ Sporočila, ki jih oni pošlejo nam:
 Polja, ki jih vsebujejo Alarmi:
 
 MsgId - Unique identifier of the sent message that allows differentiation of all the received messages - tega nimamo!
+IDGateway - 
 
 
 
