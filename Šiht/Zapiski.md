@@ -152,6 +152,10 @@ Proces:
   3. Sending the response with the alarm status: The Management Unit/Edge Unit publishes MQTT messages containing the updated status of the alarm detected within the specified time interval and in the specific topic. The message payload is in JSON format and includes the fields described in the previous section
 
 
+3.3 Measurement Management
+
+Push and Pull mode
+
 
 
 
