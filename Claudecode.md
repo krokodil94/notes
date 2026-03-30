@@ -36,3 +36,4 @@ Playwright MCP - ability to control a browser - claude mcp add playwright npx @p
 Github integration
 
 /install-github-app
+
