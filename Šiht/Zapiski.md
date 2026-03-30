@@ -44,3 +44,28 @@ Potrebno je urediti/dodati še to, da se lahko QoS spreminja - configurable para
 
     - Pre-alert (Events) - tega trenutno nimamo čist nič implementiranga
     - Alert - To je pa implementirano, sam nimamo alarm levela, in intensitya - kar pa tut v standardu ni dobr zdefinirano.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
