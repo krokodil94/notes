@@ -19,7 +19,12 @@ Standard pokriva:
 
 2.1.1 JWT Token 
 
- Ne razumem čist, bo treba še mal bolj raziskat
+JWT Authentication token must be included in the HTTP header.
+
+The process for creating the JWT token is as follows:
+  - Token request: Before making an API call, the device requests a JWT token from the Identity Provided(IdP)
+  - If authentication is successful, the authentication server returns a JWT token to the caller
+  - Using the Token for REST API calls: Once obtained, the JWT is included in the HTTP Authorization header for each request. Specifically, the token is passed in the HTTP Authorization header for each request: e.g GET https://{URL}/api/devices/status Authorization: Bearer eyJh....
 
  2.2 Summary of the Specification
 
