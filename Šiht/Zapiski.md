@@ -32,8 +32,17 @@ The process for creating the JWT token is as follows:
  Alert Management - Fault Management -  Tudi ze nekaj podobnega implementiranega - javlja za naprave ki manjkajo
 
 
- Data Flow Management - Submission measurement - To je implementirano kot REQUEST_FOR_DATA, vendar zaenkrat še ni moznosti reduced frequency
-                      - Bulk transmission - to je pa ze identično trenutni implementaciji
+ Data Flow Management
+ 
+ 
+          - Submission measurement - To je implementirano kot REQUEST_FOR_DATA, vendar zaenkrat še ni moznosti reduced frequency
+            
+
+
+
+
+ 
+          - Bulk transmission - to je pa ze identično trenutni implementaciji
 
 
 2.3 Protokoli
