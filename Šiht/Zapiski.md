@@ -110,7 +110,9 @@ Proces:
     c.)endTimestamp: End timestamp of the requested period
     d.)ValueStatus: Alarm status. Value (0,1,2,3 as described). Blank if all.
   2. Request processing: The management/edge unit receives the request and retrieves the alarm information stored for the specified period.
-  3. Sending the response with the alarm status: The Management Unit/Edge Unit publishes MQTT messages containing the updated status of the alarm detected within the specified time interval and in the specific topic.
+  3. Sending the response with the alarm status: The Management Unit/Edge Unit publishes MQTT messages containing the updated status of the alarm detected within the specified time interval and in the specific topic. The message payload is in JSON format and includes the fields described in the previous section
+
+3.2 Fault Management
 
 
 
