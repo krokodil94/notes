@@ -52,6 +52,8 @@ Zahteva MQTT 5.0 -> trenutno uporabljamo 3.1. Za en del more grega rebuildat his
 TLS -> enako treba v DLL preveriti. V DM agent delu mislim da imamo to urejeno
 Potrebno je urediti/dodati še to, da se lahko QoS spreminja - configurable parameter
 
+
+
 3. Alarm Management and Data Flow
 
   1.) Alarms - Nikjer niso zdefinirani tipi alarmov, in tipi sporočil ki jih pošlje alarm. Nekaj je implementirano v Alarm agentu, v kolikor nam uspe, bi bilo verjetno najboljše implementirati čimbolj podobno.
