@@ -31,3 +31,8 @@ Coverage:
 
 
 Playwright MCP - ability to control a browser - claude mcp add playwright npx @playwright/mcp@latest
+
+
+Github integration
+
+/install-github-app
