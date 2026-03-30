@@ -14,7 +14,8 @@ Standard pokriva:
     MQTTS in SFTP že uporabljata username in geslo, pri HTTPS pa je potrebno dodati JWT. 
 
     Acess control List je trenutno implementirana v obliki config.json datoteke, kjer se lahko konfigurira vsaka naprava posebej. Config.json se lahko upravlja preko MQTTS
-
+ Kdo postavi authentikacijski server?
+ 
 
 
 2.1.1 JWT Token 
