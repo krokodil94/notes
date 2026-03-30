@@ -43,8 +43,9 @@ Potrebno je urediti/dodati še to, da se lahko QoS spreminja - configurable para
   1.) Alarms - Nikjer niso zdefinirani tipi alarmov, in tipi sporočil ki jih pošlje alarm. Nekaj je implementirano v Alarm agentu, v kolikor nam uspe, bi bilo verjetno najboljše implementirati čimbolj podobno.
 
     - Pre-alert (Events) - tega trenutno nimamo čist nič implementiranga
-    - Alert - To je pa implementirano, sam nimamo alarm levela, in intensitya - kar pa tut v standardu ni dobr zdefinirano.
-      
+    - Alert - To je pa implementirano, sam nimamo alarm levela, in intensitya - kar pa tut v standardu ni dobr zdefinirano. Polja v sporočilih se tudi kar dosti razlikujejo
+
+    
 
 
 
