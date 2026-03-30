@@ -22,9 +22,9 @@ Standard pokriva:
 
 Oauth - keycloak
 JWT Authentication token must be included in the HTTP header.
-
+ Kdo postavi authentikacijski server?
 The process for creating the JWT token is as follows:
-  - Token request: Before making an API call, the device requests a JWT token from the Identity Provided(IdP)
+  - Token request: Before making an API call, the device requests a JWT token from the Identity Provided(IdP) - Kdo implementira IdP?
   - If authentication is successful, the authentication server returns a JWT token to the caller
   - Using the Token for REST API calls: Once obtained, the JWT is included in the HTTP Authorization header for each request. Specifically, the token is passed in the HTTP Authorization header for each request: e.g GET https://{URL}/api/devices/status Authorization: Bearer eyJh....
 
