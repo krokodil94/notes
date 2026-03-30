@@ -114,6 +114,10 @@ Proces:
 
 3.2 Fault Management
 
+Messages to be managed from the Edge to the IoT platform are:
+  - Fault occurence
+  - Fault Resolution
+
 
 
 
