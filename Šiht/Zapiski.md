@@ -60,16 +60,6 @@ Sporočila, ki jih oni pošlejo nam:
   - Alarm acknowledged
   - Alarm closure
 
-Polja, ki jih vsebujejo Alarmi:
-
-MsgId - Unique identifier of the sent message that allows differentiation of all the received messages - tega nimamo!
-IDGateway - Imamo ze identično pri nas - assetCode
-SenderId - tole ne vem če mamo, mislim da je trenutno implementirano kar kot IDGateway - kaka je razlika z IDGatway
-Timestamp
-Version - SW Version
-SensorAlarm {AlarmId, Value} - AlarmId - of the alarm associated with the asset, Value - measured by the measuring device: "1" for opening;
-SensorAlarmClosed{AlarmId, Value}
-SensorAlarmHandled{Ala
 
 
 
