@@ -63,7 +63,7 @@ Potrebno je urediti/dodati še to, da se lahko QoS spreminja - configurable para
 
     
   2.) Failures - tuki imamo implementirano samo, če naprava manjka(je odklopljena) oziroma je DewesoftX ne zazna.
-
+  3.) Measurements - v veliki večini že narejeno
 
 
 3.1 Alarm Management
@@ -71,12 +71,32 @@ Potrebno je urediti/dodati še to, da se lahko QoS spreminja - configurable para
 Sporočila, ki jih moramo poslati na platformo:
   - Alarm Trigger
   - Alarm Reset
+    - To je kr okej, trenutno imamo AlarmTrigger in AlarmClosed; ampak ne vemo pa, kakšno obliko zelijo?
 
 Sporočila, ki jih oni pošlejo nam:
   - Alarm acknowledged
   - Alarm closure
+    - OK, kako pa moramo mi pohendlat ta sporočila ? Ob Alarm Closure, moramo verjetno ugasniti alarm, kaj pa alarm acknowledged?
+   
 
+Polja ki jih vsebuje soročilo:
 
+MsgId - ? 
+IDGateway - AssetCode
+SenderId - ? 
+TimeStamp - dejanski timestamp alarma
+Version - SW Version
+SensorAlarm{AlarmId,Value} - nikjer ni definirano, kakšni so mozni alarmIdji ?  Value - "1" for opening
+SensorAlarmClosed{AlarmId, Value} - AlarmId - Unique identifier for the alarm associated with the asset - kakšni so AlarmIdji in mozni value?
+SensorAlarmManagedClosed{AlarmId, Value} - kakšni so AlarmIdji in mozni value?
+CurrentValue - koliko čez "Treshold" je alarm - kako pa so definirani Tresholdi
+Area - Field identifying the Alarm type - (LV,TLC,TE,IS - Kaj je to)
+FaultTimestamp - Timestamp ko se je poslal message
+ProblemIntensity - Description of the intensity
+ProblemLocation - Provides descriptive and additional information to the Latitude and Longitude fields. 
+AlarmText - Free-text-field where you can add additional information if neccessary
+AlarmSeverityLevel - Identifier of the severity level of the generated alarm
+SensorList [{UAD ID, IdSensor, SensorType}] - list of sensors that triggered the alarm. UAD ID: Identifier of the UAD to which the sensor belongs. IdSensors: Unique identifier of the sensor that triggered the alarm. SensorType - identifier of the sensor type
 
 
 
