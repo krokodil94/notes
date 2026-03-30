@@ -37,3 +37,12 @@ Github integration
 
 /install-github-app
 
+Hook Configuration
+Hooks are defined in Claude settings files. You can add them to:
+
+Global - ~/.claude/settings.json (affects all projects)
+Project - .claude/settings.json (shared with team)
+Project (not committed) - .claude/settings.local.json (personal settings)
+You can write hooks by hand in these files or use the /hooks command inside Claude Code.
+
+![instructor_a46l9irobhg0f5webscixp0bs_public_1752618158_010_-_Introducing_Hooks_07.1752618158600.png](/api/files/instructor_a46l9irobhg0f5webscixp0bs_public_1752618158_010_-_Introducing_Hooks_07.1752618158600.png)
