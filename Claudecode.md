@@ -28,3 +28,6 @@ Coverage:
 * Test edge cases
 * Test error states
 * Focus on testing behavior and public API's rather than implementation details
+
+
+Playwright MCP
