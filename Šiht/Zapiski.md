@@ -39,11 +39,6 @@ The process for creating the JWT token is as follows:
  
           - Submission measurement - To je implementirano kot REQUEST_FOR_DATA, vendar zaenkrat še ni moznosti reduced frequency
             
-
-
-
-
- 
           - Bulk transmission - to je pa ze identično trenutni implementaciji
 
 
