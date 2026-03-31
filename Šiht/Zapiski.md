@@ -278,7 +278,7 @@ So we trigger this with an ALARM ?  Also kinda already implemented.
   - Measurement values (encoded in Protobuf)  
   - Train/no-train label  
   
-  I really dont understand this!
+This basically means they will prepare an HTTP Server for us, and endpoints to which data from server will be posted? 
 
   
 4.2 Remote Configuration  
