@@ -237,7 +237,7 @@ This is already implemented for SINA/ANAS standard, where they can configure the
 3.2 Dynamic Acquisition — With-Train  
 For train transit events, the system needs to capture the bridge response before, during, and after the train passage. This requires a pre-trigger and post-trigger mechanism.  
 
-So we trigger this with an ALARM ?   
+So we trigger this with an ALARM ?  Also kinda already implemented. 
   
 3.3 Detection Methods  
 Two complementary methods were discussed for detecting train presence:  
