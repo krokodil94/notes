@@ -233,6 +233,7 @@ Note: Different sensor types (e.g., inclinometers) may require different acquisi
 
 This is already implemented for SINA/ANAS standard, where they can configure the Acquisition window and repetition window for every type of sensors separately over MQTT - held in config.json file.
 
+
   
 3.2 Dynamic Acquisition — With-Train  
 For train transit events, the system needs to capture the bridge response before, during, and after the train passage. This requires a pre-trigger and post-trigger mechanism.  
@@ -256,11 +257,10 @@ So we trigger this with an ALARM ?  Also kinda already implemented.
   
 3.4 Labeling Proposal — Action Required from Dewesoft/SITE  
 **RFI (Mauro Alberto) explicitly asked Dewesoft/SITE to prepare a formal technical proposal** on how to implement the train/no-train labeling. The proposal should describe how the system will tag each data segment and what detection logic will be used (laser barriers, acceleration thresholds, or a combination). 
-
-RFI and UNIBO will then review and refine it jointly.  
+  An option with sensor alarms would probably be posible - Alarms are already implemented at SINA/ANAS standard. Parameters can be managed over mqtt.
+ 
   
-3.5 Continuous Buffering Guarantee  
-Gabriele (Dewesoft) highlighted a key architectural advantage: the Dewesoft system continuously buffers all sensor data in a ring buffer. This means that even if the initial triggering logic is not perfectly tuned, no data is lost. The trigger parameters (thresholds, pre/post durations) can be adjusted at any time without risk, because the raw continuous data stream is always available for reprocessing.
+
 
 4. Data Pipeline: Field System → EDGE Server → Cloud  
 5. 
