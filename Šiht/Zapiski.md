@@ -277,7 +277,8 @@ Is one protobuf for one device?
 - Timestamp  
 - Measurement values (encoded in Protobuf)  
 - Train/no-train label  
-    
+
+This isnt logical 
 
   
 4.2 Remote Configuration  
