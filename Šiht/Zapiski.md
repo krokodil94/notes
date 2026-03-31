@@ -162,4 +162,198 @@ Push and Pull mode
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+2. Data Encoding: Protocol Buffers (Protobuf)  
+**Reference:** [ALL. 3_Specifica Tecnica - Interoperabilità RFI - ENG.pdf](https://drive.google.com/drive/folders/1xfOFQ3LAYN86ej---AAYtU8hXERFXWzy) · [Protocol Buffers documentation](https://protobuf.dev/)  
+UNIBO (Marco Di Felice) confirmed they expect all sensor data from the field system to be encoded using Google Protocol Buffers (Protobuf), as specified in the RFI tender documentation. This is a binary serialization format that is compact, fast to parse, and well-suited for high-throughput sensor telemetry.  
+  
+Requirements for Dewesoft Monitoring  
+
+- **Define a .proto schema** that describes the structure of each data message. The schema must include: sensor identifier (RFI VA code), sampling frequency, acquisition duration, timestamp, measurement values, and train/no-train label.  
+RFI VA Code - What is meant by this? 
+- **Protobuf messages will be transmitted from the Dewesoft acquisition system to the EDGE server,** and from there forwarded to the UNIBO cloud platform. The encoding/serialization must happen on the Dewesoft side.  
+- **A joint review of the .proto schema is planned** in a follow-up meeting to ensure both sides agree on field types, message structure, and metadata.  
+
+In the RFI standard, it is defined that data is send by CSV+ZIP, and also via MQTTS for reduced frequency. What happens then with sending via MQTT?
+    
+
+  
+  
+3. Train / No-Train Signal Discrimination  
+This was the most extensively discussed topic. The monitoring system must distinguish between data acquired while a train is transiting the bridge (dynamic response) and data acquired under ambient conditions only (no train). This distinction is critical because UNIBO applies different analysis algorithms to each type of data.  
+  
+3.1 OMA (Operational Modal Analysis) — No-Train Acquisition  
+  
+
+**Acquisition window**  
+300 seconds (5 minutes)  
+**Repetition interval**  
+Every 5 minutes (configurable)  
+**Sensors involved**  
+Accelerometers only  
+**Condition**  
+No train present on the bridge during the entire window  
+**Purpose**  
+Ambient modal analysis to detect structural degradation over time  
+Note: Different sensor types (e.g., inclinometers) may require different acquisition durations. UNIBO acknowledged that 300 seconds may not be optimal for all sensors and that there is flexibility to configure per-sensor durations. UNIBO will provide the required sampling frequency for each sensor, referenced by RFI VA code.  
+  
+3.2 Dynamic Acquisition — With-Train  
+For train transit events, the system needs to capture the bridge response before, during, and after the train passage. This requires a pre-trigger and post-trigger mechanism.  
+
+So we trigger this with an ALARM ?   
+  
+3.3 Detection Methods  
+Two complementary methods were discussed for detecting train presence:  
+  
+
+- **Laser barriers / photocells:** Physical sensors placed on all tracks at bridge entry/exit points. Already specified in the tender for all bridges, including the Rho viaduct (which is notably long) and bridges in the Naples area. These provide a definitive binary signal (train entered / train exited).  
+    
+- **Acceleration threshold:** Gabriele (Dewesoft) noted that vibration amplitude without a train is at least one order of magnitude lower than with a train. A threshold-based approach on acceleration signals could serve as a secondary/confirmatory method. Mauro (RFI) agreed this could be viable but emphasized the need to validate the threshold values.  
+
+		This is an option we already have implemented, and the treshold values can be changed via MQTT.
+
+    
+
+  
+3.4 Labeling Proposal — Action Required from Dewesoft/SITE  
+**RFI (Mauro Alberto) explicitly asked Dewesoft/SITE to prepare a formal technical proposal** on how to implement the train/no-train labeling. The proposal should describe how the system will tag each data segment and what detection logic will be used (laser barriers, acceleration thresholds, or a combination). 
+
+RFI and UNIBO will then review and refine it jointly.  
+  
+3.5 Continuous Buffering Guarantee  
+Gabriele (Dewesoft) highlighted a key architectural advantage: the Dewesoft system continuously buffers all sensor data in a ring buffer. This means that even if the initial triggering logic is not perfectly tuned, no data is lost. The trigger parameters (thresholds, pre/post durations) can be adjusted at any time without risk, because the raw continuous data stream is always available for reprocessing.
+
+4. Data Pipeline: Field System → EDGE Server → Cloud  
+5. 
+The overall data flow discussed is: Sensors → Dewesoft acquisition unit → EDGE server (on-site) → UNIBO cloud platform. The transmission model must be **push from DAQ to EDGE** (i.e., the Dewesoft acquisition system actively sends data to the EDGE server via HTTPS POST). The EDGE server must not need to poll or pull data from the DAQ. This simplifies the EDGE architecture and ensures timely delivery without requiring the server to manage request scheduling.  
+  
+4.1 What the EDGE Server Receives  
+Each data packet sent to the EDGE server must contain:  
+  
+Is one protobuf for one device?
+- Sensor identifier (RFI VA code)  - What is RFI VA Code?
+- Sampling frequency  
+- Acquisition duration  
+- Timestamp  
+- Measurement values (encoded in Protobuf)  
+- Train/no-train label  
+    
+
+  
+4.2 Remote Configuration  
+Acquisition parameters (sampling frequency per sensor, acquisition duration, trigger logic) must be remotely configurable from the central management PC and ultimately commandable from the UNIBO central platform. This is a specification requirement.  
+  This is already implemented via MQTT
+
+4.3 Data Packaging Strategy  
+UNIBO requested that data be sent in logically meaningful blocks rather than as a stream of small fragmented packets, which would require additional reassembly and rework on the platform side. 
+
+
+The preferred approach is to send each data unit as a self-contained message, specifically: a complete 300-second OMA buffer (for ambient/no-train acquisitions), or a complete triggered block for a train passage event (including pre-trigger and post-trigger segments). Each message should carry all necessary metadata so that UNIBO can process it independently without needing to reconstruct context from adjacent packets.  
+The recommended message design is **one message per sensor per acquisition event**. This is the most practical approach because different sensor types have different sampling frequencies and acquisition durations (e.g., accelerometers at one rate for 300s OMA, inclinometers at a different rate and potentially shorter duration). 
+
+Each Protobuf message would contain: sensor ID, timestamp, sampling frequency, duration, measurement array, and train/no-train label. Messages belonging to the same time window can be correlated via a shared acquisition ID or start timestamp. This approach is fully compatible with Protobuf (no inherent message size limits) and HTTPS transport (a 300-second accelerometer buffer at typical SHM sampling rates produces a payload of a few hundred KB, well within standard HTTP POST limits).  
+
+WHAT?
+  
+4.4 Processing Mode  
+Luca Sciullo (UNIBO) clarified that the current processing pipeline does not require real-time data delivery. Data can be sent in batches after acquisition. However, the platform architecture supports real-time streaming if future analysis requirements demand it. This means the Dewesoft system does not need to implement real-time push at this stage, but should not preclude it architecturally.  
+
+OK
+  
+  
+5. Bridge Sites Mentioned  
+The meeting referenced the following specific bridge sites where the system will be deployed: the Rho Viaduct (described as notably long, with laser barriers on all tracks), and multiple bridges in the Naples area. All sites will have laser barriers on every track for dynamic measurement triggering.
+
+6. Action Items  
+  
+1  
+Prepare formal technical proposal for train/no-train labeling (detection method, trigger logic, pre/post durations)  
+**Dewesoft / SITE**  
+TO DO  
+2  
+Define .proto schema for sensor data messages (fields, types, metadata)  
+**Dewesoft Monitoring**  
+TO DO  
+3  
+Provide required sampling frequency per sensor, referenced by RFI VA code  
+UNIBO  
+TO DO  
+4  
+Complete review of the tender specification document and submit technical questions  
+UNIBO software team  
+IN PROGRESS  
+5  
+Provide description of current data segmentation and labeling logic from prior project  
+UNIBO (Marzani)  
+TO DO  
+6  
+Schedule follow-up technical meeting to align on .proto schema and data format  
+RFI / All  
+TO DO  
+  
+  
+7. Key Technical Decisions for Dewesoft Monitoring Development  
+The following points summarize the technical decisions and constraints that directly impact the software development work at Dewesoft Monitoring:  
+  
+
+- **Serialization:** Protobuf is mandatory. You will need to design and implement the .proto message definitions. Coordinate with UNIBO for schema review.  
+    
+- **Triggering logic:** Must support both laser barrier input (digital I/O from photocells) and acceleration-threshold detection. The trigger must support configurable pre-trigger and post-trigger durations. A formal proposal must be submitted to RFI for approval.  
+    
+- **OMA mode:** 300-second acquisition windows, every 5 minutes, accelerometers only, only valid when no train is present. Parameters must be configurable per sensor.  
+    
+- **Continuous buffering:** The ring buffer architecture is a confirmed design point. Ensure the EDGE data export can retroactively extract and label segments from the buffer.  
+    
+- **Remote configuration:** All acquisition parameters (frequency, duration, trigger thresholds) must be settable remotely from the management PC and from the UNIBO central platform.  
+    
+- **Data packaging:** Each transmission must be a self-contained, logically complete block — one message per sensor per acquisition event (e.g., a full 300-second OMA buffer or a complete triggered train-passage event). Do not fragment data into small packets. Use a shared acquisition ID or start timestamp to let UNIBO correlate messages from different sensors within the same time window.  
+    
+- **Transport mode:** Push from DAQ to EDGE via HTTPS POST. The EDGE server receives data passively — no polling or pull mechanism. The Dewesoft system is responsible for initiating each transmission.  
+    
+- **Data delivery:** Batch delivery to EDGE is acceptable for now. Real-time streaming is not required at this stage but the architecture must not preclude it.  
+    
+- **Multi-bridge deployment:** The system will be deployed on multiple bridges (Rho viaduct, Naples area bridges). The software must handle different bridge configurations and sensor setups.
+
+
+
+
+
     
