@@ -244,12 +244,12 @@ So we trigger this with an ALARM ?  Also kinda already implemented.
   
 
 - **Laser barriers / photocells:** Physical sensors placed on all tracks at bridge entry/exit points. Already specified in the tender for all bridges, including the Rho viaduct (which is notably long) and bridges in the Naples area. These provide a definitive binary signal (train entered / train exited).
-
+  
 
     
 - **Acceleration threshold:** Gabriele (Dewesoft) noted that vibration amplitude without a train is at least one order of magnitude lower than with a train. A threshold-based approach on acceleration signals could serve as a secondary/confirmatory method. Mauro (RFI) agreed this could be viable but emphasized the need to validate the threshold values.  
 
-		This is an option we already have implemented, and the treshold values can be changed via MQTT.
+		This is an option we kinda already have implemented, and the treshold values can be changed via MQTT.
 
     
 
