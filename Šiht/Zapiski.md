@@ -202,9 +202,8 @@ Push and Pull mode
   
   
 2. Data Encoding: Protocol Buffers (Protobuf)  
-**Reference:** [ALL. 3_Specifica Tecnica - Interoperabilità RFI - ENG.pdf](https://drive.google.com/drive/folders/1xfOFQ3LAYN86ej---AAYtU8hXERFXWzy) · [Protocol Buffers documentation](https://protobuf.dev/)  
-UNIBO (Marco Di Felice) confirmed they expect all sensor data from the field system to be encoded using Google Protocol Buffers (Protobuf), as specified in the RFI tender documentation. This is a binary serialization format that is compact, fast to parse, and well-suited for high-throughput sensor telemetry.  
-  
+
+UNIBO (Marco Di Felice) confirmed they expect all sensor data from the field system to be encoded using Google Protocol Buffers (Protobuf), as specified in the RFI tender documentation.
 Requirements for Dewesoft Monitoring  
 
 - **Define a .proto schema** that describes the structure of each data message. The schema must include: sensor identifier (RFI VA code), sampling frequency, acquisition duration, timestamp, measurement values, and train/no-train label.  
