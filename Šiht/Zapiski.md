@@ -294,6 +294,8 @@ Sure.
 The preferred approach is to send each data unit as a self-contained message, specifically: a complete 300-second OMA buffer (for ambient/no-train acquisitions), or a complete triggered block for a train passage event (including pre-trigger and post-trigger segments). Each message should carry all necessary metadata so that UNIBO can process it independently without needing to reconstruct context from adjacent packets.  
 The recommended message design is **one message per sensor per acquisition event**. This is the most practical approach because different sensor types have different sampling frequencies and acquisition durations (e.g., accelerometers at one rate for 300s OMA, inclinometers at a different rate and potentially shorter duration). 
 
+  The biggest problem i see here is, that the time for train events is not defined, and wont be the same for all the trains. So some sort of dynamicall message sizes would have to be implemented (Pretrigger - Alarm Duration - Posttrigger)
+
 Each Protobuf message would contain: sensor ID, timestamp, sampling frequency, duration, measurement array, and train/no-train label. Messages belonging to the same time window can be correlated via a shared acquisition ID or start timestamp. This approach is fully compatible with Protobuf (no inherent message size limits) and HTTPS transport (a 300-second accelerometer buffer at typical SHM sampling rates produces a payload of a few hundred KB, well within standard HTTP POST limits).  
 
 WHAT?
