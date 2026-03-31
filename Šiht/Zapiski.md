@@ -248,7 +248,7 @@ So we trigger this with an ALARM ?  Also kinda already implemented.
   
 
     
-- **Acceleration threshold:** Gabriele (Dewesoft) noted that vibration amplitude without a train is at least one order of magnitude lower than with a train. A threshold-based approach on acceleration signals could serve as a secondary/confirmatory method. Mauro (RFI) agreed this could be viable but emphasized the need to validate the threshold values.  
+- **Acceleration threshold: noted that vibration amplitude without a train is at least one order of magnitude lower than with a train. A threshold-based approach on acceleration signals could serve as a secondary/confirmatory method. Mauro (RFI) agreed this could be viable but emphasized the need to validate the threshold values.  
 
 		This is an option we kinda already have implemented, and the treshold values can be changed via MQTT.
 
@@ -263,7 +263,7 @@ So we trigger this with an ALARM ?  Also kinda already implemented.
 
 
 4. Data Pipeline: Field System → EDGE Server → Cloud  
-5. 
+   
 The overall data flow discussed is: Sensors → Dewesoft acquisition unit → EDGE server (on-site) → UNIBO cloud platform. The transmission model must be **push from DAQ to EDGE** (i.e., the Dewesoft acquisition system actively sends data to the EDGE server via HTTPS POST). The EDGE server must not need to poll or pull data from the DAQ. This simplifies the EDGE architecture and ensures timely delivery without requiring the server to manage request scheduling.  
   
 4.1 What the EDGE Server Receives  
