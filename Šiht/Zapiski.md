@@ -230,6 +230,9 @@ No train present on the bridge during the entire window
 **Purpose**  
 Ambient modal analysis to detect structural degradation over time  
 Note: Different sensor types (e.g., inclinometers) may require different acquisition durations. UNIBO acknowledged that 300 seconds may not be optimal for all sensors and that there is flexibility to configure per-sensor durations. UNIBO will provide the required sampling frequency for each sensor, referenced by RFI VA code.  
+
+This is already implemented for SINA/ANAS standard, where they can configure the Acquisition window and repetition window for every type of sensors separately over MQTT - held in config.json file.
+
   
 3.2 Dynamic Acquisition — With-Train  
 For train transit events, the system needs to capture the bridge response before, during, and after the train passage. This requires a pre-trigger and post-trigger mechanism.  
