@@ -364,4 +364,45 @@ The following points summarize the technical decisions and constraints that dire
 
 
 
+syntax = "proto3";
+
+package rfi.vibration;
+
+// Sensor measurement message — one acquisition burst
+message VibrationRecord {
+
+  // === Identity ===
+  string sensor_id        = 1;  // RFI VA code, e.g. "Something"
+
+  // === Acquisition parameters ===
+  uint32 sampling_freq_hz = 3;  // Sampling frequency in Hz, e.g. 1000
+  uint32 duration_ms      = 4;  // Acquisition window duration in milliseconds
+
+  // === Timing ===
+  // Unix timestamp of the FIRST sample in the acquisition window
+  int64  timestamp_us     = 5;  // Microseconds since Unix epoch
+
+  // === Measurement payload ===
+  repeated float values   = 6 [packed = true];  // Raw acceleration / vibration samples
+
+  // === Label ===
+  TrainLabel label        = 7;
+
+  // === Optional metadata ===
+  string firmware_version = 8;
+}
+
+enum TrainLabel {
+  LABEL_UNKNOWN  = 0;  // Default — unlabelled
+  LABEL_NO_TRAIN = 1;  // No train passing
+  LABEL_TRAIN    = 2;  // Train detected
+}
+
+message SiteRecord {
+  string site_id = 1;
+  uint32_t total_duration_ms = 2;
+  repeated VibrationRecord = 3;
+  string label = 4;
+}
+
     
