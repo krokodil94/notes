@@ -296,18 +296,19 @@ The recommended message design is **one message per sensor per acquisition event
 
   The biggest problem i see here is, that the time for train events is not defined, and wont be the same for all the trains. So some sort of dynamicall message sizes would have to be implemented (Pretrigger - Alarm Duration - Posttrigger)
 
-Each Protobuf message would contain: sensor ID, timestamp, sampling frequency, duration, measurement array, and train/no-train label. Messages belonging to the same time window can be correlated via a shared acquisition ID or start timestamp. This approach is fully compatible with Protobuf (no inherent message size limits) and HTTPS transport (a 300-second accelerometer buffer at typical SHM sampling rates produces a payload of a few hundred KB, well within standard HTTP POST limits).  
+Each Protobuf message would contain:
+sensor ID,
+timestamp,
+sampling frequency, 
+duration, 
+measurement array, 
+and train/no-train label.
+Messages belonging to the same time window can be correlated via a shared acquisition ID or start timestamp. This approach is fully compatible with Protobuf (no inherent message size limits) and HTTPS transport (a 300-second accelerometer buffer at typical SHM sampling rates produces a payload of a few hundred KB, well within standard HTTP POST limits - probably depending on the samplerate).  
 
-WHAT?
   
 4.4 Processing Mode  
-Luca Sciullo (UNIBO) clarified that the current processing pipeline does not require real-time data delivery. Data can be sent in batches after acquisition. However, the platform architecture supports real-time streaming if future analysis requirements demand it. This means the Dewesoft system does not need to implement real-time push at this stage, but should not preclude it architecturally.  
+Luca Sciullo (UNIBO) clarified that the current processing pipeline does not require real-time data delivery. Data can be sent in batches after acquisition. However, the platform architecture supports real-time streaming if future analysis requirements demand it. This means the Dewesoft system does not need to implement real-time push at this stage, but should not preclude it architecturally. - Real-time streaming is not even possible. Probably the best what can be done is sina streaming logic - 10s dxd files 
 
-OK
-  
-  
-5. Bridge Sites Mentioned  
-The meeting referenced the following specific bridge sites where the system will be deployed: the Rho Viaduct (described as notably long, with laser barriers on all tracks), and multiple bridges in the Naples area. All sites will have laser barriers on every track for dynamic measurement triggering.
 
 6. Action Items  
   
