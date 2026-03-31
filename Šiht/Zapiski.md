@@ -213,7 +213,9 @@ In the RFI standard, it is defined that data is send by CSV+ZIP, and also via MQ
   
 3. Train / No-Train Signal Discrimination  
 This was the most extensively discussed topic. The monitoring system must distinguish between data acquired while a train is transiting the bridge (dynamic response) and data acquired under ambient conditions only (no train). This distinction is critical because UNIBO applies different analysis algorithms to each type of data.  
-  
+
+We can implement this with alarms.
+
 3.1 OMA (Operational Modal Analysis) — No-Train Acquisition  
   
 
