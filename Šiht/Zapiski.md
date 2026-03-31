@@ -262,23 +262,23 @@ So we trigger this with an ALARM ?  Also kinda already implemented.
   
 
 
-4. Data Pipeline: Field System → EDGE Server → Cloud  
-   
-The overall data flow discussed is: Sensors → Dewesoft acquisition unit → EDGE server (on-site) → UNIBO cloud platform. 
-The transmission model must be **push from DAQ to EDGE** (i.e., the Dewesoft acquisition system actively sends data to the EDGE server via HTTPS POST). The EDGE server must not need to poll or pull data from the DAQ. This simplifies the EDGE architecture and ensures timely delivery without requiring the server to manage request scheduling.  
+  4. Data Pipeline: Field System → EDGE Server → Cloud  
+     
+  The overall data flow discussed is: Sensors → Dewesoft acquisition unit → EDGE server (on-site) → UNIBO cloud platform. 
+  The transmission model must be **push from DAQ to EDGE** (i.e., the Dewesoft acquisition system actively sends data to the EDGE server via HTTPS POST). The EDGE server must not need to poll or pull data from the DAQ. This simplifies the EDGE architecture and ensures timely delivery without requiring the server to manage request scheduling.  
+    
+  4.1 What the EDGE Server Receives  
+  Each data packet sent to the EDGE server must contain:  
+    
+  Is one protobuf for one device?
+  - Sensor identifier (RFI VA code)  - What is RFI VA Code?
+  - Sampling frequency  
+  - Acquisition duration  
+  - Timestamp  
+  - Measurement values (encoded in Protobuf)  
+  - Train/no-train label  
   
-4.1 What the EDGE Server Receives  
-Each data packet sent to the EDGE server must contain:  
-  
-Is one protobuf for one device?
-- Sensor identifier (RFI VA code)  - What is RFI VA Code?
-- Sampling frequency  
-- Acquisition duration  
-- Timestamp  
-- Measurement values (encoded in Protobuf)  
-- Train/no-train label  
-
-This isnt logical 
+  I really dont understand this!
 
   
 4.2 Remote Configuration  
