@@ -283,10 +283,12 @@ This basically means they will prepare an HTTP Server for us, and endpoints to w
   
 4.2 Remote Configuration  
 Acquisition parameters (sampling frequency per sensor, acquisition duration, trigger logic) must be remotely configurable from the central management PC and ultimately commandable from the UNIBO central platform. This is a specification requirement.  
-  This is already implemented via MQTT
+  This is already implemented via MQTT  - Config.json.- sampling frequency per sensor while this is not possible. Sampling frequency can be remotely configurable per TYPE OF SENSOR - All accelerometers must have the same frequency, all inclinometers the same etc.
 
 4.3 Data Packaging Strategy  
 UNIBO requested that data be sent in logically meaningful blocks rather than as a stream of small fragmented packets, which would require additional reassembly and rework on the platform side. 
+Sure.
+
 
 
 The preferred approach is to send each data unit as a self-contained message, specifically: a complete 300-second OMA buffer (for ambient/no-train acquisitions), or a complete triggered block for a train passage event (including pre-trigger and post-trigger segments). Each message should carry all necessary metadata so that UNIBO can process it independently without needing to reconstruct context from adjacent packets.  
