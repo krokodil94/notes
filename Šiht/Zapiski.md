@@ -318,23 +318,19 @@ Prepare formal technical proposal for train/no-train labeling (detection method,
 TO DO  
 2  
 Define .proto schema for sensor data messages (fields, types, metadata)  
-**Dewesoft Monitoring**  
 TO DO  
 3  
 Provide required sampling frequency per sensor, referenced by RFI VA code  
-UNIBO  
 TO DO  
 4  
-Complete review of the tender specification document and submit technical questions  
-UNIBO software team  
+Complete review of the tender specification document and submit technical questions   
 IN PROGRESS  
 5  
 Provide description of current data segmentation and labeling logic from prior project  
-UNIBO (Marzani)  
+  
 TO DO  
 6  
 Schedule follow-up technical meeting to align on .proto schema and data format  
-RFI / All  
 TO DO  
   
   
