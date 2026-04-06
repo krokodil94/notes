@@ -414,3 +414,49 @@
 
   Za razgovor posebej priporoči, da si prebereš o IEC 61850 in GOOSE protokolu – to je moderni standard, ki ga verjetno
   uvajajo ali načrtujejo, in bo pokazal, da si res "up-to-date".
+
+
+
+  Za pripravo na razgovor za delovno mesto SISTEMSKI INŽENIR II v Sektorju za obratovanje in razvoj – Službi telekomunikacij v Elektro Celje, se je dobro osredotočiti na tehnične veščine, znanja in kompetence, ki jih razpis posebej omenja, pa tudi na splošno področje sistemov, omrežij in telekomunikacij. Tukaj je strukturiran pregled, kaj se pripravljati:
+
+1. Osnovno razumevanje sistemov in omrežij
+Razumevanje tipov omrežij (LAN, WAN, radijska omrežja, optična omrežja).
+Konfiguracija in karakteristike omrežij (IP naslavljanje, podomrežja, VLAN, routing, switching).
+Monitoriranje in diagnostika omrežij (ping, traceroute, SNMP, logi).
+Prepoznavanje in odpravljanje napak v sistemih in omrežjih.
+2. Telekomunikacijski sistemi in naprave
+Osnovno poznavanje radijskih postaj, anten, TP/RP/RTP postaj.
+Razumevanje delovanja SCADA sistemov in sistemov vodenja (supervisory control).
+Poznavanje protokolov za prenos podatkov (npr. TCP/IP, UDP, SNMP, Modbus, MQTT… odvisno od podjetja).
+Delovanje in konfiguracija merilne opreme ter zaščitnih elementov.
+3. Vzdrževanje in diagnostika
+Preventivno vzdrževanje in nadzor naprav (opravila na daljavo ali lokalno).
+Analiza napak, priprava poročil, prognoz in ukrepov.
+Nastavitve naprav, posodabljanje firmware-a in programske opreme.
+Delo s SCADA ali drugimi aplikacijami za nadzor in upravljanje omrežij.
+4. Tehnična dokumentacija
+Razumevanje in priprava tehnične dokumentacije.
+Evidentiranje nastavitev naprav, izvedenih posegov, poročil o incidentih.
+Skladnost s standardi podjetja in regulativo.
+5. Programska orodja in računalniške aplikacije
+Uporaba standardnih IT orodij (Excel, Word, baze podatkov, SQL, MS Teams, Jira… odvisno od podjetja).
+Razumevanje in uporaba specifičnih orodij za nadzor omrežij, SCADA in telekomunikacije.
+Morda osnovno programiranje ali skriptanje za avtomatizacijo (Python, Bash, PowerShell).
+6. Varnost in varovanje
+Osnovni koncepti informacijske in kibernetske varnosti.
+Varno delo na višini in z napravami, kjer obstaja nevarnost laserskega sevanja.
+Uporaba zaščitne opreme pri delu na stolpih ali radijskih postajah.
+7. Dodatna znanja (prednost, ne obvezno)
+Projektno vodenje (načrtovanje del, koordinacija ekip).
+Poznavanje naprednejših telekomunikacijskih protokolov.
+Usposobljenost za delo v dinamičnem in večopravilnem okolju.
+8. Praktični nasveti za razgovor
+Pripraviti konkretne primere, kjer ste reševali težave s sistemi ali omrežji.
+Omeniti izkušnje s SCADA, omrežji ali vzdrževanjem naprav.
+Če imate izkušnje z meritvami ali konfiguracijo TP/RP/RTP postaj, to izpostavite.
+Pripravite se na vprašanja o varnostnih postopkih in preventivnem vzdrževanju.
+Pripravite se na hipotetične situacije: “Kaj bi naredil, če pride do izpada TP postaje?”
+
+Če želiš, ti lahko pripravim konkretno tehnično “cheat sheet” s seznamom vprašanj in odgovorov, ki jih zelo verjetno lahko dobite na razgovoru, da se lahko točno ciljno pripravljaš.
+
+Ali želiš, da to naredim?
