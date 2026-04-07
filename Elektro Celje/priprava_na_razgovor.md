@@ -32,10 +32,17 @@
 ### Komunikacijski protokoli v SCADA/energetiki (OBVEZNO ZNANJE)
 
 
+---
+
+
 #### IEC 60870-5 serija
 - **IEC 60870-5-101** – serijsko (RS-232/RS-485), za komunikacijo med MTU in RTU prek počasnih linij
 - **IEC 60870-5-104** – isti protokol kot 101, vendar prek TCP/IP omrežja (Ethernet/IP)
 - Podpira: enkratne ukaze, dvojne ukaze, merjene vrednosti, časovne žige, spontane prenose
+
+
+---
+
 
 #### IEC 61850
 - Sodoben standard za komunikacijo med IED napravami v RTP/RP
@@ -45,16 +52,28 @@
 - Logični vozli (Logical Nodes): XCBR (odklopnik), XSWI (ločilnik), MMXU (meritve)...
 - Prednost: interoperabilnost različnih proizvajalcev, standardizirana konfiguracija prek **SCL** datotek (`.icd`, `.scd`, `.cid`)
 
+
+---
+
+
 #### Modbus
 - **Modbus RTU** – serijsko (RS-485)
 - **Modbus TCP** – prek IP omrežja
 - Register-based protokol; preprost, zelo razširjen pri PLC-jih in merilnikih
 - Master/Slave arhitektura
 
+
+---
+
+
 #### SNMP (Simple Network Management Protocol)
 - Za nadzor in upravljanje telekomunikacijske omrežne opreme (stikala, routerji, multipleksorji)
 - Verzije: v1, v2c, **v3** (edini s šifriranjem – priporočen za varnost)
 - Trap: asinhrono sporočilo naprave ob alarmu
+
+
+
+---
 
 
 
@@ -70,22 +89,15 @@
 Spanning Tree Protocol (STP) in Rapid Spanning Tree Protocol (RSTP, IEEE 802.1w) sta protokola, ki omogočata redundantno mrežno topologijo brez zanke v Ethernet omrežju.
 Tipično se uporablja v LAN omrežjih ali industrijskih omrežjih, kjer obstaja potreba po rezervni poti, če primarna povezava odpove.
 Kako deluje?
-Mreža z več povezanimi stikali lahko ustvari zanke. STP:
-Identificira “root bridge” (glavno stikalo)
-Izračuna minimalni set povezav, da ne nastanejo zanke
-Drugi povezavi postavi v blocking mode, dokler primarna ne odpove
+Mreža z več povezanimi stikali lahko ustvari zanke. STP: Identificira “root bridge” (glavno stikalo), Izračuna minimalni set povezav, da ne nastanejo zanke .Drugi povezavi postavi v blocking mode, dokler primarna ne odpove
 RSTP je hitrejša verzija STP, ob napaki preklopi poti v sekundah, ne v minutah.
-Prednosti
-Preprosta implementacija.
-Dovolj za manj kritične obroče ali kjer so Ethernet linki relativno poceni.
-Ni potrebna specializirana oprema.
+Prednosti: Preprosta implementacija. Dovolj za manj kritične obroče ali kjer so Ethernet linki relativno poceni. Ni potrebna specializirana oprema.
 Slabosti
-Hitrost preklopa (STP: 30–50s, RSTP: ~1–5s) je lahko prepočasna za kritične elektro obroče, kjer je stabilnost ključna.
-Ni optimizirana za sinhronizacijo ali transport velikih količin podatkov, kot je SCADA ali telemetrija.
+Hitrost preklopa (STP: 30–50s, RSTP: ~1–5s) je lahko prepočasna za kritične elektro obroče, kjer je stabilnost ključna. Ni optimizirana za sinhronizacijo ali transport velikih količin podatkov, kot je SCADA ali telemetrija.
 
 
-2. SDH obroči (Synchronous Digital Hierarchy)
-Kaj je to?
+SDH obroči (Synchronous Digital Hierarchy)
+
 SDH je telekomunikacijski standard za prenos podatkov po optičnih vlaknih.
 Omogoča gradnjo obročev z redundanco, kjer lahko signal teče v obe smeri (dual ring), in ob napaki samodejno preusmeri tok.
 Pogosto se uporablja za kritične elektro omrežne aplikacije, SCADA sisteme, daljinske telemetrije in nadzor elektro distribucije.
