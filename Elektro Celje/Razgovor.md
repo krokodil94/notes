@@ -72,6 +72,10 @@ Izvajanje nastavitev naprav (parametrizacija RTU, konfiguracija stikal in usmerj
 Preventivno vzdrževanje, ki vključuje nadgradnje programske opreme (firmware) za odpravo varnostnih ranljivosti.
 Odpravo okvar na terenu, kar zahteva uporabo službenega vozila (B kategorija) in prenašanje merilne opreme v RTP/TP postaje.
 
+### Dokumentacija in poročanje
 
+Skrb za pravilnost in popolnost tehnične dokumentacije je ključna naloga, saj je od tega odvisna varnost pri delu in hitrost odprave okvar. Inženir pripravlja:
+
+PID (Projekt izvedenih del): Sheme povezav, naslovne liste protokolov in konfiguracijske datoteke.
 
 
