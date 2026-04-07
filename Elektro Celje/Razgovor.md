@@ -39,3 +39,7 @@ Ena izmed ključnih odgovornosti razpisanega mesta je zagotavljanje ustreznega n
 Varnostna dokumentacija, ki jo mora sistemski inženir vzdrževati, vključuje tudi sezname sredstev (asset management) in sheme omrežij, kar omogoča hitro identifikacijo ranljivih točk v primeru pojava nove kibernetske grožnje.
 
 
+# Optična komunikacijska omrežja in merilna tehnika
+
+
+Služba telekomunikacij v Elektro Celje upravlja z razvejanim optičnim omrežjem, ki je primarni medij za prenos podatkov med RTP postajami. Optična vlakna so integrirana v zaščitne vrvi daljnovodov (OPGW - Optical Ground Wire) ali položena v kabelsko kanalizacijo ob elektroenergetskih kablih.
