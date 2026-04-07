@@ -212,3 +212,35 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - V OT (Operational Technology) je **razpoložljivost (Availability)** na prvem mestu (ne zaupnost kot v IT)
 - Naprave imajo dolgo življenjsko dobo (20+ let) – nimajo rednih varnostnih posodobitev
 - Motnje so fizično nevarne (izpad električne energije, poškodba infrastrukture)
+
+### Ključni standardi
+- **IEC 62443** – mednarodni standard za varnost industrijskih komunikacijskih omrežij in sistemov
+  - Definira **Security Levels (SL 1–4)** in **Zones & Conduits** arhitekturo
+- **NERC CIP** (Critical Infrastructure Protection) – ameriški standard, referenčni okvir tudi v EU
+- **NIS2 Direktiva (EU)** – direktiva o varnosti omrežij in informacijskih sistemov; operaterji energetske infrastrukture so "essential entities"
+- **ISO/IEC 27001** – splošni standard za upravljanje z informacijsko varnostjo (ISMS)
+
+### Varnostna arhitektura (Zones & Conduits)
+```
+[Corporate IT] <---Firewall/DMZ---> [Control Network (SCADA)] <----> [Field Devices]
+     Zone 4              Zone 3              Zone 2                      Zone 1/0
+```
+- **DMZ** (Demilitarized Zone) – ločitvena cona med IT in OT
+- **Data Diode** – enosmerni prenos podatkov (iz OT v IT, nikoli obratno)
+- **Industrial Firewall**: npr. Fortinet FortiGate, Cisco ASA, Hirschmann EAGLE, Tofino Xenon
+
+### Najpogostejše grožnje in ukrepi
+| Grožnja | Ukrep |
+|---------|-------|
+| Nepooblaščen dostop | MFA, AAA (RADIUS/TACACS+), segmentacija VLAN |
+| Malware / Ransomware | Aplikacijska bela lista (whitelisting), odsotnost nepotrebnih storitev |
+| Man-in-the-Middle | Šifriranje (TLS 1.2/1.3, IPsec VPN), certifikati |
+| Fizični dostop | Zaklepanje omar, CCTV, evidence dostopa |
+| Napadi na daljavo | IDS/IPS, syslog centralizacija, SIEM |
+| USB/removable media | Politika prepovedi, skeniranje |
+
+
+### VPN tehnologije
+- **IPsec VPN**: tunelsko (ESP/AH) ali transportno, IKEv2, za site-to-site
+- **SSL/TLS VPN**: za oddaljen dostop vzdrževalcev
+- Pravilo: **princip najmanjših privilegijev** – dostop samo do tistega, kar vzdrževalec potrebuje
