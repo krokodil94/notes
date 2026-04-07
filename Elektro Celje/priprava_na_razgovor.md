@@ -59,9 +59,16 @@
 - Register-based protokol; preprost, zelo razširjen pri PLC-jih in merilnikih
 - Master/Slave arhitektura
 
+#### SNMP (Simple Network Management Protocol)
+- Za nadzor in upravljanje telekomunikacijske omrežne opreme (stikala, routerji, multipleksorji)
+- Verzije: v1, v2c, **v3** (edini s šifriranjem – priporočen za varnost)
+- Trap: asinhrono sporočilo naprave ob alarmu
 
 
 
+## 3. TELEKOMUNIKACIJSKA OMREŽJA V ELEKTRODISTRIBUCIJI
+
+### Topologije
 
 - **Zvezdasta** – RTP je center, RP/TP so veje (preprosta, a brez redundance)
 - **Obroč (Ring)** – vsaka postaja je del obroča; izpad ene povezave ne povzroči izpada vozlišča
@@ -103,5 +110,16 @@ Dražja oprema (SDH multiplexerji).
 Več kompleksnosti pri upravljanju.
 
 Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med daljnovodi, trafostanicami in SCADA sistemi zaradi hitrega preklopa in zanesljivosti. STP/RSTP Ethernet obroči se uporabljajo predvsem tam, kjer so potrebe po kritičnosti manjše ali za interno omrežje z več preprostimi napravami.
+
+
+### Prenosne tehnologije
+
+#### Optična vlakna (fiber optics)
+- **Enomodni (Single-Mode, SMF, G.652)** – dolge razdalje (>2 km), 1310 nm in 1550 nm, tanek core (~9 µm)
+- **Večmodni (Multi-Mode, MMF)** – kratke razdalje (<550 m za 10G), debelejši core (50/62,5 µm)
+- Elektrodistribucija večinoma gradi **OPGW** (Optical Ground Wire – optika v ozemljitveni vrvici daljnovodov) ali **ADSS** (All-Dielectric Self-Supporting – optika v nekovinskem kablu, obešenem med drogovi)
+- **Konektorji**: SC/APC (zeleni, kot 8°, manj odboja – za distribucijo signala), SC/UPC (modri), LC, FC
+- **Splicing**: fuzijsko varjenje vlaken, mehanski spoji
+
 
 
