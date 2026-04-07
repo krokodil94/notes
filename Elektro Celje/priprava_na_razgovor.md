@@ -244,3 +244,35 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **IPsec VPN**: tunelsko (ESP/AH) ali transportno, IKEv2, za site-to-site
 - **SSL/TLS VPN**: za oddaljen dostop vzdrževalcev
 - Pravilo: **princip najmanjših privilegijev** – dostop samo do tistega, kar vzdrževalec potrebuje
+
+### Upravljanje identitet
+- **RADIUS** – centralizirana avtentikacija za omrežne naprave (login v switch/router)
+- **TACACS+** – podobno kot RADIUS, a z ločeno avtorizacijo in računovodstvom; Cisco-centric
+- **Active Directory** – za Windows okolja, LDAP integracija
+
+## 6. MERILNA OPREMA IN VZDRŽEVANJE
+
+### OTDR (že opisano – za optiko)
+### Spektralni analizator
+- Meri moč signala v odvisnosti od frekvence
+- Uporaba: preverjanje radijskih kanalov, iskanje interferenc, EMC testi
+### Omrežni analizator (Network Analyzer / Protocol Analyzer)
+- **Wireshark** – brezplačno orodje za zajem in analizo omrežnega prometa (PCAP datoteke)
+- Znati moraš: filtrirati po protokolu (ip.addr, tcp.port), slediti TCP toku, identificirati anomalij
+- ### Optični močnostni merilec (Optical Power Meter)
+- Meri optično moč v dBm; skupaj z laserskim izvorom za merjenje slabljenja
+- 
+### Reflektometrija (TDR) za Baker
+- Locira prekinitve in napake na koaksialnih ali bimetalna kablih
+
+### Multimeter in kabelski tester
+- Merjenje napetosti, toka, upora; preverba kablov
+
+### Tipična vzdrževalna dela
+1. **Preventivno vzdrževanje**: pregled konektorjev (čistost!), meritve optičnih moči, pregled alarmov v NMS
+2. **Korektivno vzdrževanje**: lokalizacija okvar z OTDR, zamenjava opreme, konfiguracijske spremembe
+3. **Dokumentacija**: vsaka sprememba mora biti evidentirana – vzdržuj aktualne kataster, sheme, konfiguracije
+
+---
+
+
