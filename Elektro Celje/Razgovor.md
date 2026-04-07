@@ -53,3 +53,25 @@ Celotno dolžino optične poti med dvema postajama.
 Slabljenje (atenuacijo) na celotni trasi, izraženo v dB/km.
 Lokacijo in resnost dogodkov, kot so zvari (splices), konektorji ali mikrougibi kabla.
 Natančno razdaljo do mesta prekinitve vlakna v primeru mehanske poškodbe kabla.
+
+Sodobni sistemi za nadzor optičnih kablov (OLM) omogočajo avtomatsko spremljanje 24 ur na dan. Ti sistemi v realnem času analizirajo stanje vlaken in sprožijo alarm, še preden se komunikacija popolnoma prekine, kar omogoča preventivno vzdrževanje, ki je ena izmed dolžnosti na tem delovnem mestu.
+
+
+### Projekt NEDO
+
+Cilji projekta so vključevali:Upravljanje napetosti: Razvoj naprednih algoritmov za koordinirano vodenje napetosti v distribucijskem omrežju, kar omogoča priključitev večjega števila sončnih elektrarn brez investicij v fizično krepitev vodov.Avtomatska lokalizacija napak: Uporaba naprednih sekundarnih naprav za hitro identifikacijo mesta okvare in avtomatsko rekonfiguracijo omrežja, s čimer se skrajša čas izpada za odjemalce.Hranilniki energije: Preizkušanje baterijskih sistemov za uravnavanje konic in zagotavljanje sistemskih storitev, kot je bila namestitev baterij v Idriji in Ljubljani v kasnejših fazah projekta.Sistemski inženir sodeluje pri integraciji teh naprednih rešitev v obstoječi SCADA sistem podjetja, kar zahteva poznavanje oblačnih rešitev in centralno vodenih platform. V obdobju 2023–2026 Elektro Celje vlaga znatna sredstva iz naslova REPowerEU in Načrta za okrevanje in odpornost v digitalizacijo RTP postaj, kar pomeni, da bo novi sodelavec vpet v projekte visoke tehnološke vrednosti.
+
+
+### Delovne naloge in odgovornosti sistemskega inženirja II
+
+Upravljanje sistemov in omrežij
+Glavna odgovornost je zagotavljanje delovanja zahtevnejših sistemov, za katere izvaja skrbništvo. To vključuje:
+
+Redno spremljanje delovanja komunikacijskih naprav in strežniške infrastrukture.
+Izvajanje nastavitev naprav (parametrizacija RTU, konfiguracija stikal in usmerjevalnikov).
+Preventivno vzdrževanje, ki vključuje nadgradnje programske opreme (firmware) za odpravo varnostnih ranljivosti.
+Odpravo okvar na terenu, kar zahteva uporabo službenega vozila (B kategorija) in prenašanje merilne opreme v RTP/TP postaje.
+
+
+
+
