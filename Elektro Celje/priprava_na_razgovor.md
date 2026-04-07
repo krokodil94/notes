@@ -30,3 +30,17 @@
    [Terenska oprema: stikala, odklopniki, merilniki]
 ```
 
+- **MTU** (Master Terminal Unit) – centralni strežnik SCADA v dispečerskem centru
+- **RTU** (Remote Terminal Unit) – naprava v oddaljeni postaji, ki zbira meritve in izvaja ukaze
+- **IED** (Intelligent Electronic Device) – pametna zaščitna ali merilna naprava (npr. zaščitni rele)
+- **HMI** (Human-Machine Interface) – grafični vmesnik za operaterje
+- **Historian** – podatkovna baza za arhiviranje časovnih vrst meritev
+
+
+### Komunikacijski protokoli v SCADA/energetiki (OBVEZNO ZNANJE)
+
+#### IEC 60870-5 serija
+
+
+
+
