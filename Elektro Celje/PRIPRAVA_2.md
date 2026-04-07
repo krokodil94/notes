@@ -30,3 +30,7 @@ SCADA (Supervisory Control and Data Acquisition) je nadzorni in upravljalski sis
 
 ### Komunikacijski protokoli v SCADA/energetiki (OBVEZNO ZNANJE)
 
+#### IEC 60870-5 serija
+- **IEC 60870-5-101** – serijsko (RS-232/RS-485), za komunikacijo med MTU in RTU prek počasnih linij
+- **IEC 60870-5-104** – isti protokol kot 101, vendar prek TCP/IP omrežja (Ethernet/IP)
+- Podpira: enkratne ukaze, dvojne ukaze, merjene vrednosti, časovne žige, spontane prenose
