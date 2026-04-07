@@ -77,5 +77,10 @@ Odpravo okvar na terenu, kar zahteva uporabo službenega vozila (B kategorija) i
 Skrb za pravilnost in popolnost tehnične dokumentacije je ključna naloga, saj je od tega odvisna varnost pri delu in hitrost odprave okvar. Inženir pripravlja:
 
 PID (Projekt izvedenih del): Sheme povezav, naslovne liste protokolov in konfiguracijske datoteke.
+Poročila o dogodkih: Analiza vzrokov izpadov komunikacij ali nepravilnega delovanja avtomatike
+Prognoze in predloge ukrepov: Na podlagi spremljanja tehnologije predlaga posodobitve opreme, ki ji izteka življenjska doba ali ne ustreza več varnostnim standardom.
+
+
+
 
 
