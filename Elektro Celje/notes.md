@@ -41,15 +41,13 @@ Protokol IEC 104 uporablja vrata (port) 2404 po standardu, vendar sodobni goniln
 
 ### Standard IEC 61850 in digitalna postaja
 - Sodoben standard za komunikacijo med IED napravami v RTP/RP
-- Dve plasti komunikacije:
-  - **MMS** (Manufacturing Message Specification) – za nadzor in kontrolo prek TCP/IP
-  - **GOOSE** (Generic Object Oriented Substation Events) – za hitro zaščitno signalizacijo prek Ethernet (sub-milisekunda)
 Medtem ko se IEC 104 uporablja za komunikacijo na dolge razdalje (WAN), standard IEC 61850 definira komunikacijo znotraj same razdelilne postaje (LAN). Ta standard uvaja koncept objektno orientiranega modeliranja podatkov, kjer se namesto številčnih naslovov (IOA) uporablja logično poimenovanje naprav in njihovih funkcij (npr. "Circuit Breaker" ali "Protection Relay").
 
-Kandidat za delovno mesto mora poznati dve ključni storitvi znotraj IEC 61850:
-MMS (Manufacturing Message Specification): Uporablja se za vertikalno komunikacijo med inteligentno elektronsko napravo (IED) in lokalnim SCADA sistemom ali prehodom (gateway).
-GOOSE (Generic Object Oriented Substation Event): Uporablja se za horizontalno, peer-to-peer komunikacijo med napravami za zaščito in vodenje. GOOSE sporočila so kritična za varnost sistema, saj omogočajo prenos informacij o okvari v manj kot 3 milisekundah, kar je bistveno hitreje od klasičnega bakrenega ožičenja med binarnimi vhodi in izhodi naprav. Uporaba Ethernet omrežja namesto bakrenih žic zmanjšuje stroške izgradnje in omogoča stalno nadziranje komunikacijske poti; če naprava preneha pošiljati periodična "heartbeat" GOOSE sporočila, sistem takoj zazna napako.
-
+MMS (Manufacturing Message Specification): Uporablja se za vertikalno komunikacijo med inteligentno elektronsko napravo (IED) in lokalnim SCADA sistemom ali prehodom (gateway)  – za nadzor in kontrolo prek TCP/IP.
+GOOSE (Generic Object Oriented Substation Event): 
+Uporablja se za horizontalno, peer-to-peer komunikacijo med napravami za zaščito in vodenje. GOOSE sporočila so kritična za varnost sistema, saj omogočajo prenos informacij o okvari v manj kot 3 milisekundah, kar je bistveno hitreje od klasičnega bakrenega ožičenja med binarnimi vhodi in izhodi naprav. Uporaba Ethernet omrežja namesto bakrenih žic zmanjšuje stroške izgradnje in omogoča stalno nadziranje komunikacijske poti; če naprava preneha pošiljati periodična "heartbeat" GOOSE sporočila, sistem takoj zazna napako. -za hitro zaščitno signalizacijo prek Ethernet (sub-milisekunda)
+- Logični vozli (Logical Nodes): XCBR (odklopnik), XSWI (ločilnik), MMXU (meritve)...
+- Prednost: interoperabilnost različnih proizvajalcev, standardizirana konfiguracija prek **SCL** datotek (`.icd`, `.scd`, `.cid`)
 
 # Optična komunikacijska omrežja in merilna tehnika
 
@@ -69,4 +67,13 @@ S pomočjo OTDR meritev lahko inženir ugotovi:
 Sodobni sistemi za nadzor optičnih kablov (OLM) omogočajo avtomatsko spremljanje 24 ur na dan. Ti sistemi v realnem času analizirajo stanje vlaken in sprožijo alarm, še preden se komunikacija popolnoma prekine, kar omogoča preventivno vzdrževanje, ki je ena izmed dolžnosti na tem delovnem mestu.
 
 
+
+
+#### SNMP (Simple Network Management Protocol)
+- Za nadzor in upravljanje telekomunikacijske omrežne opreme (stikala, routerji, multipleksorji)
+- Verzije: v1, v2c, **v3** (edini s šifriranjem – priporočen za varnost)
+- Trap: asinhrono sporočilo naprave ob alarmu
+
+
+  
 
