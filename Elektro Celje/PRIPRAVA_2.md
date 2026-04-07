@@ -19,7 +19,6 @@
 - Razumeti moraš, zakaj je zanesljiva komunikacija do vsake postaje kritična (izpad komunikacije = slepota v SCADA).
 
 ---
-
 ## 2. SCADA SISTEMI IN SISTEMI VODENJA
 
 ### Kaj je SCADA?
