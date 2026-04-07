@@ -275,4 +275,21 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 
 ---
 
+### Splošna električna varnost v RTP/RP
+- Delovna napetost tipično 24 VDC ali 48 VDC za telekomunikacijsko opremo v postajah
+- Zavedaj se bližine visoke napetosti (20 kV, 110 kV) – varna razdalja, delovni nalogi, usklajevanje z vzdrževalci EE opreme
 
+## 8. UPRAVLJANJE OMREŽJA (NMS/EMS)
+
+### Tipična orodja
+- **Cisco Prime / DNA Center** – za Cisco infrastrukturo
+- **PRTG, Zabbix, Nagios** – splošni NMS, pogosti v manjših organizacijah
+- **Solarwinds NPM** – komercialni NMS
+- **OSS/BSS sistemi** – za telekomunikacijske operaterje
+
+
+### Funkcije, ki jih moraš razumeti
+- **Fault Management**: alarm management, korelacija alarmov, eskalacija
+- **Configuration Management**: varnostne kopije konfiguracije (npr. z Oxidized/RANCID), management sprememb
+- **Performance Management**: monitoring pasovne zasedenosti, zakasnitev, izgube paketov
+- **SNMP traps vs. polling**: trapi so asinhroni alarmi; polling je periodično spraševanj
