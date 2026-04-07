@@ -293,3 +293,31 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **Configuration Management**: varnostne kopije konfiguracije (npr. z Oxidized/RANCID), management sprememb
 - **Performance Management**: monitoring pasovne zasedenosti, zakasnitev, izgube paketov
 - **SNMP traps vs. polling**: trapi so asinhroni alarmi; polling je periodično spraševanj
+
+## 10. KLJUČNE TEHNOLOGIJE IN BLAGOVNE ZNAMKE V SEKTORJU
+
+### Pogosti proizvajalci opreme v elektrodistribuciji (EU)
+| Kategorija | Proizvajalci |
+|------------|-------------|
+| SCADA/EMS | ABB (MicroSCADA), Siemens (SICAM), Schneider Electric (ArcFM), GE Grid Solutions |
+| RTU / IED | ABB, Siemens, Schneider, SEL (Schweitzer), Easergy |
+| Optični multipleksorji (SDH/MSPP) | ECI Telecom, Ericsson (ex-Marconi), Nokia, Huawei |
+| Ethernet stikala (industrijsko) | Cisco IE serija, Hirschmann (Belden), Westermo, Moxa, Ruggedcom |
+| Mikrovalovne povezave | Ericsson MINI-LINK, Nokia, Huawei, Cambium, Siae |
+| Zaščitni releji | ABB (REF, REC, RET serije), Siemens SIPROTEC, Schneider Sepam |
+| Optični merilniki | EXFO, JDSU/Viavi, Anritsu |
+
+
+## 11. POGOSTA VPRAŠANJA NA RAZGOVORU (z odgovori)
+
+### "Kaj je IEC 61850 in zakaj je pomemben?"
+> IEC 61850 je mednarodni standard za komunikacijo v elektroenergetskih postajah. Definira standardizirane logične modele naprav in komunikacijske protokole (MMS za nadzor, GOOSE za hitro zaščitno signalizacijo). Ključna prednost je interoperabilnost – naprave različnih proizvajalcev komunicirajo po istem standardu. GOOSE sporočila so brez zakasnitev (sub-ms), kar je kritično za zaščitne funkcije
+
+
+
+
+
+
+
+
+
