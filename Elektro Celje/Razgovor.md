@@ -48,4 +48,8 @@ Služba telekomunikacij v Elektro Celje upravlja z razvejanim optičnim omrežje
 
 Sistemski inženir mora obvladati uporabo merilne opreme za optična omrežja, saj je odgovoren za odpravo okvar na komunikacijskih povezavah. Osrednji instrument je OTDR (Optical Time-Domain Reflectometer), ki deluje na principu povratnega sipanja laserske svetlobe.
 
-
+S pomočjo OTDR meritev lahko inženir ugotovi:
+Celotno dolžino optične poti med dvema postajama.
+Slabljenje (atenuacijo) na celotni trasi, izraženo v dB/km.
+Lokacijo in resnost dogodkov, kot so zvari (splices), konektorji ali mikrougibi kabla.
+Natančno razdaljo do mesta prekinitve vlakna v primeru mehanske poškodbe kabla.
