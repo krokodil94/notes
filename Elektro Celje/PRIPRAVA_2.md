@@ -42,6 +42,7 @@
 - **HMI** (Human-Machine Interface) – grafični vmesnik za operaterje
 - **Historian** – podatkovna baza za arhiviranje časovnih vrst meritev
 
+
 ### Komunikacijski protokoli v SCADA/energetiki (OBVEZNO ZNANJE)
 
 #### IEC 60870-5 serija
