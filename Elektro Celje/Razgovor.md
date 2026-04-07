@@ -43,3 +43,9 @@ Varnostna dokumentacija, ki jo mora sistemski inženir vzdrževati, vključuje t
 
 
 Služba telekomunikacij v Elektro Celje upravlja z razvejanim optičnim omrežjem, ki je primarni medij za prenos podatkov med RTP postajami. Optična vlakna so integrirana v zaščitne vrvi daljnovodov (OPGW - Optical Ground Wire) ali položena v kabelsko kanalizacijo ob elektroenergetskih kablih.
+
+# Merjenje in vzdrževanje optike
+
+Sistemski inženir mora obvladati uporabo merilne opreme za optična omrežja, saj je odgovoren za odpravo okvar na komunikacijskih povezavah. 
+
+
