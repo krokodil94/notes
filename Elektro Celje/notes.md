@@ -11,6 +11,22 @@
 
 Jedro tehničnega znanja za razpisano delovno mesto predstavlja poznavanje protokolov prenosa podatkov, ki omogočajo delovanje SCADA sistemov (Supervisory Control and Data Acquisition).
 
+**SCADA** (Supervisory Control and Data Acquisition) je nadzorni in upravljavski sistem za daljinsko vodenje elektroenergetskega omrežja.
+
+      ```
+      [Dispečerski center / Control Center]
+              |
+         [SCADA Server / MTU]
+              |  (komunikacijsko omrežje)
+         [RTU / IED naprave v RTP/RP/TP]
+              |
+         [Terenska oprema: stikala, odklopniki, merilniki]
+      ```
+- **MTU** (Master Terminal Unit) – centralni strežnik SCADA v dispečerskem centru
+- **RTU** (Remote Terminal Unit) – naprava v oddaljeni postaji, ki zbira meritve in izvaja ukaze
+- **IED** (Intelligent Electronic Device) – pametna zaščitna ali merilna naprava (npr. zaščitni rele)
+- **HMI** (Human-Machine Interface) – grafični vmesnik za operaterje
+      
 ### Protokol IEC 60870-5-104
 Standard IEC 60870-5-104 (znan kot IEC 104) predstavlja nadgradnjo serijskega protokola IEC 101 za uporabo v omrežjih TCP/IP. To je primarni protokol, ki ga sistemski inženir uporablja za komunikacijo med nadzornim centrom (Master station) in oddaljenimi enotami (RTU) v RTP in TP postajah.
 
