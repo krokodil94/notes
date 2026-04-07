@@ -15,3 +15,17 @@
 
 ## 2. SCADA SISTEMI IN SISTEMI VODENJA
 
+### Kaj je SCADA?
+**SCADA** (Supervisory Control and Data Acquisition) je nadzorni in upravljavski sistem za daljinsko vodenje elektroenergetskega omrežja.
+
+### Arhitektura SCADA sistema
+
+```
+[Dispečerski center / Control Center]
+        |
+   [SCADA Server / MTU]
+        |  (komunikacijsko omrežje)
+   [RTU / IED naprave v RTP/RP/TP]
+        |
+   [Terenska oprema: stikala, odklopniki, merilniki]
+```
