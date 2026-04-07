@@ -135,3 +135,20 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - Deluje na principu radarskega echa: pošlje pulz, meri odboje nazaj
 - Iz dobljene krivulje razbereš: lokacijo preloma, slabljenje spojk, dolžino vlakna, slabljenje konektorjev
 - Znati moraš interpretirati OTDR trace: normalen Fresnelov odboj, Rayleighevo sipanje, prelom
+
+
+#### SDH (Synchronous Digital Hierarchy)
+- Standard za prenos po optičnih vlaknih, star ampak še pogosto prisoten v energetiki
+- Hierarhija: **STM-1** (155 Mbit/s), STM-4 (622 Mbit/s), STM-16 (2,5 Gbit/s)
+- Ključna prednost: deterministična zakasnitev, vgrajena zaščita (APS – Automatic Protection Switching)
+- Obroči: **SNCP** (SubNetwork Connection Protection) in **MS-Spring**
+- Zamenjuje ga Carrier Ethernet / IP/MPLS
+
+#### Carrier Ethernet / L2 omrežja
+- **IEEE 802.1Q** – VLAN označevanje
+- **IEEE 802.1ad** – Q-in-Q (double tagging, provider bridges)
+- **IEEE 802.1D / 802.1w RSTP** – Spanning Tree za preprečevanje zank; RSTP konvergira v <1 s
+- **IEEE 802.1s MSTP** – Multiple Spanning Tree, različne instance za različne VLAN-e
+- **ERPS (G.8032)** – Ethernet Ring Protection Switching, sub-50 ms zaščita obroča
+
+
