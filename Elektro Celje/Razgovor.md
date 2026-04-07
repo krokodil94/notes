@@ -34,3 +34,8 @@ Poleg RTU naprav mora inženir poznati tudi delovanje zaščitnih elementov v RT
 
 Ena izmed ključnih odgovornosti razpisanega mesta je zagotavljanje ustreznega nivoja informacijske in kibernetske varnosti. V letu 2026 je to področje pod strogim nadzorom nove slovenske zakonodaje, ki implementira evropsko direktivo NIS2.
 
+![Screenshot 2026-04-07 055229.png](/api/files/Elektro Celje/Screenshot 2026-04-07 055229.png)
+
+Varnostna dokumentacija, ki jo mora sistemski inženir vzdrževati, vključuje tudi sezname sredstev (asset management) in sheme omrežij, kar omogoča hitro identifikacijo ranljivih točk v primeru pojava nove kibernetske grožnje.
+
+
