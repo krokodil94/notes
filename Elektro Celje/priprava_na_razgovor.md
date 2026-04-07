@@ -29,3 +29,4 @@
         |
    [Terenska oprema: stikala, odklopniki, merilniki]
 ```
+
