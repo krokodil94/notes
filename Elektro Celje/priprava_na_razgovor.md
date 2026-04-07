@@ -1,16 +1,4 @@
 
-
-#### SNMP (Simple Network Management Protocol)
-- Za nadzor in upravljanje telekomunikacijske omrežne opreme (stikala, routerji, multipleksorji)
-- Verzije: v1, v2c, **v3** (edini s šifriranjem – priporočen za varnost)
-- Trap: asinhrono sporočilo naprave ob alarmu
-
-
-
----
-
-
-
 ## 3. TELEKOMUNIKACIJSKA OMREŽJA V ELEKTRODISTRIBUCIJI
 
 ### Topologije
