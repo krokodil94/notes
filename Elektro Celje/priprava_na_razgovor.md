@@ -151,4 +151,64 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **IEEE 802.1s MSTP** – Multiple Spanning Tree, različne instance za različne VLAN-e
 - **ERPS (G.8032)** – Ethernet Ring Protection Switching, sub-50 ms zaščita obroča
 
+#### IP/MPLS omrežja
+- **MPLS** (Multiprotocol Label Switching) – prenos paketov po oznakah, ne IP naslovih
+- **LSP** (Label Switched Path) – vnaprej določena pot v MPLS domeni
+- **PE/CE** (Provider Edge / Customer Edge) router
+- **L3 VPN (RFC 4364)** in **L2 VPN (VPWS, VPLS)** – segmentacija prometa
+- **LDP / RSVP-TE** – protokola za vzpostavljanje LSP
+- Zakaj je MPLS primeren za energetiko: deterministične poti, QoS, TE (traffic engineering)
 
+#### Radijske (mikrovalovne) povezave
+- **Point-to-Point (PtP)** mikrovalovi: 6–38 GHz (pogosto 7, 13, 15, 18, 23 GHz za distribucijo)
+- **Frekvenčni pas** določa zmogljivost in doseg: nižji pas = večji doseg, manjša pasovna širina
+- Sestavni deli: antena (parabolična), IDU (Indoor Unit – modem/radio), ODU (Outdoor Unit – RF del)
+- **Link budget**: EIRP – FSL – slabljenje ozračja – ostale izgube ≥ RSL (Received Signal Level), z ustrezno rezervo (fade margin, tipično 25–30 dB)
+- **Modulacije**: QPSK, 16/64/128/256/1024-QAM – višja modulacija = večja hitrost, a manjša odpornost na motnje
+- **ATPC** (Automatic Transmit Power Control) – avtomatska regulacija oddajne moči
+- **Frekvenčni koordinacija**: obvezna pri AKOS (Agencija za komunikacijska omrežja in storitve RS)
+- **Antenske postaje**: dostop omejen, varnost pri delu na višini, RF nevarne cone
+
+#### LTE/4G privatna omrežja (Private LTE)
+- Nekateri distribucijski operaterji gradijo lastne LTE mreže za daljinsko odčitavanje in avtomatizacijo (pametno omrežje)
+- **Frekvence**: PPDR pasovi (npr. 800 MHz za dobro pokritost)
+- **eNodeB**, **EPC** (Evolved Packet Core): MME, SGW, PGW, HSS
+
+
+## 4. OMREŽNE TEHNOLOGIJE IN KONFIGURACIJE
+
+### TCP/IP model (osvežitev)
+| Plast | Protokoli | Naprave |
+|-------|-----------|---------|
+| Aplikacijska | HTTP, HTTPS, SFTP, SSH, SNMP, Syslog, NTP, DNP3-TCP, IEC 104 | – |
+| Transportna | TCP, UDP | – |
+| Omrežna | IP (v4/v6), ICMP, OSPF, BGP | Router |
+| Podatkovna | Ethernet, 802.1Q, PPP, HDLC | Switch, Bridge |
+| Fizična | Fiber, bakreni kabel, radio | Kabel, antena |
+
+### Usmerjevalni protokoli
+- **OSPF** (Open Shortest Path First) – link-state, hiter, za notranje AS omrežje; areas (backbone area 0)
+- **BGP** (Border Gateway Protocol) – za medoperaterske povezave, policy-based routing
+- **IS-IS** – alternativa OSPF, pogostejši v telekomunikacijskih jedrnih omrežjih
+
+
+### QoS (Quality of Service)
+- Kritično za energetiko: SCADA promet mora imeti prioriteto pred video/podatki
+- **DiffServ**: DSCP oznake v IP glavi (EF = Expedited Forwarding za visoko prioriteto)
+- **802.1p**: CoS oznake v Ethernet glavi (0–7)
+- Mehanizmi: PQ (Priority Queuing), WFQ, CBWFQ, policing, shaping
+
+
+### NTP (Network Time Protocol)
+- Sinhronizacija časa je v energetiki KRITIČNA za pravilno časovno žigosanje SCADA dogodkov
+- **IEEE 1588 PTP** (Precision Time Protocol) – sub-mikrosekundna natančnost za zahtevne aplikacije (IEC 61850 GOOSE, PMU meritve)
+- Hierarhija: **Stratum 0** (GPS/GNSS ura) → Stratum 1 (NTP server) → Stratum 2 (naprave)
+
+
+## 5. INFORMACIJSKA IN KIBERNETSKA VARNOST (ICS/OT Security)
+
+
+### Zakaj je OT varnost drugačna od IT varnosti?
+- V OT (Operational Technology) je **razpoložljivost (Availability)** na prvem mestu (ne zaupnost kot v IT)
+- Naprave imajo dolgo življenjsko dobo (20+ let) – nimajo rednih varnostnih posodobitev
+- Motnje so fizično nevarne (izpad električne energije, poškodba infrastrukture)
