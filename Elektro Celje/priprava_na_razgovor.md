@@ -98,20 +98,12 @@ Hitrost preklopa (STP: 30–50s, RSTP: ~1–5s) je lahko prepočasna za kritičn
 
 SDH obroči (Synchronous Digital Hierarchy)
 
-SDH je telekomunikacijski standard za prenos podatkov po optičnih vlaknih.
-Omogoča gradnjo obročev z redundanco, kjer lahko signal teče v obe smeri (dual ring), in ob napaki samodejno preusmeri tok.
-Pogosto se uporablja za kritične elektro omrežne aplikacije, SCADA sisteme, daljinske telemetrije in nadzor elektro distribucije.
-Kako deluje?
-Signal teče v obroču, običajno v dveh smereh: primarna in rezervna.
-Ob izpadu primarne poti SDH obroč samodejno preklopi na drugo smer (hitro: v milisekundah).
-Ponuja visoko zanesljivost (availability 99,999%).
+SDH je telekomunikacijski standard za prenos podatkov po optičnih vlaknih. Omogoča gradnjo obročev z redundanco, kjer lahko signal teče v obe smeri (dual ring), in ob napaki samodejno preusmeri tok. Pogosto se uporablja za kritične elektro omrežne aplikacije, SCADA sisteme, daljinske telemetrije in nadzor elektro distribucije.
+Signal teče v obroču, običajno v dveh smereh: primarna in rezervna. Ob izpadu primarne poti SDH obroč samodejno preklopi na drugo smer (hitro: v milisekundah). Ponuja visoko zanesljivost (availability 99,999%).
 Prednosti
-Hitre odzivne čase ob napaki (ms).
-Sinhronizacija za SCADA, telemetrijo, zaščito daljnovodov.
-Omogoča QoS in različen prenos (telefonija, Ethernet, telemetrija) preko iste infrastrukture.
+Hitre odzivne čase ob napaki (ms). Sinhronizacija za SCADA, telemetrijo, zaščito daljnovodov. Omogoča QoS in različen prenos (telefonija, Ethernet, telemetrija) preko iste infrastrukture.
 Slabosti
-Dražja oprema (SDH multiplexerji).
-Več kompleksnosti pri upravljanju.
+Dražja oprema (SDH multiplexerji). Več kompleksnosti pri upravljanju.
 
 Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med daljnovodi, trafostanicami in SCADA sistemi zaradi hitrega preklopa in zanesljivosti. STP/RSTP Ethernet obroči se uporabljajo predvsem tam, kjer so potrebe po kritičnosti manjše ali za interno omrežje z več preprostimi napravami.
 
