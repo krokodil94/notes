@@ -26,3 +26,7 @@ SCADA (Supervisory Control and Data Acquisition) je nadzorni in upravljalski sis
 - **IED** (Intelligent Electronic Device) – pametna zaščitna ali merilna naprava (npr. zaščitni rele)
 - **HMI** (Human-Machine Interface) – grafični vmesnik za operaterje
 - **Historian** – podatkovna baza za arhiviranje časovnih vrst meritev
+
+
+### Komunikacijski protokoli v SCADA/energetiki (OBVEZNO ZNANJE)
+
