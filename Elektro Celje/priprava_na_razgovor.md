@@ -117,9 +117,11 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **Konektorji**: SC/APC (zeleni, kot 8°, manj odboja – za distribucijo signala), SC/UPC (modri), LC, FC
 - **Splicing**: fuzijsko varjenje vlaken, mehanski spoji
 
+
+
 #### Ključne meritve in parametri optičnih vlaken
 | Parameter | Tipična vrednost | Pomen |
-|-----------|-----------------|-------|
+|-----------|------------------|-------|
 | Slabljenje (attenuation) | ≤ 0,35 dB/km @ 1310 nm; ≤ 0,2 dB/km @ 1550 nm | Izguba signala |
 | Disperzija | ps/(nm·km) | Razmazanost pulzov, omejuje pasovno širino |
 | Odboj (reflectance) | < -55 dB (APC) | Odbiti signal nazaj k viru |
