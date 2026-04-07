@@ -28,6 +28,9 @@ Jedro tehničnega znanja za razpisano delovno mesto predstavlja poznavanje proto
 - **HMI** (Human-Machine Interface) – grafični vmesnik za operaterje
       
 ### Protokol IEC 60870-5-104
+- **IEC 60870-5-101** – serijsko (RS-232/RS-485), za komunikacijo med MTU in RTU prek počasnih linij
+- - **IEC 60870-5-104** – isti protokol kot 101, vendar prek TCP/IP omrežja (Ethernet/IP)
+- Podpira: enkratne ukaze, dvojne ukaze, merjene vrednosti, časovne žige, spontane prenose
 Standard IEC 60870-5-104 (znan kot IEC 104) predstavlja nadgradnjo serijskega protokola IEC 101 za uporabo v omrežjih TCP/IP. To je primarni protokol, ki ga sistemski inženir uporablja za komunikacijo med nadzornim centrom (Master station) in oddaljenimi enotami (RTU) v RTP in TP postajah.
 
 Tehnična struktura protokola IEC 104 temelji na Application Protocol Data Unit (APDU), ki se deli na:
@@ -37,7 +40,10 @@ ASDU (Application Service Data Unit): Vsebuje dejanske procesne podatke, kot so 
 Protokol IEC 104 uporablja vrata (port) 2404 po standardu, vendar sodobni gonilniki omogočajo konfiguracijo poljubnih vrat, če je to potrebno zaradi varnostnih nastavitev požarnih zidov.
 
 ### Standard IEC 61850 in digitalna postaja
-
+- Sodoben standard za komunikacijo med IED napravami v RTP/RP
+- Dve plasti komunikacije:
+  - **MMS** (Manufacturing Message Specification) – za nadzor in kontrolo prek TCP/IP
+  - **GOOSE** (Generic Object Oriented Substation Events) – za hitro zaščitno signalizacijo prek Ethernet (sub-milisekunda)
 Medtem ko se IEC 104 uporablja za komunikacijo na dolge razdalje (WAN), standard IEC 61850 definira komunikacijo znotraj same razdelilne postaje (LAN). Ta standard uvaja koncept objektno orientiranega modeliranja podatkov, kjer se namesto številčnih naslovov (IOA) uporablja logično poimenovanje naprav in njihovih funkcij (npr. "Circuit Breaker" ali "Protection Relay").
 
 Kandidat za delovno mesto mora poznati dve ključni storitvi znotraj IEC 61850:
