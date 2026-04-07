@@ -133,5 +133,5 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 #### OTDR (Optical Time Domain Reflectometer)
 - **Najpomembnejše merilno orodje za optiko**
 - Deluje na principu radarskega echa: pošlje pulz, meri odboje nazaj
-- Iz dobljene krivulje razbereaš: lokacijo preloma, slabljenje spojk, dolžino vlakna, slabljenje konektorjev
+- Iz dobljene krivulje razbereš: lokacijo preloma, slabljenje spojk, dolžino vlakna, slabljenje konektorjev
 - Znati moraš interpretirati OTDR trace: normalen Fresnelov odboj, Rayleighevo sipanje, prelom
