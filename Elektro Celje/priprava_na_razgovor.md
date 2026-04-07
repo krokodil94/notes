@@ -39,7 +39,29 @@
 
 ### Komunikacijski protokoli v SCADA/energetiki (OBVEZNO ZNANJE)
 
+
 #### IEC 60870-5 serija
+- **IEC 60870-5-101** – serijsko (RS-232/RS-485), za komunikacijo med MTU in RTU prek počasnih linij
+- **IEC 60870-5-104** – isti protokol kot 101, vendar prek TCP/IP omrežja (Ethernet/IP)
+- Podpira: enkratne ukaze, dvojne ukaze, merjene vrednosti, časovne žige, spontane prenose
+
+#### IEC 61850
+- Sodoben standard za komunikacijo med IED napravami v RTP/RP
+- Dve plasti komunikacije:
+  - **MMS** (Manufacturing Message Specification) – za nadzor in kontrolo prek TCP/IP
+  - **GOOSE** (Generic Object Oriented Substation Events) – za hitro zaščitno signalizacijo prek Ethernet (sub-milisekunda)
+- Logični vozli (Logical Nodes): XCBR (odklopnik), XSWI (ločilnik), MMXU (meritve)...
+- Prednost: interoperabilnost različnih proizvajalcev, standardizirana konfiguracija prek **SCL** datotek (`.icd`, `.scd`, `.cid`)
+
+#### Modbus
+- **Modbus RTU** – serijsko (RS-485)
+- **Modbus TCP** – prek IP omrežja
+- Register-based protokol; preprost, zelo razširjen pri PLC-jih in merilnikih
+- Master/Slave arhitektura
+
+
+
+
 
 - **Zvezdasta** – RTP je center, RP/TP so veje (preprosta, a brez redundance)
 - **Obroč (Ring)** – vsaka postaja je del obroča; izpad ene povezave ne povzroči izpada vozlišča
@@ -81,3 +103,5 @@ Dražja oprema (SDH multiplexerji).
 Več kompleksnosti pri upravljanju.
 
 Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med daljnovodi, trafostanicami in SCADA sistemi zaradi hitrega preklopa in zanesljivosti. STP/RSTP Ethernet obroči se uporabljajo predvsem tam, kjer so potrebe po kritičnosti manjše ali za interno omrežje z več preprostimi napravami.
+
+
