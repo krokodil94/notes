@@ -324,3 +324,138 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 
 
 
+### "Kako zagotoviš visoko razpoložljivost telekomunikacijskega omrežja?"
+> Redundanca na vseh nivojih: dvojne optične poti (obroči), redundantni napajalni sistemi (UPS, baterije), dual-homing (naprava priključena na dve stikali), RSTP/G.8032 za hitro okrevanje omrežja. Redno preverjanje backup poti, alarmi ob izpadih, testiranje načrtov ob nepredvidenih situacijah.
+
+### "Kaj je OTDR in kako ga uporabiš?"
+> OTDR (Optical Time Domain Reflectometer) je merilni instrument za diagnostiko optičnih vlaken. Deluje podobno kot radar – v vlakno pošlje kratke svetlobne pulze in meri odboje. Iz dobljene krivulje (trace) razberemo dolžino vlakna, lokacijo prelomov ali napak, slabljenje spojk in konektorjev. Pred meritvijo nastavimo valovni dolžini (1310/1550 nm), dolžinsko območje in impulzno širino.
+
+### "Kako bi ravnal ob izpadu SCADA komunikacije do postaje?"
+> 1. Preverim alarm v NMS – kateri segment je prizadet. 2. Preverim fizično plast – optika, konektorji, napajanje aktivne opreme. 3. Preverim L2/L3 – ping, MAC tabele, routing tabele. 4. Preverim SCADA protokol – log sporočila na RTU in strežniku. 5. Dokumentiram potek okvarovaske analize in ukrepe. 6. Vzpostavim ustrezne nadomestne poti, če obstajajo.
+
+### "Kaj razumeš pod pojmom kibernetska varnost v OT okolju?"
+> V OT je razpoložljivost sistema prioriteta – izpad pomeni fizičen izpad omrežja. Varnost gradim v slojih (defense in depth): segmentacija omrežja z VLAN in firewall, kontrola dostopa (AAA, MFA), nadzor in detekcija (SIEM, IDS), obvladovanje ranljivosti (patch management z upoštevanjem omejitev OT okolja), in fizična varnost. Sledim standardu IEC 62443.
+
+---
+
+## 12. DODATNI NASVETI ZA RAZGOVOR
+
+### Kaj poudariti
+- Razumeš **kritičnost** telekomunikacij v elektrodistribuciji – nisi samo IT tehnik, razumeš kontekst energetike.
+- Pripravljenost na **terensko delo** (RTP/RP obisk, antenna mast) in **dežurstvo/urgence**.
+- Primerite izkušnje z **vzdrževanjem in odpravljanjem napak** – konkretni primeri.
+- Zavedanje o **dokumentaciji** – vsaka sprememba mora biti evidentirana (kataster omrežja).
+
+### Kaj vprašati na koncu
+- Katere SCADA platforme in telekomunikacijska oprema je v uporabi?
+- Ali podjetje prehaja na IP/MPLS ali SDH omrežje?
+- Kakšne so načrtovane investicije v telekomunikacijsko infrastrukturo?
+- Kako je organizirano dežurstvo?
+- Kakšen je program uvajanja in mentorstva?
+
+---
+
+## 13. KRATEK SEZNAM POJMOV (za hitro osvežitev)
+
+| Kratica | Polni naziv | Opomba |
+|---------|-------------|--------|
+| SCADA | Supervisory Control and Data Acquisition | Nadzorni sistem |
+| RTU | Remote Terminal Unit | Naprava v postaji |
+| IED | Intelligent Electronic Device | Pametni rele/merilnik |
+| MTU | Master Terminal Unit | Centralni SCADA strežnik |
+| GOOSE | Generic Object Oriented Substation Event | Hitra zaščitna sporočila (IEC 61850) |
+| MMS | Manufacturing Message Specification | SCADA komunikacija (IEC 61850) |
+| SDH | Synchronous Digital Hierarchy | Optični prenosni standard |
+| MPLS | Multiprotocol Label Switching | Paketno usmerjevanje |
+| VLAN | Virtual Local Area Network | Logična segmentacija omrežja |
+| RSTP | Rapid Spanning Tree Protocol | Preprečevanje zank v L2 |
+| ERPS | Ethernet Ring Protection Switching | Zaščita Ethernet obroča |
+| OTDR | Optical Time Domain Reflectometer | Merilnik za optična vlakna |
+| OSPF | Open Shortest Path First | Notranji usmerjevalni protokol |
+| QoS | Quality of Service | Prioritizacija prometa |
+| NTP/PTP | Network/Precision Time Protocol | Sinhronizacija časa |
+| SNMP | Simple Network Management Protocol | Upravljanje omrežnih naprav |
+| IEC 62443 | – | Standard za varnost industrijskih omrežij |
+| NIS2 | Network and Information Security Directive 2 | EU direktiva za kibernetsko varnost |
+| OPGW | Optical Ground Wire | Optični kabel v ozemljitveni vrvici |
+| ADSS | All-Dielectric Self-Supporting | Nekovinski visečni optični kabel |
+| RTP | Razdelilna transformatorska postaja | 110/20 kV |
+| RP | Razdelilna postaja | 20 kV stikalna postaja |
+| TP | Transformatorska postaja | 20/0,4 kV |
+| PtP | Point-to-Point | Mikrovalovna zveza |
+| ATPC | Automatic Transmit Power Control | Avtomatska regulacija oddajne moči |
+| NMS | Network Management System | Upravljanje omrežja |
+
+---
+
+*Pripravljeno: april 2026 | Delovno mesto: Sistemski inženir II – Elektro Celje, Služba telekomunikacij*
+
+
+
+ Tukaj je pregled tega, kar sem vključil in zakaj je vsak del pomemben za tvoj razgovor:
+
+  Zakaj te teme:
+
+  Elektro Celje je distribucijsko elektro podjetje. Telekomunikacijska služba skrbi za komunikacijsko hrbtenico, ki
+  omogoča daljinsko vodenje celotnega omrežja (postaje RTP/RP/TP). Brez telekomunikacij ni SCADA, brez SCADA ni nadzora
+  nad omrežjem.
+
+  Najpomembnejše področje za ta razgovor je kombinacija:
+  1. SCADA protokoli – IEC 60870-5-101/104 in IEC 61850 sta standarda, ki jih Elektro Celje zagotovo uporablja. Razumeti
+   moraš razliko in zakaj se jih uporablja.
+  2. Optična vlakna + OTDR – verjetno boš delal z optičnimi kabli (OPGW po daljnovodih), OTDR meritve so osnova
+  vzdrževanja.
+  3. Ethernet omrežja / VLAN / RSTP / MPLS – moderna telekomunikacijska omrežja v postajah.
+  4. Kibernetska varnost OT – razpis izrecno omenja kibernetsko varnost; IEC 62443 in NIS2 sta ključni referenci.
+  5. RTP/RP/TP – razumeti moraš, kaj se dogaja v postajah, ki jih servisiraš.
+
+  Za razgovor posebej priporoči, da si prebereš o IEC 61850 in GOOSE protokolu – to je moderni standard, ki ga verjetno
+  uvajajo ali načrtujejo, in bo pokazal, da si res "up-to-date".
+
+
+
+  Za pripravo na razgovor za delovno mesto SISTEMSKI INŽENIR II v Sektorju za obratovanje in razvoj – Službi telekomunikacij v Elektro Celje, se je dobro osredotočiti na tehnične veščine, znanja in kompetence, ki jih razpis posebej omenja, pa tudi na splošno področje sistemov, omrežij in telekomunikacij. Tukaj je strukturiran pregled, kaj se pripravljati:
+
+1. Osnovno razumevanje sistemov in omrežij
+Razumevanje tipov omrežij (LAN, WAN, radijska omrežja, optična omrežja).
+Konfiguracija in karakteristike omrežij (IP naslavljanje, podomrežja, VLAN, routing, switching).
+Monitoriranje in diagnostika omrežij (ping, traceroute, SNMP, logi).
+Prepoznavanje in odpravljanje napak v sistemih in omrežjih.
+2. Telekomunikacijski sistemi in naprave
+Osnovno poznavanje radijskih postaj, anten, TP/RP/RTP postaj.
+Razumevanje delovanja SCADA sistemov in sistemov vodenja (supervisory control).
+Poznavanje protokolov za prenos podatkov (npr. TCP/IP, UDP, SNMP, Modbus, MQTT… odvisno od podjetja).
+Delovanje in konfiguracija merilne opreme ter zaščitnih elementov.
+3. Vzdrževanje in diagnostika
+Preventivno vzdrževanje in nadzor naprav (opravila na daljavo ali lokalno).
+Analiza napak, priprava poročil, prognoz in ukrepov.
+Nastavitve naprav, posodabljanje firmware-a in programske opreme.
+Delo s SCADA ali drugimi aplikacijami za nadzor in upravljanje omrežij.
+4. Tehnična dokumentacija
+Razumevanje in priprava tehnične dokumentacije.
+Evidentiranje nastavitev naprav, izvedenih posegov, poročil o incidentih.
+Skladnost s standardi podjetja in regulativo.
+5. Programska orodja in računalniške aplikacije
+Uporaba standardnih IT orodij (Excel, Word, baze podatkov, SQL, MS Teams, Jira… odvisno od podjetja).
+Razumevanje in uporaba specifičnih orodij za nadzor omrežij, SCADA in telekomunikacije.
+Morda osnovno programiranje ali skriptanje za avtomatizacijo (Python, Bash, PowerShell).
+6. Varnost in varovanje
+Osnovni koncepti informacijske in kibernetske varnosti.
+Varno delo na višini in z napravami, kjer obstaja nevarnost laserskega sevanja.
+Uporaba zaščitne opreme pri delu na stolpih ali radijskih postajah.
+7. Dodatna znanja (prednost, ne obvezno)
+Projektno vodenje (načrtovanje del, koordinacija ekip).
+Poznavanje naprednejših telekomunikacijskih protokolov.
+Usposobljenost za delo v dinamičnem in večopravilnem okolju.
+8. Praktični nasveti za razgovor
+Pripraviti konkretne primere, kjer ste reševali težave s sistemi ali omrežji.
+Omeniti izkušnje s SCADA, omrežji ali vzdrževanjem naprav.
+Če imate izkušnje z meritvami ali konfiguracijo TP/RP/RTP postaj, to izpostavite.
+Pripravite se na vprašanja o varnostnih postopkih in preventivnem vzdrževanju.
+Pripravite se na hipotetične situacije: “Kaj bi naredil, če pride do izpada TP postaje?”
+
+Če želiš, ti lahko pripravim konkretno tehnično “cheat sheet” s seznamom vprašanj in odgovorov, ki jih zelo verjetno lahko dobite na razgovoru, da se lahko točno ciljno pripravljaš.
+
+Ali želiš, da to naredim?
+
+
