@@ -41,6 +41,11 @@
 
 #### IEC 60870-5 serija
 
+- **Zvezdasta** – RTP je center, RP/TP so veje (preprosta, a brez redundance)
+- **Obroč (Ring)** – vsaka postaja je del obroča; izpad ene povezave ne povzroči izpada vozlišča
+- **Mrežasta (Mesh)** – visoka redundanca, kompleksno upravljanje
 
+- Elektro podjetja tipično gradijo **obroče s Spanning Tree / RSTP** ali **SDH obroče**
+Spanning Tree Protocol (STP) in Rapid Spanning Tree Protocol (RSTP, IEEE 802.1w) sta protokola, ki omogočata redundantno mrežno topologijo brez zanke v Ethernet omrežju.
 
 
