@@ -58,10 +58,6 @@
 - Logični vozli (Logical Nodes): XCBR (odklopnik), XSWI (ločilnik), MMXU (meritve)...
 - Prednost: interoperabilnost različnih proizvajalcev, standardizirana konfiguracija prek **SCL** datotek (`.icd`, `.scd`, `.cid`)
 
-#### DNP3
-- Pogost v ZDA, nekateri sistemi v EU; podobna vloga kot IEC 60870-5-101/104
-- Vgrajena podpora za časovne žige, integriteto podatkov
-
 #### Modbus
 - **Modbus RTU** – serijsko (RS-485)
 - **Modbus TCP** – prek IP omrežja
