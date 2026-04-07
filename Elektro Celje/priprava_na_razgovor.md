@@ -313,8 +313,11 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 ### "Kaj je IEC 61850 in zakaj je pomemben?"
 > IEC 61850 je mednarodni standard za komunikacijo v elektroenergetskih postajah. Definira standardizirane logične modele naprav in komunikacijske protokole (MMS za nadzor, GOOSE za hitro zaščitno signalizacijo). Ključna prednost je interoperabilnost – naprave različnih proizvajalcev komunicirajo po istem standardu. GOOSE sporočila so brez zakasnitev (sub-ms), kar je kritično za zaščitne funkcije
 
+### "Razloži razliko med IEC 60870-5-101 in 104."
+> IEC 60870-5-101 je serijsko-based protokol (RS-232/485) za SCADA komunikacijo, primeren za počasne in zanesljive povezave. IEC 60870-5-104 je nadgradnja, ki isti aplikacijski protokol prenaša prek TCP/IP omrežja. Danes večina novih sistemov uporablja 104, saj ima vsako postaje IP povezavo prek optike ali radia.
 
-
+### "Kako zagotoviš visoko razpoložljivost telekomunikacijskega omrežja?"
+> Redundanca na vseh nivojih: dvojne optične poti (obroči), redundantni napajalni sistemi (UPS, baterije), dual-homing (naprava priključena na dve stikali), RSTP/G.8032 za hitro okrevanje omrežja. Redno preverjanje backup poti, alarmi ob izpadih, testiranje načrtov ob nepredvidenih situacijah.
 
 
 
