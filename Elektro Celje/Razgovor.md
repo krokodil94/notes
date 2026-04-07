@@ -46,6 +46,6 @@ Služba telekomunikacij v Elektro Celje upravlja z razvejanim optičnim omrežje
 
 # Merjenje in vzdrževanje optike
 
-Sistemski inženir mora obvladati uporabo merilne opreme za optična omrežja, saj je odgovoren za odpravo okvar na komunikacijskih povezavah. 
+Sistemski inženir mora obvladati uporabo merilne opreme za optična omrežja, saj je odgovoren za odpravo okvar na komunikacijskih povezavah. Osrednji instrument je OTDR (Optical Time-Domain Reflectometer), ki deluje na principu povratnega sipanja laserske svetlobe.
 
 
