@@ -168,6 +168,7 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 
 ## 4. OMREŽNE TEHNOLOGIJE IN KONFIGURACIJE
 
+! To je narobe - TCP ima samo 4 plasti - poglej še bolj detailno
 ### TCP/IP model (osvežitev)
 | Plast | Protokoli | Naprave |
 |-------|-----------|---------|
@@ -177,5 +178,9 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 | Podatkovna | Ethernet, 802.1Q, PPP, HDLC | Switch, Bridge |
 | Fizična | Fiber, bakreni kabel, radio | Kabel, antena |
 
-! To je narobe - TCP ima samo 4 plasti - poglej še bolj detailno
+### Usmerjevalni protokoli
+- **OSPF** (Open Shortest Path First) – link-state, hiter, za notranje AS omrežje; areas (backbone area 0)
+- **BGP** (Border Gateway Protocol) – za medoperaterske povezave, policy-based routing
+- **IS-IS** – alternativa OSPF, pogostejši v telekomunikacijskih jedrnih omrežjih
+
 
