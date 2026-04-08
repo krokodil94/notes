@@ -314,3 +314,15 @@ Switching vs. Routing:
 
   Switch (Stikalo): Povezuje naprave znotraj istega omrežja (L2 nivo).
   Router (Usmerjevalnik): Povezuje različna omrežja in določa pot podatkov (L3 nivo).
+
+
+Ping	Preveri osnovno dosegljivost naprave in odzivni čas (latenco).
+Traceroute	Izpiše celotno pot paketa od izvora do cilja (vsa vmesna vozlišča).
+SNMP	Protokol za upravljanje in zbiranje statistike iz omrežnih naprav (obremenitev CPU, promet).
+
+Sistematičen pristop k reševanju težav običajno sledi OSI modelu (od fizične plasti navzgor):
+
+Fizična plast: Ali je kabel priklopljen? Ali lučke na stikalu utripajo?
+Povezovalna plast: Ali ima naprava MAC naslov? So VLAN-i pravilno nastavljeni?
+Omrežna plast: Ali ima naprava pravilen IP naslov? Lahko "pingamo" privzeti prehod (Default Gateway)?
+Aplikacijska plast: Ali storitev (npr. spletna stran) sploh teče na strežniku?
