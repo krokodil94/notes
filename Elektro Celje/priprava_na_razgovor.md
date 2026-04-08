@@ -1,34 +1,4 @@
 
-## 3. TELEKOMUNIKACIJSKA OMREŽJA V ELEKTRODISTRIBUCIJI
-
-### Topologije
-
-- **Zvezdasta** – RTP je center, RP/TP so veje (preprosta, a brez redundance)
-- **Obroč (Ring)** – vsaka postaja je del obroča; izpad ene povezave ne povzroči izpada vozlišča
-- **Mrežasta (Mesh)** – visoka redundanca, kompleksno upravljanje
-
-- Elektro podjetja tipično gradijo **obroče s Spanning Tree / RSTP** ali **SDH obroče**
-Spanning Tree Protocol (STP) in Rapid Spanning Tree Protocol (RSTP, IEEE 802.1w) sta protokola, ki omogočata redundantno mrežno topologijo brez zanke v Ethernet omrežju.
-Tipično se uporablja v LAN omrežjih ali industrijskih omrežjih, kjer obstaja potreba po rezervni poti, če primarna povezava odpove.
-Kako deluje?
-Mreža z več povezanimi stikali lahko ustvari zanke. STP: Identificira “root bridge” (glavno stikalo), Izračuna minimalni set povezav, da ne nastanejo zanke .Drugi povezavi postavi v blocking mode, dokler primarna ne odpove
-RSTP je hitrejša verzija STP, ob napaki preklopi poti v sekundah, ne v minutah.
-Prednosti: Preprosta implementacija. Dovolj za manj kritične obroče ali kjer so Ethernet linki relativno poceni. Ni potrebna specializirana oprema.
-Slabosti
-Hitrost preklopa (STP: 30–50s, RSTP: ~1–5s) je lahko prepočasna za kritične elektro obroče, kjer je stabilnost ključna. Ni optimizirana za sinhronizacijo ali transport velikih količin podatkov, kot je SCADA ali telemetrija.
-
-
-SDH obroči (Synchronous Digital Hierarchy)
-
-SDH je telekomunikacijski standard za prenos podatkov po optičnih vlaknih. Omogoča gradnjo obročev z redundanco, kjer lahko signal teče v obe smeri (dual ring), in ob napaki samodejno preusmeri tok. Pogosto se uporablja za kritične elektro omrežne aplikacije, SCADA sisteme, daljinske telemetrije in nadzor elektro distribucije.
-Signal teče v obroču, običajno v dveh smereh: primarna in rezervna. Ob izpadu primarne poti SDH obroč samodejno preklopi na drugo smer (hitro: v milisekundah). Ponuja visoko zanesljivost (availability 99,999%).
-Prednosti
-Hitre odzivne čase ob napaki (ms). Sinhronizacija za SCADA, telemetrijo, zaščito daljnovodov. Omogoča QoS in različen prenos (telefonija, Ethernet, telemetrija) preko iste infrastrukture.
-Slabosti
-Dražja oprema (SDH multiplexerji). Več kompleksnosti pri upravljanju.
-
-Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med daljnovodi, trafostanicami in SCADA sistemi zaradi hitrega preklopa in zanesljivosti. STP/RSTP Ethernet obroči se uporabljajo predvsem tam, kjer so potrebe po kritičnosti manjše ali za interno omrežje z več preprostimi napravami.
-
 
 ### Prenosne tehnologije
 
