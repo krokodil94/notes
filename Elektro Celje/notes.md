@@ -108,3 +108,4 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 
 #### Optična vlakna (fiber optics)
 - **Enomodni (Single-Mode, SMF, G.652)** – dolge razdalje (>2 km), 1310 nm in 1550 nm, tanek core (~9 µm)
+- **Večmodni (Multi-Mode, MMF)** – kratke razdalje (<550 m za 10G), debelejši core (50/62,5 µm)
