@@ -265,3 +265,40 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 
 ### "Kako bi ravnal ob izpadu SCADA komunikacije do postaje?"
 > 1. Preverim alarm v NMS – kateri segment je prizadet. 2. Preverim fizično plast – optika, konektorji, napajanje aktivne opreme. 3. Preverim L2/L3 – ping, MAC tabele, routing tabele. 4. Preverim SCADA protokol – log sporočila na RTU in strežniku. 5. Dokumentiram potek okvarovaske analize in ukrepe. 6. Vzpostavim ustrezne nadomestne poti, če obstajajo.
+
+
+
+## 13. KRATEK SEZNAM POJMOV (za hitro osvežitev)
+
+| Kratica | Polni naziv | Opomba |
+|---------|-------------|--------|
+| SCADA | Supervisory Control and Data Acquisition | Nadzorni sistem |
+| RTU | Remote Terminal Unit | Naprava v postaji |
+| IED | Intelligent Electronic Device | Pametni rele/merilnik |
+| MTU | Master Terminal Unit | Centralni SCADA strežnik |
+| GOOSE | Generic Object Oriented Substation Event | Hitra zaščitna sporočila (IEC 61850) |
+| MMS | Manufacturing Message Specification | SCADA komunikacija (IEC 61850) |
+| SDH | Synchronous Digital Hierarchy | Optični prenosni standard |
+| MPLS | Multiprotocol Label Switching | Paketno usmerjevanje |
+| VLAN | Virtual Local Area Network | Logična segmentacija omrežja |
+| RSTP | Rapid Spanning Tree Protocol | Preprečevanje zank v L2 |
+| ERPS | Ethernet Ring Protection Switching | Zaščita Ethernet obroča |
+| OTDR | Optical Time Domain Reflectometer | Merilnik za optična vlakna |
+| OSPF | Open Shortest Path First | Notranji usmerjevalni protokol |
+| QoS | Quality of Service | Prioritizacija prometa |
+| NTP/PTP | Network/Precision Time Protocol | Sinhronizacija časa |
+| SNMP | Simple Network Management Protocol | Upravljanje omrežnih naprav |
+| IEC 62443 | – | Standard za varnost industrijskih omrežij |
+| NIS2 | Network and Information Security Directive 2 | EU direktiva za kibernetsko varnost |
+| OPGW | Optical Ground Wire | Optični kabel v ozemljitveni vrvici |
+| ADSS | All-Dielectric Self-Supporting | Nekovinski visečni optični kabel |
+| RTP | Razdelilna transformatorska postaja | 110/20 kV |
+| RP | Razdelilna postaja | 20 kV stikalna postaja |
+| TP | Transformatorska postaja | 20/0,4 kV |
+| PtP | Point-to-Point | Mikrovalovna zveza |
+| ATPC | Automatic Transmit Power Control | Avtomatska regulacija oddajne moči |
+| NMS | Network Management System | Upravljanje omrežja |
+
+---
+
+
