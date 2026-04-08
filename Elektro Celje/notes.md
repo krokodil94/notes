@@ -309,4 +309,8 @@ WAN (Wide Area Network): Širokoobmočno omrežje, ki povezuje več LAN-ov (npr.
 
 Za delovanje omrežja morajo naprave govoriti "isti jezik" in imeti jasne naslove.
 IP Naslavljanje: Vsaka naprava potrebuje naslov (npr. IPv4: 192.168.1.10). Podomrežja (Subnetting) omogočajo razdelitev velikega omrežja na manjše dele za boljšo varnost in hitrost.
+VLAN (Virtual LAN): Logična ločitev naprav znotraj istega fizičnega stikala. (Npr. ločeno omrežje za računovodstvo in za goste).
+Switching vs. Routing:
 
+  Switch (Stikalo): Povezuje naprave znotraj istega omrežja (L2 nivo).
+  Router (Usmerjevalnik): Povezuje različna omrežja in določa pot podatkov (L3 nivo).
