@@ -129,3 +129,14 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 | Disperzija | ps/(nm·km) | Razmazanost pulzov, omejuje pasovno širino |
 | Odboj (reflectance) | < -55 dB (APC) | Odbiti signal nazaj k viru |
 | **Optični proračun (link budget)** | Tx moč – celotno slabljenje ≥ Rx občutljivost | Preveriti pred vsako inštalacijo |
+
+
+
+
+#### Carrier Ethernet / L2 omrežja
+- **IEEE 802.1Q** – VLAN označevanje
+- **IEEE 802.1ad** – Q-in-Q (double tagging, provider bridges)
+- **IEEE 802.1D / 802.1w RSTP** – Spanning Tree za preprečevanje zank; RSTP konvergira v <1 s
+- **IEEE 802.1s MSTP** – Multiple Spanning Tree, različne instance za različne VLAN-e
+- **ERPS (G.8032)** – Ethernet Ring Protection Switching, sub-50 ms zaščita obroča
+
