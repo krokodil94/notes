@@ -195,7 +195,9 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **NIS2 Direktiva (EU)** – direktiva o varnosti omrežij in informacijskih sistemov; operaterji energetske infrastrukture so "essential entities"
 
 - ### Varnostna arhitektura (Zones & Conduits)
-```
+
+
+
 [Corporate IT] <---Firewall/DMZ---> [Control Network (SCADA)] <----> [Field Devices]
      Zone 4              Zone 3              Zone 2                      Zone 1/0
 
@@ -226,3 +228,5 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **TACACS+** – podobno kot RADIUS, a z ločeno avtorizacijo in računovodstvom; Cisco-centric
 - **Active Directory** – za Windows okolja, LDAP integracija
 
+
+## 6. MERILNA OPREMA IN VZDRŽEVANJE
