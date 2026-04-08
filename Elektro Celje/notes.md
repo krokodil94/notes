@@ -83,3 +83,5 @@ Sodobni sistemi za nadzor optičnih kablov (OLM) omogočajo avtomatsko spremljan
 
 - Elektro podjetja tipično gradijo **obroče s Spanning Tree / RSTP** ali **SDH obroče**
 
+Spanning Tree Protocol (STP) in Rapid Spanning Tree Protocol (RSTP, IEEE 802.1w) sta protokola, ki omogočata redundantno mrežno topologijo brez zanke v Ethernet omrežju. Tipično se uporablja v LAN omrežjih ali industrijskih omrežjih, kjer obstaja potreba po rezervni poti, če primarna povezava odpove.
+Kako deluje?
