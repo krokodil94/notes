@@ -199,4 +199,17 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 [Corporate IT] <---Firewall/DMZ---> [Control Network (SCADA)] <----> [Field Devices]
      Zone 4              Zone 3              Zone 2                      Zone 1/0
 
-     
+- **DMZ** (Demilitarized Zone) – ločitvena cona med IT in OT
+- **Data Diode** – enosmerni prenos podatkov (iz OT v IT, nikoli obratno)
+- **Industrial Firewall**: npr. Fortinet FortiGate, Cisco ASA, Hirschmann EAGLE, Tofino Xenon     
+
+
+### Najpogostejše grožnje in ukrepi
+| Grožnja | Ukrep |
+|---------|-------|
+| Nepooblaščen dostop | MFA, AAA (RADIUS/TACACS+), segmentacija VLAN |
+| Malware / Ransomware | Aplikacijska bela lista (whitelisting), odsotnost nepotrebnih storitev |
+| Man-in-the-Middle | Šifriranje (TLS 1.2/1.3, IPsec VPN), certifikati |
+| Fizični dostop | Zaklepanje omar, CCTV, evidence dostopa |
+| Napadi na daljavo | IDS/IPS, syslog centralizacija, SIEM |
+| USB/removable media | Politika prepovedi, skeniranje |
