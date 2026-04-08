@@ -140,3 +140,12 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **IEEE 802.1s MSTP** – Multiple Spanning Tree, različne instance za različne VLAN-e
 - **ERPS (G.8032)** – Ethernet Ring Protection Switching, sub-50 ms zaščita obroča
 
+
+
+#### IP/MPLS omrežja
+- **MPLS** (Multiprotocol Label Switching) – prenos paketov po oznakah, ne IP naslovih
+- **LSP** (Label Switched Path) – vnaprej določena pot v MPLS domeni
+- **PE/CE** (Provider Edge / Customer Edge) router
+- **L3 VPN (RFC 4364)** in **L2 VPN (VPWS, VPLS)** – segmentacija prometa
+- **LDP / RSVP-TE** – protokola za vzpostavljanje LSP
+- Zakaj je MPLS primeren za energetiko: deterministične poti, QoS, TE (traffic engineering)
