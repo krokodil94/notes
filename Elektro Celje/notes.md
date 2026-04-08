@@ -103,3 +103,8 @@ Slabosti
 Dražja oprema (SDH multiplexerji). Več kompleksnosti pri upravljanju.
 
 Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med daljnovodi, trafostanicami in SCADA sistemi zaradi hitrega preklopa in zanesljivosti. STP/RSTP Ethernet obroči se uporabljajo predvsem tam, kjer so potrebe po kritičnosti manjše ali za interno omrežje z več preprostimi napravami.
+
+### Prenosne tehnologije
+
+#### Optična vlakna (fiber optics)
+- **Enomodni (Single-Mode, SMF, G.652)** – dolge razdalje (>2 km), 1310 nm in 1550 nm, tanek core (~9 µm)
