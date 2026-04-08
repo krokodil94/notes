@@ -230,3 +230,19 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 
 
 ## 6. MERILNA OPREMA IN VZDRŽEVANJE
+
+### Spektralni analizator
+- Meri moč signala v odvisnosti od frekvence
+- Uporaba: preverjanje radijskih kanalov, iskanje interferenc, EMC testi
+### Omrežni analizator (Network Analyzer / Protocol Analyzer)
+- **Wireshark** – brezplačno orodje za zajem in analizo omrežnega prometa (PCAP datoteke)
+- Znati moraš: filtrirati po protokolu (ip.addr, tcp.port), slediti TCP toku, identificirati anomalij
+
+- ### Optični močnostni merilec (Optical Power Meter)
+- Meri optično moč v dBm; skupaj z laserskim izvorom za merjenje slabljenja
+
+
+
+### Splošna električna varnost v RTP/RP
+- Delovna napetost tipično 24 VDC ali 48 VDC za telekomunikacijsko opremo v postajah
+- Zavedaj se bližine visoke napetosti (20 kV, 110 kV) – varna razdalja, delovni nalogi, usklajevanje z vzdrževalci EE opreme
