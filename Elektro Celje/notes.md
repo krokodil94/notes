@@ -190,3 +190,6 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **802.1p**: CoS oznake v Ethernet glavi (0–7)
 - Mehanizmi: PQ (Priority Queuing), WFQ, CBWFQ, policing, shaping
 
+## 5. INFORMACIJSKA IN KIBERNETSKA VARNOST (ICS/OT Security)
+
+- **NIS2 Direktiva (EU)** – direktiva o varnosti omrežij in informacijskih sistemov; operaterji energetske infrastrukture so "essential entities"
