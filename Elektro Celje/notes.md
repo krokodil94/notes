@@ -67,6 +67,12 @@ S pomočjo OTDR meritev lahko inženir ugotovi:
 Sodobni sistemi za nadzor optičnih kablov (OLM) omogočajo avtomatsko spremljanje 24 ur na dan. Ti sistemi v realnem času analizirajo stanje vlaken in sprožijo alarm, še preden se komunikacija popolnoma prekine, kar omogoča preventivno vzdrževanje, ki je ena izmed dolžnosti na tem delovnem mestu.
 
 
+#### OTDR (Optical Time Domain Reflectometer)
+- **Najpomembnejše merilno orodje za optiko**
+- Deluje na principu radarskega echa: pošlje pulz, meri odboje nazaj
+- Iz dobljene krivulje razbereš: lokacijo preloma, slabljenje spojk, dolžino vlakna, slabljenje konektorjev
+- Znati moraš interpretirati OTDR trace: normalen Fresnelov odboj, Rayleighevo sipanje, prelom
+
 
 
 #### SNMP (Simple Network Management Protocol)
@@ -114,3 +120,12 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - Elektrodistribucija večinoma gradi **OPGW** (Optical Ground Wire – optika v ozemljitveni vrvici daljnovodov) ali **ADSS** (All-Dielectric Self-Supporting – optika v nekovinskem kablu, obešenem med drogovi)
 - **Konektorji**: SC/APC (zeleni, kot 8°, manj odboja – za distribucijo signala), SC/UPC (modri), LC, FC
 - **Splicing**: fuzijsko varjenje vlaken, mehanski spoji
+
+
+#### Ključne meritve in parametri optičnih vlaken
+| Parameter | Tipična vrednost | Pomen |
+|-----------|------------------|-------|
+| Slabljenje (attenuation) | ≤ 0,35 dB/km @ 1310 nm; ≤ 0,2 dB/km @ 1550 nm | Izguba signala |
+| Disperzija | ps/(nm·km) | Razmazanost pulzov, omejuje pasovno širino |
+| Odboj (reflectance) | < -55 dB (APC) | Odbiti signal nazaj k viru |
+| **Optični proračun (link budget)** | Tx moč – celotno slabljenje ≥ Rx občutljivost | Preveriti pred vsako inštalacijo |
