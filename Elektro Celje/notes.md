@@ -75,5 +75,11 @@ Sodobni sistemi za nadzor optičnih kablov (OLM) omogočajo avtomatsko spremljan
 - Trap: asinhrono sporočilo naprave ob alarmu
 
 
-  
+### Topologije
+
+- **Zvezdasta** – RTP je center, RP/TP so veje (preprosta, a brez redundance)
+- **Obroč (Ring)** – vsaka postaja je del obroča; izpad ene povezave ne povzroči izpada vozlišča
+- **Mrežasta (Mesh)** – visoka redundanca, kompleksno upravljanje
+
+- Elektro podjetja tipično gradijo **obroče s Spanning Tree / RSTP** ali **SDH obroče**
 
