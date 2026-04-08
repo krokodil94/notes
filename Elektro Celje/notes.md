@@ -301,6 +301,12 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 
 ---
 
+1. Osnovno razumevanje sistemov in omrežij
 
+Geografska razdelitev:
+LAN (Local Area Network): Lokalno omrežje (dom, pisarna). Odlikujejo ga visoke hitrosti in nizka zakasnitev.
+WAN (Wide Area Network): Širokoobmočno omrežje, ki povezuje več LAN-ov (npr. internet).
 
+Za delovanje omrežja morajo naprave govoriti "isti jezik" in imeti jasne naslove.
+IP Naslavljanje: Vsaka naprava potrebuje naslov (npr. IPv4: 192.168.1.10). Podomrežja (Subnetting) omogočajo razdelitev velikega omrežja na manjše dele za boljšo varnost in hitrost.
 
