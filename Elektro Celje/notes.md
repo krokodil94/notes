@@ -326,3 +326,28 @@ Fizična plast: Ali je kabel priklopljen? Ali lučke na stikalu utripajo?
 Povezovalna plast: Ali ima naprava MAC naslov? So VLAN-i pravilno nastavljeni?
 Omrežna plast: Ali ima naprava pravilen IP naslov? Lahko "pingamo" privzeti prehod (Default Gateway)?
 Aplikacijska plast: Ali storitev (npr. spletna stran) sploh teče na strežniku?
+
+
+2. Telekomunikacijski sistemi in naprave
+
+Temeljna transportna protokola: TCP vs. UDP
+
+TCP (Transmission Control Protocol):
+Zanesljivost: Zagotavlja, da so vsi podatki prispeli v pravilnem vrstnem redu. Če se paket izgubi, ga zahteva ponovno.
+Uporaba: Spletni brskalniki (HTTP), e-pošta (SMTP), prenos datotek (FTP).
+
+UDP (User Datagram Protocol):
+Hitrost: Ne preverja, ali so podatki prispeli. Samo pošlje jih ("pošlji in pozabi").
+Uporaba: Video klici, igranje iger preko spleta, prenos v živo (kjer je hitrost pomembnejša od občasne izgubljene sličice).
+
+SNMP (Simple Network Management Protocol):
+Uporablja se za zbiranje informacij iz omrežnih naprav (usmerjevalniki, stikala, strežniki).
+Omogoča nam, da v realnem času vidimo, koliko je obremenjen procesor na stikalu ali ali je kateri od mrežnih portov izpadel.
+
+
+Protokol,Glavna lastnost,Tipična uporaba
+TCP,"Brez napak, počasnejši","Prenos kritičnih podatkov, baze podatkov."
+UDP,"Hitrost, možne izgube","Video, glas, DNS poizvedbe."
+MQTT,"Lahkoten, varčen","Pametne hiše, senzorji na terenu."
+Modbus,Industrijski standard,"Komunikacija s PLC-ji, senzorji v tovarni."
+SNMP,Diagnostika,Nadzor zdravja mrežne opreme.
