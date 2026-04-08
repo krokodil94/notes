@@ -184,3 +184,9 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 - **IS-IS** – alternativa OSPF, pogostejši v telekomunikacijskih jedrnih omrežjih
 
 
+### QoS (Quality of Service)
+- Kritično za energetiko: SCADA promet mora imeti prioriteto pred video/podatki
+- **DiffServ**: DSCP oznake v IP glavi (EF = Expedited Forwarding za visoko prioriteto)
+- **802.1p**: CoS oznake v Ethernet glavi (0–7)
+- Mehanizmi: PQ (Priority Queuing), WFQ, CBWFQ, policing, shaping
+
