@@ -260,4 +260,8 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 ### "Kako zagotoviš visoko razpoložljivost telekomunikacijskega omrežja?"
 > Redundanca na vseh nivojih: dvojne optične poti (obroči), redundantni napajalni sistemi (UPS, baterije), dual-homing (naprava priključena na dve stikali), RSTP/G.8032 za hitro okrevanje omrežja. Redno preverjanje backup poti, alarmi ob izpadih, testiranje načrtov ob nepredvidenih situacijah.
 
+### "Kaj je OTDR in kako ga uporabiš?"
+> OTDR (Optical Time Domain Reflectometer) je merilni instrument za diagnostiko optičnih vlaken. Deluje podobno kot radar – v vlakno pošlje kratke svetlobne pulze in meri odboje. Iz dobljene krivulje (trace) razberemo dolžino vlakna, lokacijo prelomov ali napak, slabljenje spojk in konektorjev. Pred meritvijo nastavimo valovni dolžini (1310/1550 nm), dolžinsko območje in impulzno širino.
 
+### "Kako bi ravnal ob izpadu SCADA komunikacije do postaje?"
+> 1. Preverim alarm v NMS – kateri segment je prizadet. 2. Preverim fizično plast – optika, konektorji, napajanje aktivne opreme. 3. Preverim L2/L3 – ping, MAC tabele, routing tabele. 4. Preverim SCADA protokol – log sporočila na RTU in strežniku. 5. Dokumentiram potek okvarovaske analize in ukrepe. 6. Vzpostavim ustrezne nadomestne poti, če obstajajo.
