@@ -193,3 +193,10 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 ## 5. INFORMACIJSKA IN KIBERNETSKA VARNOST (ICS/OT Security)
 
 - **NIS2 Direktiva (EU)** – direktiva o varnosti omrežij in informacijskih sistemov; operaterji energetske infrastrukture so "essential entities"
+
+- ### Varnostna arhitektura (Zones & Conduits)
+```
+[Corporate IT] <---Firewall/DMZ---> [Control Network (SCADA)] <----> [Field Devices]
+     Zone 4              Zone 3              Zone 2                      Zone 1/0
+
+     
