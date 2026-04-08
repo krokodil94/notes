@@ -177,3 +177,5 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 | Podatkovna | Ethernet, 802.1Q, PPP, HDLC | Switch, Bridge |
 | Fizična | Fiber, bakreni kabel, radio | Kabel, antena |
 
+! To je narobe - TCP ima samo 4 plasti - poglej še bolj detailno
+
