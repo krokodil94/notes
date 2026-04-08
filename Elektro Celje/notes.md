@@ -213,3 +213,16 @@ Elektro podjetja običajno uporabljajo SDH obroče za kritične povezave med dal
 | Fizični dostop | Zaklepanje omar, CCTV, evidence dostopa |
 | Napadi na daljavo | IDS/IPS, syslog centralizacija, SIEM |
 | USB/removable media | Politika prepovedi, skeniranje |
+
+
+### VPN tehnologije
+- **IPsec VPN**: tunelsko (ESP/AH) ali transportno, IKEv2, za site-to-site
+- **SSL/TLS VPN**: za oddaljen dostop vzdrževalcev
+- Pravilo: **princip najmanjših privilegijev** – dostop samo do tistega, kar vzdrževalec potrebuje
+
+
+### Upravljanje identitet
+- **RADIUS** – centralizirana avtentikacija za omrežne naprave (login v switch/router)
+- **TACACS+** – podobno kot RADIUS, a z ločeno avtorizacijo in računovodstvom; Cisco-centric
+- **Active Directory** – za Windows okolja, LDAP integracija
+
