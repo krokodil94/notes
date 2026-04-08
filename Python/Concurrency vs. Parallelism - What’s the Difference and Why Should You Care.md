@@ -1,4 +1,4 @@
-[[What is Polymorphism in Python]]
+
 **Concurrency** refers to the ability of a system to manage multiple tasks within overlapping time periods. It does not necessarily mean these tasks execute at the exact same instant. Rather, concurrency is about structuring a program to handle multiple operations by interleaving their execution, often on a single processor core.
 
 **Parallelism**, by contrast, involves the simultaneous execution of multiple tasks. This typically requires multiple CPU cores or processors working in tandem, with each handling a separate portion of the workload at the same time.
