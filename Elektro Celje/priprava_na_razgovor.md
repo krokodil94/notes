@@ -213,39 +213,37 @@ SCADA center / HMI → operater nadzira, analizira, po potrebi pošlje ukaze
 SCADA = centralni nadzor in vodenje industrijskih sistemov preko RTU, PLC in HMI, kjer komunikacija omogoča zbiranje in nadzor podatkov v realnem času.
 
 8️⃣ Katere industrijske protokole poznaš?
-
-To je ZELO verjetno vprašanje.
-
-Minimalno poznaj:
-
-MODBUS
-
-Najpomembnejši.
-
-Modbus RTU (serial)
-Modbus TCP (Ethernet)
-master/slave (client/server)
-
+1. Modbus (najpomembnejši)
+Modbus RTU:
+Serial komunikacija (RS-485)
+Master / Slave arhitektura
+Modbus TCP:
+Ethernet verzija
+Client / Server arhitektura
 Kaj prenaša:
+Coils → digitalni izhodi/on-off
+Holding registers → analogni podatki / nastavitve
+Uporaba: PLC ↔ SCADA HMI, industrijska avtomatizacija
 
-registre (coils, holding registers)
+💡 Bonus točke: Če omeniš Modbus TCP → Ethernet, TCP/IP
 
-👉 Če omenjaš Modbus TCP → dobiš točke.
+2. IEC 60870-5-104
+Standard za SCADA komunikacijo v elektrodistribuciji
+Omogoča komunikacijo Remote Terminal Unit (RTU) ↔ SCADA center
+Temelji na TCP/IP
+Pogosto uporablja za telemetrijo in nadzor distribucijskih omrežij
+3. MQTT (bonus / IoT)
+Publish / Subscribe model
+Nizka latenca, primeren za telemetrijo in IoT
+Odličen za SCADA sisteme, kjer je potrebna real-time posodobitev podatkov
 
-IEC 60870-5-104
+💡 Povzetek:
 
-Če to omeniš → zelo plus.
-Uporaba:
-
-elektro distribucija
-komunikacija RTP/TP ↔ center vodenja
-temelji na TCP/IP
-MQTT (bonus!)
-
-Ker si ga že delal → omeniti!
-
-publish/subscribe
-telemetrija, IoT
+Protokol	Transport	Arhitektura	Uporaba
+Modbus RTU	Serial	Master/Slave	PLC ↔ HMI, industrija
+Modbus TCP	Ethernet	Client/Server	Ethernet SCADA, PLC
+IEC 60870-5-104	TCP/IP	Client/Server	Elektro distribucija, RTU ↔ center
+MQTT	TCP/IP	Pub/Sub	Telemetrija, IoT, SCADA
 9️⃣ Kaj je latenca vs jitter?
 
 Za radijska omrežja pomembno.
