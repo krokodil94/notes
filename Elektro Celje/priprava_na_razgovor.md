@@ -88,19 +88,26 @@ Real-time telemetrija, senzorji, video/glas v živo → hitrost je pomembnejša 
 DNS, VoIP, streaming podatki.
 
 
-3️⃣ Kaj je subnet maska in zakaj jo potrebujemo?
-
-Primer vprašanja:
-👉 Koliko hostov ima 192.168.1.0/24?
-
-Odgovor:
-
-/24 = 255.255.255.0
-256 naslovov
-usable hosti = 254
-
-Lahko dobijo nalogo:
-👉 Ali sta 192.168.1.10 in 192.168.2.10 v istem subnetu?
+3️⃣ Kaj je subnet maska in zakaj jo potrebujemo
+Subnet maska določa, katere bite IP naslova predstavljajo omrežje in katere hoste.
+Omrežje je razdeljeno na network part in host part.
+Omogoča:
+določanje velikosti omrežja
+ločevanje različnih subnetov v istem IP prostoru
+boljši nadzor in manj trčenja med napravami
+Primer /24
+IP: 192.168.1.0/24
+/24 pomeni, da je prvih 24 bitov network part, ostalih 8 bitov host part.
+Subnet maska: 255.255.255.0
+Skupno število naslovov: 2^8 = 256
+Uporabniški hosti: 256 − 2 = 254 (prvi = network, zadnji = broadcast)
+Preverjanje, ali sta v istem subnetu
+IP 1: 192.168.1.10
+IP 2: 192.168.2.10
+Mask: /24 → primerjamo network del:
+192.168.1.10 → network = 192.168.1.0
+192.168.2.10 → network = 192.168.2.0
+✅ Zaključek: nista v istem subnetu
 
 4️⃣ Kaj je VLAN?
 
