@@ -3,13 +3,33 @@
 Ko “pošlješ ping”, računalnik preverja, ali je druga naprava na omrežju dosegljiva in kako hitro odgovori. To je ena najbolj osnovnih diagnostičnih metod za internet ali lokalno omrežje.
 
 Kaj se dejansko zgodi v ozadju
+Ustvari se ICMP paket
+Tvoj računalnik pošlje majhen podatkovni paket.
+Ta uporablja protokol ICMP (Internet Control Message Protocol).
+Sporočilo se imenuje Echo Request.
+Paket potuje po internetu
+Paket gre skozi usmerjevalnike (routerje).
+Vsak usmerjevalnik ga preusmeri proti ciljnemu IP naslovu.
+Ciljna naprava odgovori
+Če je naprava dosegljiva in dovoljuje ping:
+Pošlje nazaj Echo Reply (odmevni odgovor).
+Izmeri se čas poti
+Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora.
+Temu rečemo latenca ali ping time (npr. 20 ms).
 
-
-
-
-
-
-Kaj preverjajo: ali razumeš TCP/IP stack.
+Preverjanje MAC naslova (ARP)
+Računalnik najprej pogleda, ali ima MAC naslov cilja v ARP cache.
+Če ga nima → pošlje ARP request in prejme ARP reply, da ve, kam poslati paket na lokalnem omrežju.
+Pošiljanje ICMP paketa
+Pošlje se ICMP Echo Request (ping).
+Paket vsebuje svoj TTL (Time To Live), ki preprečuje, da bi krožil večno po omrežju.
+Forwardanje preko omrežja
+Paket potuje skozi routerje, ki gledajo v routing tabelo, da vedo, kam poslati naslednji korak.
+TTL se pri vsakem hopu zmanjša za 1; če TTL doseže 0 → paket je zavrnjen.
+Odgovor cilja
+Ciljna naprava prejme Echo Request → pošlje ICMP Echo Reply nazaj na izvorni naslov.
+Merjenje RTT (Round-Trip Time)
+Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenca.
 
 Kaj omeniti:
 
