@@ -354,3 +354,4 @@ SNMP,Diagnostika,Nadzor zdravja mrežne opreme.
 
 
  Kaj se zgodi, ko pošlješ ping?
+Ko “pošlješ ping”, računalnik preverja, ali je druga naprava na omrežju dosegljiva in kako hitro odgovori. To je ena najbolj osnovnih diagnostičnih metod za internet ali lokalno omrežje.
