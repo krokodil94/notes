@@ -351,3 +351,6 @@ UDP,"Hitrost, možne izgube","Video, glas, DNS poizvedbe."
 MQTT,"Lahkoten, varčen","Pametne hiše, senzorji na terenu."
 Modbus,Industrijski standard,"Komunikacija s PLC-ji, senzorji v tovarni."
 SNMP,Diagnostika,Nadzor zdravja mrežne opreme.
+
+
+
