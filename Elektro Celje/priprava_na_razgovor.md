@@ -30,25 +30,33 @@ Odgovor cilja
 Ciljna naprava prejme Echo Request → pošlje ICMP Echo Reply nazaj na izvorni naslov.
 Merjenje RTT (Round-Trip Time)
 Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenca.
+Host preveri ARP → pošlje ICMP Echo → routerji forwardajo po routing tabeli → cilj odgovori → izmeri se RTT.
 
-Kaj omeniti:
 
-ICMP Echo Request / Echo Reply
-ARP (če ni MAC v cache)
-Routing tabela
-TTL
-Kaj pomeni če ping dela / ne dela
 
-💡 Lep odgovor (kratko):
 
-Host preveri ARP → pošlje ICMP Echo → router forwarda → cilj odgovori → meri se RTT.
-
-Možna podvprašanja:
-
-Zakaj ping dela, ampak web ne?
+Zakaj ping dela, splet pa ne
 DNS problem
-firewall blokira TCP/80 ali 443
-routing problem
+Ping na IP deluje, ker paket pride do cilja.
+Brskalnik ne najde spletne strani, ker ime domene ni prevedeno v IP.
+Rešitev: preveri z nslookup ali dig.
+Firewall ali blokada vrat
+Ping uporablja ICMP → deluje.
+HTTP/HTTPS uporabljata TCP 80 in 443, ki sta morda blokirani.
+Rešitev: preveri firewall, usmerjevalnik ali korporativne omejitve.
+Routing problem za TCP, ne ICMP
+Omrežje omogoča ICMP promet, a TCP paketi morda ne pridejo do cilja zaradi napačnih routing tabel.
+Običajno se zgodi v kompleksnih omrežjih ali VPN-jih.
+Proxy ali NAT omejitve
+Nekateri proxy strežniki ali NAT konfiguracije lahko dovolijo ping, a blokirajo HTTP/HTTPS.
+
+💡 Praktični test:
+
+ping 8.8.8.8 → če dela, osnovna povezava je OK
+curl -v http://8.8.8.8 → preveri, ali TCP povezava deluje
+nslookup google.com → preveri DNS
+
+
 2️⃣ Razlika TCP vs UDP
 
 To je 100 % vprašanje.
