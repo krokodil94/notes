@@ -57,28 +57,37 @@ curl -v http://8.8.8.8 → preveri, ali TCP povezava deluje
 nslookup google.com → preveri DNS
 
 
-2️⃣ Razlika TCP vs UDP
-
-To je 100 % vprašanje.
-
-Ključne točke:
-TCP:
-
-connection oriented
-reliable (ACK, retransmission)
-ordered delivery
-več overhead
-
-UDP:
-
-connectionless
-brez garancije dostave
-nizka latenca
+2️⃣ Razlika med TCP in UDP
+TCP (Transmission Control Protocol)
+Connection-oriented:
+Preden pošlje podatke, TCP vzpostavi povezavo med pošiljateljem in prejemnikom (3-way handshake: SYN → SYN/ACK → ACK).
+Zanesljivost (reliability):
+TCP uporablja ACK (potrditev prejema) in retransmission → izgubljeni paketi se ponovno pošljejo.
+Urejena dostava:
+Paketi pridejo v istem vrstnem redu, kot so bili poslani.
+Več overheada:
+Zaradi handshaka, potrditev in številk paketov je TCP počasnejši od UDP.
 
 Industrijski primeri:
 
-SCADA pogosto uporablja TCP
-real-time telemetrija → UDP
+SCADA sistemi, HMI (Human Machine Interface), kjer je kritično, da podatki prispejo točno in v pravem vrstnem redu.
+FTP, HTTP/HTTPS, e-pošta.
+UDP (User Datagram Protocol)
+Connectionless:
+Pošilja pakete brez vzpostavljanja povezave → manj zakasnitev.
+Brez garancije dostave:
+Ni ACK, ni retransmission → izgubljeni paketi ne bodo poslani ponovno.
+Brez urejenosti:
+Paketi lahko prispejo izven vrstnega reda.
+Nizka latenca:
+Minimalen overhead → primerno za real-time aplikacije.
+
+Industrijski primeri:
+
+Real-time telemetrija, senzorji, video/glas v živo → hitrost je pomembnejša kot popolna zanesljivost.
+DNS, VoIP, streaming podatki.
+
+
 3️⃣ Kaj je subnet maska in zakaj jo potrebujemo?
 
 Primer vprašanja:
