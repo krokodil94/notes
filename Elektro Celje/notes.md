@@ -359,4 +359,12 @@ Kaj se dejansko zgodi v ozadju:
   Ustvari se ICMP paket
   Tvoj računalnik pošlje majhen podatkovni paket.
   Ta uporablja protokol ICMP (Internet Control Message Protocol).
-  
+  Paket potuje po internetu
+  Paket gre skozi usmerjevalnike (routerje).
+  Vsak usmerjevalnik ga preusmeri proti ciljnemu IP naslovu.
+  Ciljna naprava odgovori
+  Če je naprava dosegljiva in dovoljuje ping:
+  Pošlje nazaj Echo Reply (odmevni odgovor).
+  Izmeri se čas poti
+  Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora.
+  Temu rečemo latenca ali ping time (npr. 20 ms).
