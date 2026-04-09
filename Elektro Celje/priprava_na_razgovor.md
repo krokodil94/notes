@@ -254,46 +254,52 @@ jitter = variacija zakasnitve
 Zakaj pomembno:
 
 real-time nadzor
-🔐 KIBERNETSKA VARNOST (bo vprašanje)
 10️⃣ Kako zaščititi industrijsko omrežje?
 
-Omeniti:
+Ključni ukrepi:
 
-segmentacija (VLAN)
-firewall
-VPN
-ločitev IT in OT omrežja
-monitoring
+Segmentacija omrežja (VLAN)
+Ločitev različnih delov OT omrežja (SCADA, PLC, HMI) in IT omrežja.
+Omeji lateralno gibanje napadalcev.
+Firewally
+Kontrola prometa med segmenti in proti internetu.
+Implementacija pravil “allow/deny” glede na protokol in port.
+VPN za oddaljen dostop
+Za varno delo na daljavo.
+Dvosmerna avtentikacija (2FA) je plus.
+Ločitev IT in OT omrežja
+IT omrežje → office, e-mail, internet
+OT omrežje → SCADA, PLC, industrijska oprema
+Minimalna integracija preko nadzorovanih gateway-ev.
+Monitoring in logging
+SIEM, IDS/IPS, redni pregledi logov
+Odkrivanje anomalij, sumljivih povezav.
 
-Magic phrase:
+Magic phrase za razgovor:
 👉 "air gap ali vsaj segmentacija OT omrežja"
 
-🛠 PRAKTIČNA VPRAŠANJA (zelo verjetna)
 11️⃣ SCADA postaja ne komunicira – kaj narediš?
 
-Idealna struktura odgovora:
+Zlata struktura odgovora:
 
-Preverim fizično povezavo
-Ping gateway
-Ping oddaljeno napravo
-Preverim routing/VLAN
-Preverim port/protokol
-Preverim loge
-Izoliram napako
+Preverim fizično povezavo (kabli, switche, porti)
+Ping gateway (lokalni router/firewall)
+Ping oddaljeno napravo (PLC ali HMI)
+Preverim routing/VLAN konfiguracijo
+Preverim port/protokol (TCP/UDP, Modbus, OPC)
+Preverim loge (SCADA, PLC, firewall, switch)
+Izoliram napako (je na SCADA postaji, OT segmentu ali omrežju)
 
-To je ZLATO vprašanje.
+💡 Tip: vedno reci, da deluješ sistematično in dokumentiraš spremembe.
 
 12️⃣ Razlika med hub / switch / router
-
-Hitro:
-
-hub → broadcast vse
-switch → MAC tabela
-router → IP routing
-🎯 BONUS vprašanja (možna)
-Kaj je DNS?
-Kaj je DHCP?
-Kaj je SNMP?
-Kaj je redundancy (RSTP ring)?
-Kaj je packet loss?
-
+Naprava	Kako deluje	Primer uporabe
+Hub	Pošlje vse pakete vsem	Staro, manj varno, broadcast vse
+Switch	Uporablja MAC tabelo, pošlje paket samo pravemu portu	Standard v LAN omrežjih
+Router	Uporablja IP routing, povezuje različna omrežja	Povezovanje LAN → WAN, VLAN routing
+🎯 Bonus vprašanja – hiter pregled
+DNS (Domain Name System) → Prevede ime naprave (npr. plc1.local) v IP naslov.
+DHCP (Dynamic Host Configuration Protocol) → Samodejno dodeljuje IP naslove.
+SNMP (Simple Network Management Protocol) → Monitoriranje in upravljanje omrežnih naprav.
+Redundancy (RSTP ring) → Preprečuje downtime, hitro preusmerjanje v primeru prekinitve povezave.
+Packet loss → Paketi izgubljeni med prenosom → slab signal, napačna konfiguracija ali preobremenjeno omrežje.
