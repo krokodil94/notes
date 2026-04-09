@@ -353,4 +353,4 @@ Modbus,Industrijski standard,"Komunikacija s PLC-ji, senzorji v tovarni."
 SNMP,Diagnostika,Nadzor zdravja mrežne opreme.
 
 
-
+ Kaj se zgodi, ko pošlješ ping?
