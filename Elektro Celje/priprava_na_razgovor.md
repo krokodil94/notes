@@ -109,48 +109,108 @@ Mask: /24 → primerjamo network del:
 192.168.2.10 → network = 192.168.2.0
 ✅ Zaključek: nista v istem subnetu
 
-4️⃣ Kaj je VLAN?
+4️⃣ Kaj je VLAN (Virtual Local Area Network)
+Logična segmentacija omrežja:
+VLAN omogoča, da en fizični switch razdeliš na več logičnih omrežij.
+Naprave v istem VLAN-u se obnašajo, kot da so v istem fizičnem omrežju, tudi če so na različnih switch portih.
+Izolacija prometa:
+Promet znotraj VLAN-a ostaja znotraj VLAN-a → drug VLAN ga ne vidi brez routing-a.
+To preprečuje, da bi broadcasti ali nepotreben promet motili druga omrežja.
+Več varnosti:
+Ločitev omrežij (npr. SCADA vs pisarniško omrežje) omeji dostop do kritičnih sistemov.
+Napadalci v enem VLAN-u ne morejo neposredno dostopati do drugega VLAN-a brez router/firewall-a.
+Zmanjšanje broadcast domen:
+VLAN zmanjšuje število naprav, ki prejemajo broadcast promet → bolj učinkovito omrežje.
+Praktičen primer
+SCADA omrežje: VLAN 10 → kritični industrijski sistemi
+Pisarniško omrežje: VLAN 20 → računalniki zaposlenih
+Rezultat:
+SCADA in pisarniško omrežje ne delita broadcast prometa
+Promet med njima je mogoč le preko routerja ali Layer 3 switcha, kar poveča varnost
 
-Zelo verjetno vprašanje.
+💡 En stavek povzetek:
+VLAN = logična segmentacija omrežja, ki izolira promet, povečuje varnost in zmanjšuje broadcast domene.
 
-Poudari:
+5️⃣ Kaj je NAT (Network Address Translation)
+Definicija:
+NAT prevaja privatne IP naslove v en ali več javnih IP naslovov, da naprave v lokalnem omrežju lahko dostopajo do interneta.
+Zakaj ga potrebujemo:
+Varčevanje z IPv4:
+Več naprav lahko uporablja en sam javni IP, kar rešuje problem omejenih IPv4 naslovov.
+Varnost:
+Privatni IP naslovi niso neposredno vidni na internetu → zmanjšuje možnost neposrednih napadov.
+Omogoča internet povezavo za lokalna omrežja:
+Računalniki, telefoni, SCADA sistemi ipd., lahko dostopajo do interneta preko enega javnega IP.
+Kako deluje:
+Naprava v lokalnem omrežju pošlje paket → NAT router spremeni izvorni IP in port → pošlje na internet.
+Odgovor iz interneta → NAT router prevede nazaj → paket pride do pravilne naprave.
+Praktičen primer
+SCADA omrežje ali pisarniško omrežje ima privatne IP-je: 192.168.x.x
+NAT na routerju jih prevaja v javni IP: 85.17.23.10
+Vse naprave delijo isti javni IP, internet vidi le NAT naslov, notranji IP-ji ostanejo skriti
 
-logična segmentacija omrežja
-izolacija prometa
-več varnosti
-zmanjšanje broadcast domen
+💡 En stavek povzetek:
+NAT = prevajanje privatnih IP v javni, kar omogoča varnost, internet povezljivost in varčevanje z IPv4 naslovi.
+6️⃣ Kaj je routing
+Routing je proces, kjer paketi najdejo pot od izvorne naprave do cilja preko različnih omrežij.
+Odločanje temelji na IP naslovih (Layer 3).
+Switch vs Router
+Naprava	Layer	Funkcija
+Switch	L2 (Data Link)	Pošilja paket samo na pravi MAC naslov znotraj istega omrežja
+Router	L3 (Network)	Pošilja pakete med različnimi IP omrežji (subneti)
+Switch → deluje lokalno
+Router → omogoča komunikacijo med subneti ali internetom
+Routing tabela
+Routing tabela je “navodilo” routerja, kam poslati paket glede na ciljni IP naslov.
+Vsebina tipične tabele:
+Network → ciljni subnet
+Next hop → naslednji router ali vrata
+Interface → kateri port / vmesnik se uporablja
+Router vedno pogleda tabelo in izbere najbolj specifično pot (longest prefix match).
+Default gateway
+Default gateway je IP naslov routerja, ki ga host uporablja, kadar ciljna naprava ni v istem subnetu.
+Primer:
+Host: 192.168.1.10/24
+Default gateway: 192.168.1.1
+Paket na 8.8.8.8 → pošlje se na gateway → router naprej po internetu
+Industrijski / SCADA protokoli in routing
+SCADA omrežja pogosto uporabljajo static routes, da nadzorujejo promet med PLC-ji, HMI-ji in kontrolnimi sistemi.
+Pogosti industrijski protokoli:
+Modbus TCP – uporablja TCP/IP za komunikacijo PLC ↔ HMI
+DNP3 TCP/UDP – za SCADA telemetrijo
+EtherNet/IP – real-time industrijski Ethernet protokol
+Routing je kritičen za izolacijo SCADA subnetov od pisarniških omrežij → varnost in zanesljivost.
 
-Praktični primer:
-SCADA omrežje mora biti ločeno od pisarniškega.
+💡 Povzetek:
 
-5️⃣ Kaj je NAT?
-prevajanje privatnih IP → javni IP
-varnost
-varčevanje z IPv4
-6️⃣ Kaj je routing?
+Switch: MAC → lokalno omrežje
+Router: IP → med subneti / internet
+Routing tabela: kam poslati paket
+Default gateway: kam poslati pakete zunaj lokalnega subnet-a
+SCADA: routing nadzira dostop in izolacijo industrijskih omrežij
 
-Razlika:
+7️⃣ Kaj je SCADA
 
-switch → L2 (MAC)
-router → L3 (IP)
+SCADA = Supervisory Control And Data Acquisition
 
-Kaj je routing tabela?
-Kaj je default gateway?
+Sistem za nadzor, spremljanje in vodenje industrijskih procesov.
+Pogosto se uporablja v:
+Energetiki (elektrarne, distribucija)
+Vodni in odpadni sistemi
+Tovarne in procesna industrija
+Ključne komponente
+Komponenta	Funkcija
+RTU (Remote Terminal Unit)	Oddaljeni modul, ki zbira podatke iz senzorjev in izvaja ukaze
+PLC (Programmable Logic Controller)	Krmilnik za avtomatizacijo procesov, lokalno vodenje
+HMI (Human Machine Interface)	Uporabniški vmesnik za operaterje, prikaz podatkov in kontrola
+SCADA center / Master station	Centralni nadzorni sistem, analitika, zgodovina podatkov
+Tipična arhitektura
+RTU / PLC → zbira podatke iz senzorjev in aktuatorjev
+Komunikacija (Ethernet, Modbus, DNP3, EtherNet/IP) → prenaša podatke
+SCADA center / HMI → operater nadzira, analizira, po potrebi pošlje ukaze
 
-📡 INDUSTRIJSKI / SCADA PROTOKOLI
-
-Tu se lahko res pokažeš.
-
-7️⃣ Kaj je SCADA?
-
-Odgovor:
-
-Supervisory Control And Data Acquisition
-nadzor in vodenje energetskih sistemov
-RTU, PLC, HMI, center vodenja
-
-Tipična arhitektura:
-RTU → komunikacija → SCADA center
+💡 Povzetek:
+SCADA = centralni nadzor in vodenje industrijskih sistemov preko RTU, PLC in HMI, kjer komunikacija omogoča zbiranje in nadzor podatkov v realnem času.
 
 8️⃣ Katere industrijske protokole poznaš?
 
