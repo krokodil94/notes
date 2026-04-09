@@ -1,21 +1,4 @@
- Kaj se zgodi, ko pošlješ ping?
 
-Ko “pošlješ ping”, računalnik preverja, ali je druga naprava na omrežju dosegljiva in kako hitro odgovori. To je ena najbolj osnovnih diagnostičnih metod za internet ali lokalno omrežje.
-
-Kaj se dejansko zgodi v ozadju
-Ustvari se ICMP paket
-Tvoj računalnik pošlje majhen podatkovni paket.
-Ta uporablja protokol ICMP (Internet Control Message Protocol).
-Sporočilo se imenuje Echo Request.
-Paket potuje po internetu
-Paket gre skozi usmerjevalnike (routerje).
-Vsak usmerjevalnik ga preusmeri proti ciljnemu IP naslovu.
-Ciljna naprava odgovori
-Če je naprava dosegljiva in dovoljuje ping:
-Pošlje nazaj Echo Reply (odmevni odgovor).
-Izmeri se čas poti
-Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora.
-Temu rečemo latenca ali ping time (npr. 20 ms).
 
 Preverjanje MAC naslova (ARP)
 Računalnik najprej pogleda, ali ima MAC naslov cilja v ARP cache.
