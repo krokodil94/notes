@@ -2,7 +2,7 @@
 
 Ko “pošlješ ping”, računalnik preverja, ali je druga naprava na omrežju dosegljiva in kako hitro odgovori. To je ena najbolj osnovnih diagnostičnih metod za internet ali lokalno omrežje.
 
-
+Kaj se dejansko zgodi v ozadju
 
 
 
