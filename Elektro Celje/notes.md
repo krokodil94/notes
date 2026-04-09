@@ -368,3 +368,7 @@ Kaj se dejansko zgodi v ozadju:
   Izmeri se čas poti
   Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora.
   Temu rečemo latenca ali ping time (npr. 20 ms).
+
+### Preverjanje MAC naslova (ARP)
+
+
