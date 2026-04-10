@@ -392,4 +392,6 @@ Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenc
     Rešitev: preveri z nslookup ali dig.
   Firewall ali blokada vrat
     Ping uporablja ICMP → deluje.
+    HTTP/HTTPS uporabljata TCP 80 in 443, ki sta morda blokirani.
+    Rešitev: preveri firewall, usmerjevalnik ali korporativne omejitve.
   
