@@ -384,3 +384,9 @@ Ciljna naprava prejme Echo Request → pošlje ICMP Echo Reply nazaj na izvorni 
 Merjenje RTT (Round-Trip Time)
 Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenca.
 
+
+### Zakaj ping dela, splet pa ne
+  DNS problem
+    Ping na IP deluje, ker paket pride do cilja.
+    Brskalnik ne najde spletne strani, ker ime domene ni prevedeno v IP.
+    Rešitev: preveri z nslookup ali dig.
