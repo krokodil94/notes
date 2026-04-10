@@ -487,6 +487,10 @@ VLAN = logična segmentacija omrežja, ki izolira promet, povečuje varnost in z
 Kaj je NAT (Network Address Translation)
   Definicija:
     NAT prevaja privatne IP naslove v en ali več javnih IP naslovov, da naprave v lokalnem omrežju lahko dostopajo do interneta.
+  Zakaj ga potrebujemo:
+    Več naprav lahko uporablja en sam javni IP, kar rešuje problem omejenih IPv4 naslovov.
+  Varnost:
+    Privatni IP naslovi niso neposredno vidni na internetu → zmanjšuje možnost neposrednih napadov.
 
 
 
