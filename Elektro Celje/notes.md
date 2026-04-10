@@ -394,4 +394,8 @@ Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenc
     Ping uporablja ICMP → deluje.
     HTTP/HTTPS uporabljata TCP 80 in 443, ki sta morda blokirani.
     Rešitev: preveri firewall, usmerjevalnik ali korporativne omejitve.
-  
+  Routing problem za TCP, ne ICMP
+    Omrežje omogoča ICMP promet, a TCP paketi morda ne pridejo do cilja zaradi napačnih routing tabel.
+    Običajno se zgodi v kompleksnih omrežjih ali VPN-jih.
+  Proxy ali NAT omejitve
+    Nekateri proxy strežniki ali NAT konfiguracije lahko dovolijo ping, a blokirajo HTTP/HTTPS.
