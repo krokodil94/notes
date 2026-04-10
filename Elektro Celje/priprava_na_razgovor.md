@@ -1,26 +1,5 @@
 
-
-5️⃣ Kaj je NAT (Network Address Translation)
-Definicija:
-NAT prevaja privatne IP naslove v en ali več javnih IP naslovov, da naprave v lokalnem omrežju lahko dostopajo do interneta.
-Zakaj ga potrebujemo:
-Varčevanje z IPv4:
-Več naprav lahko uporablja en sam javni IP, kar rešuje problem omejenih IPv4 naslovov.
-Varnost:
-Privatni IP naslovi niso neposredno vidni na internetu → zmanjšuje možnost neposrednih napadov.
-Omogoča internet povezavo za lokalna omrežja:
-Računalniki, telefoni, SCADA sistemi ipd., lahko dostopajo do interneta preko enega javnega IP.
-Kako deluje:
-Naprava v lokalnem omrežju pošlje paket → NAT router spremeni izvorni IP in port → pošlje na internet.
-Odgovor iz interneta → NAT router prevede nazaj → paket pride do pravilne naprave.
-Praktičen primer
-SCADA omrežje ali pisarniško omrežje ima privatne IP-je: 192.168.x.x
-NAT na routerju jih prevaja v javni IP: 85.17.23.10
-Vse naprave delijo isti javni IP, internet vidi le NAT naslov, notranji IP-ji ostanejo skriti
-
-💡 En stavek povzetek:
-NAT = prevajanje privatnih IP v javni, kar omogoča varnost, internet povezljivost in varčevanje z IPv4 naslovi.
-6️⃣ Kaj je routing
+Kaj je routing
 Routing je proces, kjer paketi najdejo pot od izvorne naprave do cilja preko različnih omrežij.
 Odločanje temelji na IP naslovih (Layer 3).
 Switch vs Router
