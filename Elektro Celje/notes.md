@@ -484,7 +484,7 @@ Kaj je VLAN (Virtual Local Area Network)
 VLAN = logična segmentacija omrežja, ki izolira promet, povečuje varnost in zmanjšuje broadcast domene.
 
 
-Kaj je NAT (Network Address Translation)
+# Kaj je NAT (Network Address Translation)
   Definicija:
     NAT prevaja privatne IP naslove v en ali več javnih IP naslovov, da naprave v lokalnem omrežju lahko dostopajo do interneta.
   Zakaj ga potrebujemo:
