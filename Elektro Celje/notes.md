@@ -375,8 +375,12 @@ Računalnik najprej pogleda, ali ima MAC naslov cilja v ARP cache.
 Če ga nima → pošlje ARP request in prejme ARP reply, da ve, kam poslati paket na lokalnem omrežju.
 Pošiljanje ICMP paketa
 Pošlje se ICMP Echo Request (ping).
-
-
-
+Paket vsebuje svoj TTL (Time To Live), ki preprečuje, da bi krožil večno po omrežju.
+Forwardanje preko omrežja
+Paket potuje skozi routerje, ki gledajo v routing tabelo, da vedo, kam poslati naslednji korak.
+TTL se pri vsakem hopu zmanjša za 1; če TTL doseže 0 → paket je zavrnjen.
+Odgovor cilja
+Ciljna naprava prejme Echo Request → pošlje ICMP Echo Reply nazaj na izvorni naslov.
+Merjenje RTT (Round-Trip Time)
 
 
