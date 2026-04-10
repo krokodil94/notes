@@ -430,11 +430,16 @@ Razlika med TCP in UDP
     Brez garancije dostave:
       Ni ACK, ni retransmission → izgubljeni paketi ne bodo poslani ponovno.
     Brez urejenosti:
-    Paketi lahko prispejo izven vrstnega reda.
+      Paketi lahko prispejo izven vrstnega reda.
     Nizka latenca:
-    Minimalen overhead → primerno za real-time aplikacije.
+      Minimalen overhead → primerno za real-time aplikacije.
     
     Industrijski primeri:
     
     Real-time telemetrija, senzorji, video/glas v živo → hitrost je pomembnejša kot popolna zanesljivost.
     DNS, VoIP, streaming podatki.
+
+
+Kaj je subnet maska in zakaj jo potrebujemo
+    Subnet maska določa, katere bite IP naslova predstavljajo omrežje in katere hoste.
+
