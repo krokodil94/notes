@@ -482,3 +482,10 @@ Kaj je VLAN (Virtual Local Area Network)
     Promet med njima je mogoč le preko routerja ali Layer 3 switcha, kar poveča varnost
 
 VLAN = logična segmentacija omrežja, ki izolira promet, povečuje varnost in zmanjšuje broadcast domene.
+
+
+Kaj je NAT (Network Address Translation)
+
+
+
+
