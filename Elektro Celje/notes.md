@@ -491,6 +491,8 @@ Kaj je NAT (Network Address Translation)
     Več naprav lahko uporablja en sam javni IP, kar rešuje problem omejenih IPv4 naslovov.
   Varnost:
     Privatni IP naslovi niso neposredno vidni na internetu → zmanjšuje možnost neposrednih napadov.
+  Omogoča internet povezavo za lokalna omrežja:
+    Računalniki, telefoni, SCADA sistemi ipd., lahko dostopajo do interneta preko enega javnega IP.
 
 
 
