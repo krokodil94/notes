@@ -1,38 +1,4 @@
 
-
-Preverjanje MAC naslova (ARP)
-Računalnik najprej pogleda, ali ima MAC naslov cilja v ARP cache.
-Če ga nima → pošlje ARP request in prejme ARP reply, da ve, kam poslati paket na lokalnem omrežju.
-Pošiljanje ICMP paketa
-Pošlje se ICMP Echo Request (ping).
-Paket vsebuje svoj TTL (Time To Live), ki preprečuje, da bi krožil večno po omrežju.
-Forwardanje preko omrežja
-Paket potuje skozi routerje, ki gledajo v routing tabelo, da vedo, kam poslati naslednji korak.
-TTL se pri vsakem hopu zmanjša za 1; če TTL doseže 0 → paket je zavrnjen.
-Odgovor cilja
-Ciljna naprava prejme Echo Request → pošlje ICMP Echo Reply nazaj na izvorni naslov.
-Merjenje RTT (Round-Trip Time)
-Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenca.
-Host preveri ARP → pošlje ICMP Echo → routerji forwardajo po routing tabeli → cilj odgovori → izmeri se RTT.
-
-
-
-
-Zakaj ping dela, splet pa ne
-DNS problem
-Ping na IP deluje, ker paket pride do cilja.
-Brskalnik ne najde spletne strani, ker ime domene ni prevedeno v IP.
-Rešitev: preveri z nslookup ali dig.
-Firewall ali blokada vrat
-Ping uporablja ICMP → deluje.
-HTTP/HTTPS uporabljata TCP 80 in 443, ki sta morda blokirani.
-Rešitev: preveri firewall, usmerjevalnik ali korporativne omejitve.
-Routing problem za TCP, ne ICMP
-Omrežje omogoča ICMP promet, a TCP paketi morda ne pridejo do cilja zaradi napačnih routing tabel.
-Običajno se zgodi v kompleksnih omrežjih ali VPN-jih.
-Proxy ali NAT omejitve
-Nekateri proxy strežniki ali NAT konfiguracije lahko dovolijo ping, a blokirajo HTTP/HTTPS.
-
 💡 Praktični test:
 
 ping 8.8.8.8 → če dela, osnovna povezava je OK
