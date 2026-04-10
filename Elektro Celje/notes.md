@@ -451,11 +451,13 @@ Kaj je subnet maska in zakaj jo potrebujemo
   IP: 192.168.1.0/24
   /24 pomeni, da je prvih 24 bitov network part, ostalih 8 bitov host part.
   Subnet maska: 255.255.255.0
-Skupno število naslovov: 2^8 = 256
-Uporabniški hosti: 256 − 2 = 254 (prvi = network, zadnji = broadcast)
-Preverjanje, ali sta v istem subnetu
-IP 1: 192.168.1.10
-IP 2: 192.168.2.10
-Mask: /24 → primerjamo network del:
-192.168.1.10 → network = 192.168.1.0
-192.168.2.10 → network = 192.168.2.0
+  Skupno število naslovov: 2^8 = 256
+  Uporabniški hosti: 256 − 2 = 254 (prvi = network, zadnji = broadcast)
+  Preverjanje, ali sta v istem subnetu
+  IP 1: 192.168.1.10
+  IP 2: 192.168.2.10
+  Mask: /24 → primerjamo network del:
+  192.168.1.10 → network = 192.168.1.0
+  192.168.2.10 → network = 192.168.2.0
+  Zaključek: nista v istem subnetu
+
