@@ -417,3 +417,24 @@ Razlika med TCP in UDP
       Paketi pridejo v istem vrstnem redu, kot so bili poslani.
     Več overheada:
       Zaradi handshaka, potrditev in številk paketov je TCP počasnejši od UDP.
+
+  Industrijski primeri:
+  
+  SCADA sistemi, HMI (Human Machine Interface), kjer je kritično, da podatki prispejo točno in v pravem vrstnem redu.
+  FTP, HTTP/HTTPS, e-pošta.
+
+
+  UDP (User Datagram Protocol)
+    Connectionless:
+      Pošilja pakete brez vzpostavljanja povezave → manj zakasnitev.
+    Brez garancije dostave:
+      Ni ACK, ni retransmission → izgubljeni paketi ne bodo poslani ponovno.
+    Brez urejenosti:
+    Paketi lahko prispejo izven vrstnega reda.
+    Nizka latenca:
+    Minimalen overhead → primerno za real-time aplikacije.
+    
+    Industrijski primeri:
+    
+    Real-time telemetrija, senzorji, video/glas v živo → hitrost je pomembnejša kot popolna zanesljivost.
+    DNS, VoIP, streaming podatki.
