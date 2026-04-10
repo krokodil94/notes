@@ -399,3 +399,21 @@ Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenc
     Običajno se zgodi v kompleksnih omrežjih ali VPN-jih.
   Proxy ali NAT omejitve
     Nekateri proxy strežniki ali NAT konfiguracije lahko dovolijo ping, a blokirajo HTTP/HTTPS.
+
+  ping 8.8.8.8 → če dela, osnovna povezava je OK
+  curl -v http://8.8.8.8 → preveri, ali TCP povezava deluje
+  nslookup google.com → preveri DNS
+
+
+
+
+Razlika med TCP in UDP
+  TCP (Transmission Control Protocol)
+    Connection-oriented:
+      Preden pošlje podatke, TCP vzpostavi povezavo med pošiljateljem in prejemnikom (3-way handshake: SYN → SYN/ACK → ACK).
+    Zanesljivost (reliability):
+      TCP uporablja ACK (potrditev prejema) in retransmission → izgubljeni paketi se ponovno pošljejo.
+    Urejena dostava:
+      Paketi pridejo v istem vrstnem redu, kot so bili poslani.
+    Več overheada:
+      Zaradi handshaka, potrditev in številk paketov je TCP počasnejši od UDP.
