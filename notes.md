@@ -33,3 +33,7 @@ i would love to add a drawing review like code review in git, where you could le
   easier
 >
 > Also the comments are too big. this should be scalled smart somehow, to be the same as drawing area
+
+
+
+claude --resume cad570a2-4478-4790-a423-93f3be698243  - - - - - agents plugin
