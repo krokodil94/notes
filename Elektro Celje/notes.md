@@ -382,5 +382,5 @@ TTL se pri vsakem hopu zmanjša za 1; če TTL doseže 0 → paket je zavrnjen.
 Odgovor cilja
 Ciljna naprava prejme Echo Request → pošlje ICMP Echo Reply nazaj na izvorni naslov.
 Merjenje RTT (Round-Trip Time)
-
+Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenca.
 
