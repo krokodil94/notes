@@ -390,3 +390,6 @@ Tvoj računalnik izmeri čas od pošiljanja do prejema odgovora → to je latenc
     Ping na IP deluje, ker paket pride do cilja.
     Brskalnik ne najde spletne strani, ker ime domene ni prevedeno v IP.
     Rešitev: preveri z nslookup ali dig.
+  Firewall ali blokada vrat
+    Ping uporablja ICMP → deluje.
+  
