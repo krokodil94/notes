@@ -371,4 +371,12 @@ Kaj se dejansko zgodi v ozadju:
 
 ### Preverjanje MAC naslova (ARP)
 
+Računalnik najprej pogleda, ali ima MAC naslov cilja v ARP cache.
+Če ga nima → pošlje ARP request in prejme ARP reply, da ve, kam poslati paket na lokalnem omrežju.
+Pošiljanje ICMP paketa
+Pošlje se ICMP Echo Request (ping).
+
+
+
+
 
