@@ -37,3 +37,6 @@ i would love to add a drawing review like code review in git, where you could le
 
 
 claude --resume cad570a2-4478-4790-a423-93f3be698243  - - - - - agents plugin
+
+
+  API Key:     3f98a46b2235026498cb7c8822f4bd55e61bfff97cd1eb836c4cabe28226cd66 api key 
