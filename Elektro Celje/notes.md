@@ -461,3 +461,24 @@ Kaj je subnet maska in zakaj jo potrebujemo
   192.168.2.10 → network = 192.168.2.0
   Zaključek: nista v istem subnetu
 
+
+Kaj je VLAN (Virtual Local Area Network)
+  Logična segmentacija omrežja:
+    VLAN omogoča, da en fizični switch razdeliš na več logičnih omrežij.
+    Naprave v istem VLAN-u se obnašajo, kot da so v istem fizičnem omrežju, tudi če so na različnih switch portih.
+    Izolacija prometa:
+      Promet znotraj VLAN-a ostaja znotraj VLAN-a → drug VLAN ga ne vidi brez routing-a.
+    To preprečuje, da bi broadcasti ali nepotreben promet motili druga omrežja.
+    Več varnosti:
+      Ločitev omrežij (npr. SCADA vs pisarniško omrežje) omeji dostop do kritičnih sistemov.
+      Napadalci v enem VLAN-u ne morejo neposredno dostopati do drugega VLAN-a brez router/firewall-a.
+    Zmanjšanje broadcast domen:
+      VLAN zmanjšuje število naprav, ki prejemajo broadcast promet → bolj učinkovito omrežje.
+    Praktičen primer
+      SCADA omrežje: VLAN 10 → kritični industrijski sistemi
+    Pisarniško omrežje: VLAN 20 → računalniki zaposlenih
+    Rezultat:
+    SCADA in pisarniško omrežje ne delita broadcast prometa
+    Promet med njima je mogoč le preko routerja ali Layer 3 switcha, kar poveča varnost
+
+VLAN = logična segmentacija omrežja, ki izolira promet, povečuje varnost in zmanjšuje broadcast domene.
