@@ -538,14 +538,12 @@ Default gateway: kam poslati pakete zunaj lokalnega subnet-a
 SCADA: routing nadzira dostop in izolacijo industrijskih omrežij
 
 
+### Razlika med hub / switch / router
 
+  Hub	Pošlje vse pakete vsem	Staro, manj varno, broadcast vse
+  Switch	Uporablja MAC tabelo, pošlje paket samo pravemu portu	Standard v LAN omrežjih
+  Router	Uporablja IP routing, povezuje različna omrežja	Povezovanje LAN → WAN, VLAN routing
 
-12️⃣ Razlika med hub / switch / router
-Naprava	Kako deluje	Primer uporabe
-Hub	Pošlje vse pakete vsem	Staro, manj varno, broadcast vse
-Switch	Uporablja MAC tabelo, pošlje paket samo pravemu portu	Standard v LAN omrežjih
-Router	Uporablja IP routing, povezuje različna omrežja	Povezovanje LAN → WAN, VLAN routing
-🎯 Bonus vprašanja – hiter pregled
 DNS (Domain Name System) → Prevede ime naprave (npr. plc1.local) v IP naslov.
 DHCP (Dynamic Host Configuration Protocol) → Samodejno dodeljuje IP naslove.
 SNMP (Simple Network Management Protocol) → Monitoriranje in upravljanje omrežnih naprav.
