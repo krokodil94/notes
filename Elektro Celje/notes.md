@@ -512,20 +512,22 @@ NAT = prevajanje privatnih IP v javni, kar omogoča varnost, internet povezljivo
 ### Switch vs Router
   Switch	L2 (Data Link)	Pošilja paket samo na pravi MAC naslov znotraj istega omrežja
   Router	L3 (Network)	Pošilja pakete med različnimi IP omrežji (subneti)
-Switch → deluje lokalno
-Router → omogoča komunikacijo med subneti ali internetom
-Routing tabela
-Routing tabela je “navodilo” routerja, kam poslati paket glede na ciljni IP naslov.
-Vsebina tipične tabele:
-Network → ciljni subnet
-Next hop → naslednji router ali vrata
-Interface → kateri port / vmesnik se uporablja
-Router vedno pogleda tabelo in izbere najbolj specifično pot (longest prefix match).
-Default gateway
+  Switch → deluje lokalno
+  Router → omogoča komunikacijo med subneti ali internetom
+  
+### Routing tabela
+  Routing tabela je “navodilo” routerja, kam poslati paket glede na ciljni IP naslov.
+  Vsebina tipične tabele:
+    Network → ciljni subnet
+    Next hop → naslednji router ali vrata
+    Interface → kateri port / vmesnik se uporablja
+    Router vedno pogleda tabelo in izbere najbolj specifično pot (longest prefix match).
+    
+### Default gateway
 Default gateway je IP naslov routerja, ki ga host uporablja, kadar ciljna naprava ni v istem subnetu.
 Primer:
-Host: 192.168.1.10/24
-Default gateway: 192.168.1.1
+  Host: 192.168.1.10/24
+  Default gateway: 192.168.1.1
 Paket na 8.8.8.8 → pošlje se na gateway → router naprej po internetu
 Industrijski / SCADA protokoli in routing
 SCADA omrežja pogosto uporabljajo static routes, da nadzorujejo promet med PLC-ji, HMI-ji in kontrolnimi sistemi.
