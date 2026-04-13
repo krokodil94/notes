@@ -47,3 +47,11 @@ claude --resume cad570a2-4478-4790-a423-93f3be698243  - - - - - agents plugin
   skipfish
   hping3
   https://www.youtube.com/watch?v=Ukt2gVz25PQ
+
+
+
+
+
+  claude --resume 7743812c-8dfb-4855-be27-782fa1968249       agents plugin 
+
+  V OBSIDIAN WEB BI LAHKO DODAL, DA LAHKO BRIŠEŠ CELOTNE STRANI IZ PDFJA.
