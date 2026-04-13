@@ -43,3 +43,7 @@ claude --resume cad570a2-4478-4790-a423-93f3be698243  - - - - - agents plugin
 
 
   metasploit
+
+  skipfish
+
+  https://www.youtube.com/watch?v=Ukt2gVz25PQ
