@@ -54,4 +54,4 @@ claude --resume cad570a2-4478-4790-a423-93f3be698243  - - - - - agents plugin
 
   claude --resume 7743812c-8dfb-4855-be27-782fa1968249       agents plugin 
 
-  V OBSIDIAN WEB BI LAHKO DODAL, DA LAHKO BRIŠEŠ CELOTNE STRANI IZ PDFJA.
+Ko scrollam po pdfju, se strani ne updejtajo avtomatsko. Poleg tega se še vedno ne vtisne marker na stran/v stran, torej npr ko izbrišem eno stran, se potem tisto kar je bilo na tej strani pozna na naslednji ki zamenja to stran. Poleg tega pa še zginja marker
