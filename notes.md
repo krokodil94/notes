@@ -57,6 +57,4 @@ claude --resume cad570a2-4478-4790-a423-93f3be698243  - - - - - agents plugin
 Ko scrollam po pdfju, se strani ne updejtajo avtomatsko. Poleg tega se še vedno ne vtisne marker na stran/v stran, torej npr ko izbrišem eno stran, se potem tisto kar je bilo na tej strani pozna na naslednji ki zamenja to stran. Poleg tega pa še zginja marker
 
 
-
-
-"sina" - > če oni nastavjo dcs 10.45, potem se iz tega nemore izračunat period and duration - ni deljivo z 24 
+cisco packettracer : klemenstanic@gmail.com Kle3men123!
