@@ -58,3 +58,27 @@ Ko scrollam po pdfju, se strani ne updejtajo avtomatsko. Poleg tega se še vedno
 
 
 cisco packettracer : klemenstanic@gmail.com Kle3men123!
+
+
+
+
+
+
+● Done. wlan0 in monitor mode, ready for packet capture.
+
+  Summary of what's set up:
+  - Custom WSL2 kernel built with rtl8xxxu driver
+  - .wslconfig points to new kernel permanently
+  - wlan0 = your N150 adapter, monitor mode confirmed
+
+  Quick start for captures:
+  # In Kali WSL (as root):
+  modprobe rtl8xxxu          # load driver (after reboot)
+  iw dev wlan0 set type monitor
+  ip link set wlan0 up
+  airodump-ng wlan0          # scan
+  wireshark -i wlan0         # or GUI capture
+
+  Note: after each Windows reboot, re-run usbipd attach --wsl --busid 5-4 from Windows to re-attach the USB adapter.
+
+✻ Brewed for 1m 11s · 2 shells still running
