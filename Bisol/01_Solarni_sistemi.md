@@ -59,8 +59,16 @@ Pri fotonapetostnih sistemih je temperatura paradoksalen faktor: Čeprav potrebu
 Nevarnost pozimi (Mraz = Visoka napetost) - To je kritična točka za vsakega projektanta. Inverterji imajo strogo določeno maksimalno vhodno napetost. Če sistem načrtuješ poleti pri 30 stopinjah, bo napetost nizka. Ko pride jasen zimski dan, in temperature padejo pa napetost panelov naraste, ker je koeficient negativen. 
 Posledica: Če nisi pustil dovolj rezerve, lahko napetostni sunek ob mrzlem jutru trajno skuri inverter.
 Pravilo: Pri izračunu števila panelov v nizu se vedno uporabi najnižja zgodovinska temperatura na tisti lokaciji.
+
 - Nižja temperatura → višja napetost → pozor pri dimenzioniranju inverterja!
-- NOCT – Nominal Operating Cell Temperature (tipično 45°C)
+
+V tehničnih listih opaziš dve meritvi: STC in NOCT. 
+STC - Standard Test Conditions - Laboratorijski pogoji (25 stopinj, 1000 W/m2). Ti pogoji so v praksi skoraj nemogoči, saj se črn panel na soncu takoj segreje čez 25 stopinj.
+- NOCT – Nominal Operating Cell Temperature (tipično 45°C) - Pove nam, na kakšno temperaturo se bo celica segrela v realnih pogojih.
+  - Temperatura zraka: 20 stopinj
+  - Sonce: 800 W/m2
+  - Veter: 1m/s (ki hladi panele)
+- Tipična vrednost : 45 stopin. To pomeni, da ko je zunaj prijetnih 20 stopinj, so celice v resnici že na 45 stopinj. To je tista "delovna temperatura", ki jo uporabiš za realen izračun donosa energije.
 
 ## 5. Komponente sistema
 
