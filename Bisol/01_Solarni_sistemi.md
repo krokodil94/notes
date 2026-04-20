@@ -208,6 +208,11 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
 
 "Ali optimizirati na nivoju modula ali nivoju niza?
 
+1. String Inverter (Nizni razsmernik)
+2. Central inverter (Centralni razsmernik)
+3. Micro Inverter (mikro razsmernik)
+4. Power Optimizer (Močnostni optimizatorji)
+
 ### MPPT – Maximum Power Point Tracking
 - Algoritem (P&O, InCond) neprestano išče točko max. moči
 - Perturb & Observe: mala sprememba V → izmeri P → ponovi
