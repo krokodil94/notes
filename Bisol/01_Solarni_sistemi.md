@@ -100,7 +100,7 @@ Moduli → Hibridni inverter ←→ Baterija
 | Umazanija          |    1–5%        |
 | Kabelske izgube    |    1–3%        |
 | Inverter izkoristek|    2–5%        |
-| Mismatch modulov | 1–2% |
+| Mismatch modulov   |    1–2%        |
 
 **PR (Performance Ratio)** = dejanska produkcija / teoretična produkcija; dober sistem > 80%
 
