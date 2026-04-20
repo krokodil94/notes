@@ -1,4 +1,5 @@
 
+
 ### MPPT – Maximum Power Point Tracking
 - Algoritem (P&O, InCond) neprestano išče točko max. moči
 - Perturb & Observe: mala sprememba V → izmeri P → ponovi
