@@ -20,3 +20,7 @@ Ko foton(delec svetlobe) zadane sončno celico, svojo energijo preda elektronu v
 - Če je energija fotona dovolj visoka (večja od t.i energijske reže), elektron "odskoči" iz svoje vezi.
 - Nastane par elektron-luknja.
 - Zaradi prej omenjenega električnega polja v p-n spoju so ti prosti elektroni prisiljeni potovati proti N-pasti, luknje pa proti P-plasti.
+
+Ti ločeni elektroni si obupno želijo nazaj k svojim luknjam, vendar jim notranje polje poti ne dopušta. Edina pot nazaj je skozi zunanji elektročni krog (tvoje porabnike ali baterijo).
+- Ta neprekinjen tok elektronov v eno smer imenujemo enosmerni tok (DC)
+  
