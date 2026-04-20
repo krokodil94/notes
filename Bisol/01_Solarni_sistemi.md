@@ -50,7 +50,9 @@ PV niz je več modulov povezanih na strehi in proizvede 300-800V.
 
 ## 4. Temperaturni koeficienti
 Pri fotonapetostnih sistemih je temperatura paradoksalen faktor: Čeprav potrebujemo sonce(toploto), je vročina dejansko sovražnik učinkovitosti. 
-  - Vzbu
+  - Vzbujanje elektronov: Ko se silicij segreje, elektroni že zaradi toplote postanejo "nemirni": To zmanjša razloki v energijskih nivojih med p-n spojme.
+  - Notranje upornosti: Povišana temperatura poveča vibracije atomov v kristalni mreži silicija, kar otežuje potovanje elektronov (poveča se upornost)
+  - Rezultat: Najbolj trpi napetost odprtih sponk (Voc). Medtem ko se električni tok(Isc) ob vročini malenkostno celo poveča, je pa padec napetosti tako silovit, da skuphna izhodna moč pade. (P = UI)
 
 - Višja temperatura → nižja napetost (≈ −0.3%/°C za Voc)
 - Nižja temperatura → višja napetost → pozor pri dimenzioniranju inverterja!
