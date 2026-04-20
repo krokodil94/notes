@@ -4,12 +4,7 @@
 
 ## 5. Komponente sistema
 
-### Grid-tied (omrežni)
-```
-Moduli → String kabel → DC Combiner Box → Inverter → AC panel → Omrežje
-                                              ↑
-                                         MPPT regulator (v inverterju)
-```
+
 
 ### Off-grid
 ```
