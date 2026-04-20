@@ -1,11 +1,4 @@
 
-
-## 6. Inverterji
-- **String inverter** – 1 MPPT na string; en shadow → vse prizadeto
-- **Central inverter** – za velike elektrarne (>100 kW); centraliziran
-- **Micro inverter** – 1/modul; dražji, boljši pri senci
-- **Power optimizer** – modul-level DC/DC; centralni inverter ostane
-
 ### MPPT – Maximum Power Point Tracking
 - Algoritem (P&O, InCond) neprestano išče točko max. moči
 - Perturb & Observe: mala sprememba V → izmeri P → ponovi
