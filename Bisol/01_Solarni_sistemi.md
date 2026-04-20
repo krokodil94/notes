@@ -70,6 +70,11 @@ STC - Standard Test Conditions - Laboratorijski pogoji (25 stopinj, 1000 W/m2). 
   - Veter: 1m/s (ki hladi panele)
 - Tipična vrednost : 45 stopin. To pomeni, da ko je zunaj prijetnih 20 stopinj, so celice v resnici že na 45 stopinj. To je tista "delovna temperatura", ki jo uporabiš za realen izračun donosa energije.
 
+Ker je temperatura tako pomembna, se v praksi uporablja nekaj trikov:
+1. Zračna reža: Paneli na strehi ne smejo biti nalepljeni direktno na kritino. Potrebujejo vsaj 10-15cm razmika, da pod njimi kroži zrak.
+2. Plavajoče elektrarne: Postavljanje panelov na vodo, kjer izhlapevanje vode naravno hladi module.
+3. Barva okvirja: Črni okvirji so estetski, a se segrejejo za kakšno stopinjo več kot srebrni
+
 ## 5. Komponente sistema
 
 ### Grid-tied (omrežni)
