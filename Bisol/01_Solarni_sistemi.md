@@ -206,7 +206,7 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
 - **Micro inverter** – 1/modul; dražji, boljši pri senci
 - **Power optimizer** – modul-level DC/DC; centralni inverter ostane
 
-
+"Ali optimizirati na nivoju modula ali nivoju niza?
 
 ### MPPT – Maximum Power Point Tracking
 - Algoritem (P&O, InCond) neprestano išče točko max. moči
