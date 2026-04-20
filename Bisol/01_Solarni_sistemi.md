@@ -135,6 +135,8 @@ Pri off-grid sistemih se pravila igre spremenijo. Tukaj nimaš varnostne mreže 
 1. Moduli (Sončni sistemi)
 
 Vloga je ista kot pri omrežnem sistemu, vendar je pri off-grid sistemih ključno pre-dimenzioniranje. Ker ne moreš uvažati energije iz omrežja, morajo paneli tudi ob slabem vremenu proizvesti dovolj, da pokrijejo porabo in hkrati napolnijo baterije.
+
+2. Charge C
 ### Hibridni
 ```
 Moduli → Hibridni inverter ←→ Baterija
