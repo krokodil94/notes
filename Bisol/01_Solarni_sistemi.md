@@ -209,9 +209,39 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
 "Ali optimizirati na nivoju modula ali nivoju niza?
 
 1. String Inverter (Nizni razsmernik)
+To je klasična in najbolj razširjena tehnologija. Več panelov povežemo zaporedno v eno dolgo "verigo" (niz), ki se konča v inverterju na steni.
+Problem sence: Ker so paneli vezani zaporedno, delujejo kot stare novoletne lučke. Če en panel prekrije senca dimnika, se upor v njem poveča, kar upočasni pretok elektronov skozi celoten niz.
+Prednosti: Najcenejša rešitev, visoka zanesljivost (manj elektronike na vroči strehi), enostavno vzdrževanje.
+Idealno za: Strehe brez senc, kjer so vsi paneli obrnjeni v isto smer.
+
 2. Central inverter (Centralni razsmernik)
+
+To so "veliki bratje" string inverterjev. Niso namenjeni hišam, ampak ogromnim poljem panelov.
+Zasnova: Namesto da bi imeli 50 malih inverterjev, imamo eno ogromno omaro (velikosti kontejnerja), kamor se stekajo vsi nizi.
+Moč: Običajno od 100kW pa vse do več MW.
+Prednosti: Nižji stroški na vat moči pri velikih projektih, lažje upravljanje za elektroenergetski sistem.
+
 3. Micro Inverter (mikro razsmernik)
+Tukaj vsak panel dobi svoj mali inverter, nameščen neposredno pod njim. Iz strehe ne pride DC tok, ampak že pripravljen AC (230V).
+
+Individualni MPPT: Vsak panel dela neodvisno. Če na enega pade senca, ostalih 19 dela s 100% močjo.
+Prednosti: Najboljši izkoristek pri kompleksnih strehah (več smeri, dosti dimnikov/kukerlov), večja varnost (ni visoke DC napetosti na strehi).
+Slabost: Visoka cena in dejstvo, da imaš občutljivo elektroniko izpostavljeno vročini neposredno pod paneli.
+
 4. Power Optimizer (Močnostni optimizatorji)
+To je hibridna rešitev (npr. SolarEdge). Pod vsak panel damo DC/DC pretvornik (optimizator), na steni pa še vedno ostane en osrednji inverter.
+Kako deluje: Optimizator prilagodi napetost in tok posameznega panela tako, da ta ne ovira niza, tudi če je v senci.
+MLPE (Module-Level Power Electronics): Omogoča spremljanje delovanja vsakega posameznega panela preko aplikacije.
+Prednosti: Cenejši od mikro-inverterjev, a rešujejo problem sence skoraj enako dobro.
+
+Hitra primerjava za odločitev:
+
+Tehnologija,Cena,Izkoristek v senci,Lokacija elektronike
+String,Nizka,Slab,V hiši/Garaži
+Micro,Visoka,Odličen,Na strehi (pod paneli)
+Optimizer,Srednja,Odličen,Oboje (streha + stena)
+
+Zanimivost: Večina sodobnih string inverterjev ima danes že 2 ali 3 MPPT vhode. To pomeni, da lahko npr. 10 panelov na južni strani povežeš na en vhod, 10 na vzhodni pa na drugega, in bosta delovala neodvisno brez uporabe dragih optimizatorjev.
 
 ### MPPT – Maximum Power Point Tracking
 - Algoritem (P&O, InCond) neprestano išče točko max. moči
