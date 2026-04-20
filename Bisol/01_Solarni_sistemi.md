@@ -139,7 +139,31 @@ Vloga je ista kot pri omrežnem sistemu, vendar je pri off-grid sistemih ključn
 2. Charge Controller (Polnilni regulator) je ključna komponenta, ki je pri grid-tied sistemu sploh ne poznamo. Njegova naloga je, da energijo iz panelov varno in učinkovito "stisne" v baterijo.
 Poznamo dva tipa:
 - PWM (Pulse Width Modulation): Starejša, cenejša tehnologija. Deluje kot stiskalo, ki se hitro vklaplja in izklaplja. Je manj učinkovito, saj napetost panelov "povozi" na napetost baterije (izgubljaš energijo).
-- MPPT (Maximum Power Point Tracking): 
+- MPPT (Maximum Power Point Tracking):  Sodobna in pametna izbira. Elektronsko pretvori višjo napetost panelov v nižjo napetost za polnjenje baterije, pri tem pa poveča tok. Je do 30% bolj učinkovita kot PWNM še posebej v hladnem vremenu.
+  
+3. Baterija je srce in hkrati najdražji del off-grid sistema. Baterija shranjuje energijo za čas, ko ni sonca.
+  - Svinčeno-kislinske /AGM / Gel: Cenejše ob nakupu, a krajša življenska doba in občutljivost na globoko praznenje. ( Ne smeš izprazniti pod 50% )
+  - LiFePO4 (Litij - Železo - fosfat) - Danes standard - lahko izprazniš do 90%, zdržijo 10x več ciklov in so varnejše.
+
+4. Inverter (Otočni razsmernik)
+
+V off-grid sistemu ima inverter drugačno vlogo kot v omrežnem:
+  - Ustvarjanje lastne mreže: Sam določa frekvenco (50 Hz) in napetost (230 V), saj nima omrežja, po katerem bi se zgledoval.
+  - Visoki zagonski tokovi: Ker napaja naprave direktno, mora biti sposoben prenesti kratkotrajne sunke (npr. ko se vklopi hladilnik ali vodna črpalka), ki so lahko 2-3x večji od njegove nazivne moči.
+  - Vgrajen polnilnik (opcijsko): Veliko off-grid inverterjev ima tudi vhod za generator(agregat), da lahko napolniš baterije, če je sonca premalo več dni zapored.
+
+5. Porabniki
+
+- DC porabniki: Nekatere naprave lahko priklopimo direktno na regulator ali baterijo. S tem se izgonemo izgubam, ki nastanejo pri pretvorbi v 230V.
+- AC porabniki: Standardne naprave na 230V.
+
+Lastnost,Grid-tied (Omrežni),Off-grid (Otočni)
+Baterija,Opcijska (za večjo avtonomijo),Nujna
+Izpad omrežja,Elektrarna neha delovati,Deluje nemoteno
+Načrtovanje,Glede na letno porabo,Glede na največjo dnevno porabo
+Viški,Oddajaš v omrežje,Ostanejo neizkoriščeni (ko je baterija polna)
+
+Pomemben nasvet: Pri off-grid sistemih je kritičen podatek "Days of Autonomy" (dnevi avtonomije). Pove nam, koliko dni lahko hiša živi samo iz baterij, če je zunaj popolna tema (npr. sneg na panelih). Običajno se projektira za 2–3 dni.
 ### Hibridni
 ```
 Moduli → Hibridni inverter ←→ Baterija
