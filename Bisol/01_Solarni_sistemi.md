@@ -170,6 +170,36 @@ Moduli → Hibridni inverter ←→ Baterija
               ↕
            Omrežje / Porabniki
 ```
+
+Hibridni sistem je "najbolše iz obeh svetov". Združuje zanesljivost omrežne povezave s neodvisnostjo otočnega sistema. Danes je to "zlati standard" za stanovanjske hiše, saj omogoča maksimalno samooskrbo.
+
+1. Hibridni inverter (Vse v enem) - To ni le navaden razsmernik, ampak kompleksna naprava, ki upravlja s tremi viri energije hkrati: Soncem, baterijo in omrežjem. V njem se najahajo:
+
+  - MPPT regulator za panele
+  - Baterijski polnilnik (dvosmerni: polni baterijo iz sonca/omrežja in prazni baterijo za hišo).
+  - EMS (Energy management system): Možgani, ki se vsako sekundo odločajo, kam bo šla energija.
+
+2. Baterija (visokonapetostna shramba) - Pri hibridnih sistemih se pogosto uporablja visokonapetostne baterije (150-450V) kar poveča ikoristek pretvorbe, saj je napetost bližje tisti v omrežju.
+  - Vloga: shranjuje viške čez dan za porabo zvečer in ponoči.
+  - Rezerva: Hibridni sistemi omogočajo nastavitev "rezervne kapacitete", ki se je nikoli ne dotakneš, razen če zmanjka elektrike v omrežju.
+
+3. Načini delovanja (Logika sistema): Hibridni sistem deluje v treh glavnih načinih:
+
+   - Samooskrba - sonce napaja hišo - viški polnijo baterijo - ko je baterija polna gredo viški v omrežje.
+   - Backup mode(EPS/UPS): Ob izpadu omrežja se inverter v milisekundah fizično loči od zunanjega omrežja( da ne pošilja toka ven) in ustvari lastno "otočno" mrežo za nujne porabnike v hiši
+3. Time of use (Tarifno delovanje) - Če imaš poceni in drago tarifo, lahko inverterju ukažeš, naj polni baterijo iz omrežja ponoči, ko je poceni in jo prazno podnevi, ko je draga.
+
+Zakaj izbrati hibridni sistem? 
+
+Prednost,Opis
+Varnost,"Hiša ima elektriko tudi, ko sosedje ostanejo v temi (Blackout zaščita)."
+Donosnost,Maksimiziraš porabo lastne energije (ki je brezplačna) in minimaliziraš nakup iz omrežja.
+Fleksibilnost,"Baterije lahko dodaš naknadno, ko se potrebe povečajo."
+
+Ključna razlika v shemi (Smart Meter)
+V hibridni shemi je nujen še en element, ki ga nisi narisal: Pametni števec (Smart Meter), ki je nameščen tik ob glavnih varovalkah hiše.
+Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" elektriko. Brez tega podatka ne bi vedel, kdaj mora začeti prazniti baterijo, da ustavi uvoz iz omrežja.
+
 ## 6. Inverterji
 - **String inverter** – 1 MPPT na string; en shadow → vse prizadeto
 - **Central inverter** – za velike elektrarne (>100 kW); centraliziran
