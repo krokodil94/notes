@@ -1,25 +1,4 @@
 
-
-## 8. Izgube sistema
-| Vzrok | Tipična izguba |
-|-------|---------------|
-| Temperatura modula | 5–10% |
-| Senčenje | variabilno |
-| Umazanija | 1–5% |
-| Kabelske izgube | 1–3% |
-| Inverter izkoristek | 2–5% |
-| Mismatch modulov | 1–2% |
-
-**PR (Performance Ratio)** = dejanska produkcija / teoretična produkcija; dober sistem > 80%
-
-## 9. Varnostni sistemi
-- **DC disconnect** – ločitev od modulov
-- **AC disconnect** – ločitev od omrežja
-- **Anti-islanding** – inverter zaustavi ob izpadu omrežja (VDE-AR-N 4105, EN 50549)
-- **Surge Protection Device (SPD)** – strela/prenapetost
-- **AFCI** – Arc Fault Circuit Interrupter (požarna varnost DC)
-- **Fuse/breaker** per string
-
 ## 10. Standardi in certifikati
 - **IEC 61215** – kristalni Si moduli (mehansko, električno testiranje)
 - **IEC 61730** – varnost modulov
