@@ -49,6 +49,8 @@ PV niz je več modulov povezanih na strehi in proizvede 300-800V.
 - **STC** – Standard Test Conditions: 1000 W/m², 25°C, AM 1.5
 
 ## 4. Temperaturni koeficienti
+Pri fotonapetostnih sistemih je temperatura paradoksalen faktor: Čeprav potrebujemo sonce(toploto), je vročina dejansko sovražnik učinkovitosti. 
+
 - Višja temperatura → nižja napetost (≈ −0.3%/°C za Voc)
 - Nižja temperatura → višja napetost → pozor pri dimenzioniranju inverterja!
 - NOCT – Nominal Operating Cell Temperature (tipično 45°C)
