@@ -98,6 +98,10 @@ Vloga: Proizvodnja surove električne energije. Več panelov se veže zaporedno 
 
 3. DC Combiner box (Združevalna omarica)
 
+- Če imaš na strehni več nizov (npr. en niz na vzhodni in eden na zahodni strani), se ti kabli srečajo tukaj.
+- Varnost: vsebuje varovalke za vsak niz posebej in prenapetostno zaščito (SPD), ki ščiti inverter pred udarom strele.
+- Stikalo: Običajno vsebuje glavno DC ločilno stikalo, ki omogoča, da varno odklopiš panele od ostalega sistema. (npr. med servisom)
+
 ### Off-grid
 ```
 Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
