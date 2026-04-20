@@ -130,7 +130,7 @@ V grid-tied sistemu omrežje deluje kot tvoj stabilizator.
 ```
 Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
 ```
-Pri off-grid sistemih se pravila igre spremenijo. Tukaj nimaš varnostne mreže javnega omrežja, zato mora biti sistem popolnoma samostojen in spos
+Pri off-grid sistemih se pravila igre spremenijo. Tukaj nimaš varnostne mreže javnega omrežja, zato mora biti sistem popolnoma samostojen in sposoben preživeti "energetsko sušo". (noč ali oblačne dni).
 ### Hibridni
 ```
 Moduli → Hibridni inverter ←→ Baterija
