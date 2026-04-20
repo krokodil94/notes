@@ -82,3 +82,6 @@ cisco packettracer : klemenstanic@gmail.com Kle3men123!
   Note: after each Windows reboot, re-run usbipd attach --wsl --busid 5-4 from Windows to re-attach the USB adapter.
 
 ✻ Brewed for 1m 11s · 2 shells still running
+
+
+claude --resume "telemach-ftth-interview-prep"
