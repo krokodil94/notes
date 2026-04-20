@@ -93,6 +93,10 @@ Vloga: Proizvodnja surove električne energije. Več panelov se veže zaporedno 
 2. String kabel (solarni kabel)
 
 - UV odporni: da izolacija po nekaj letih na soncu ne razpade
+- Temperaturno vdržljivi: Na strehi se lahko segrejejo tudi čez 80 stopinj.
+- Dvojno izolirani: Zaradi varnosti, saj prenašajo visoke napetosti (tudi do 1000 V).
+
+3. DC Combiner box (Združevalna omarica)
 
 ### Off-grid
 ```
