@@ -50,6 +50,7 @@ PV niz je več modulov povezanih na strehi in proizvede 300-800V.
 
 ## 4. Temperaturni koeficienti
 Pri fotonapetostnih sistemih je temperatura paradoksalen faktor: Čeprav potrebujemo sonce(toploto), je vročina dejansko sovražnik učinkovitosti. 
+  - Vzbu
 
 - Višja temperatura → nižja napetost (≈ −0.3%/°C za Voc)
 - Nižja temperatura → višja napetost → pozor pri dimenzioniranju inverterja!
