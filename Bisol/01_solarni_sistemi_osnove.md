@@ -1,15 +1,5 @@
 
 
-### MPPT – Maximum Power Point Tracking
-- Algoritem (P&O, InCond) neprestano išče točko max. moči
-- Perturb & Observe: mala sprememba V → izmeri P → ponovi
-- Vhodni razpon MPPT ≠ celoten Voc razpon – ključno pri načrtovanju!
-
-## 7. Stringing – dimenzioniranje
-- **Max string V** = Voc (STC) × koef. temp. (min. temp.) × N modulov < Vmax inverterja
-- **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT
-- **Število vzporednih stringov** = Imax inverterja / Isc stringa
-
 ## 8. Izgube sistema
 | Vzrok | Tipična izguba |
 |-------|---------------|
