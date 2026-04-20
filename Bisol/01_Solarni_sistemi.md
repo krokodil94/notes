@@ -136,7 +136,10 @@ Pri off-grid sistemih se pravila igre spremenijo. Tukaj nimaš varnostne mreže 
 
 Vloga je ista kot pri omrežnem sistemu, vendar je pri off-grid sistemih ključno pre-dimenzioniranje. Ker ne moreš uvažati energije iz omrežja, morajo paneli tudi ob slabem vremenu proizvesti dovolj, da pokrijejo porabo in hkrati napolnijo baterije.
 
-2. Charge C
+2. Charge Controller (Polnilni regulator) je ključna komponenta, ki je pri grid-tied sistemu sploh ne poznamo. Njegova naloga je, da energijo iz panelov varno in učinkovito "stisne" v baterijo.
+Poznamo dva tipa:
+- PWM (Pulse Width Modulation): Starejša, cenejša tehnologija. Deluje kot stiskalo, ki se hitro vklaplja in izklaplja. Je manj učinkovito, saj napetost panelov "povozi" na napetost baterije (izgubljaš energijo).
+- MPPT (Maximum Power Point Tracking): 
 ### Hibridni
 ```
 Moduli → Hibridni inverter ←→ Baterija
