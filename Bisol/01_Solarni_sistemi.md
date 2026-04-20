@@ -104,6 +104,7 @@ Vloga: Proizvodnja surove električne energije. Več panelov se veže zaporedno 
 
 4. MPPT Regulator (Maximum Power Point Tracking)
 To so "možgani" sistema, ki so danes skoraj vedno integrirani neposredno v inverterju.
+- Vloga: Sonce se čez dan spreminja
 ### Off-grid
 ```
 Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
