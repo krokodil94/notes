@@ -102,6 +102,8 @@ Vloga: Proizvodnja surove električne energije. Več panelov se veže zaporedno 
 - Varnost: vsebuje varovalke za vsak niz posebej in prenapetostno zaščito (SPD), ki ščiti inverter pred udarom strele.
 - Stikalo: Običajno vsebuje glavno DC ločilno stikalo, ki omogoča, da varno odklopiš panele od ostalega sistema. (npr. med servisom)
 
+4. MPPT Regulator (Maximum Power Point Tracking)
+To so "možgani" sistema, ki so danes skoraj vedno integrirani neposredno v inverterju.
 ### Off-grid
 ```
 Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
