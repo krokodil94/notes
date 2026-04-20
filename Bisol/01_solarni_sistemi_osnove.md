@@ -1,22 +1,4 @@
-# Solarni PV sistemi – Osnove
 
-
-
-## 5. Komponente sistema
-
-
-
-### Off-grid
-```
-Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
-```
-
-### Hibridni
-```
-Moduli → Hibridni inverter ←→ Baterija
-              ↕
-           Omrežje / Porabniki
-```
 
 ## 6. Inverterji
 - **String inverter** – 1 MPPT na string; en shadow → vse prizadeto
