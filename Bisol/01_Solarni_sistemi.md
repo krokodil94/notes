@@ -85,6 +85,10 @@ Moduli → String kabel → DC Combiner Box → Inverter → AC panel → Omrež
                                          MPPT regulator (v inverterju)
 ```
 
+1. Moduli (sončni paneli)
+
+
+
 ### Off-grid
 ```
 Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
