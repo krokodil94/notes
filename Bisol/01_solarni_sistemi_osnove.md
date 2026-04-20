@@ -1,9 +1,6 @@
 # Solarni PV sistemi – Osnove
 
-## 1. Fotonapetostni efekt
-- Sončna svetloba (fotoni) izbija elektrone iz polprevodnika (Si)
-- p-n spoj ustvari električno polje → enosmerni tok (DC)
-- 1 celica ≈ 0.5–0.6 V; moduli serija/vzporedno za višje napetosti/tokove
+
 
 ## 2. Tipi solarnih modulov
 | Tip | Izkoristek | Opomba |
