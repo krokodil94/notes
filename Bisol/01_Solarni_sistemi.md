@@ -249,16 +249,35 @@ Brez MPPT bi bili solarni sistemi le dragi in neučinkoviti grelniki silicija. K
 Sončna celica ima specifično I-V karakteristiko (razmerje med tokom in napetostjo). Če s panela črpaš preveč toka, napetost strmoglavo pade. Če je napetost previsoka, tok pade.
 Točka maksimalne moči (MPP) je tisto "koleno" na krivulji, kjer je zmnožek P=UI največji. Ta točka se nenehno premika glede na osvetljenost in temperaturo.
 
-- Algoritem (P&O, InCond) neprestano išče točko max. moči
+Algoritmi:
+- P&O(Perturb & Observe/ Poskusi & opazuj) je najpogostejši algoritem zaradi svoje preprostosti.
+1. Perturb (Sprememba): Regulator malenkost spremeni (zviša ali zniža) delovno napetost panela.
+2. Observe(Opazuj): Izmeri moč. Če je moč večja kot prej, nadaljuje v isti smeri. Če je moč padla, spremeni smer.
+Slabost: Okoli točke MPP vedno malce "oscilira", namesto da bi se popolnoma ustavil. Ob hitrih spremembah vremena se lahko za trenutek "izgubi".
 
+-Incremental Conductance(InCond): Bolj napreden algoritem, ki temelji na matematiki odvoda (dP/dV).
+Algoritem meri inkrementalno prevodnost in neposredno ve, ali je dosegel vrh krivulje.
+Prednosti: Ko doseže MPP, se tam ustali in ne niha. Hitreje se odziva na spremembe vremena, a zahteva več procesorske moči.
 
+MPPT vhodni razpon vs. Voc (ključ za načrtovanje)
+To je točka, kjer se najpogosteje delajo napake pri DIY projektih ali hitrem dimenzioniranju.
 
-  
-- Perturb & Observe: mala sprememba V → izmeri P → ponovi
+MPPT Voltage Range (Operativno območje)
+To je območje napetosti (npr. 150-800V), v katerem je inverter sposoben izvajati MPPT algoritem.
+- Če je napetost niza pod spodnjo mejo, se inverter sploh ne bo vklopil.
+- Če je napetost nad zgornjo mejo, bo inverter še vedno deloval, vendar ne bo mogel izvleči maksimalne moči(začel bo omejevati moč).
 
+Max DC Input Voltage (Vmax ali Voc meja)
+To je absolutna varnostna meja, ki je ne smeš preseči niti za milivolt.  Pozimi pri nizkih temperaturah napetost niza Voc naraste. Če niz panelov v teoriji daje 950V pri 25 stopinjih, bo pozimi pri mrazu zlahka presegel 1000V in uničil vhodno stopnjo inverterja.
 
+Težava: Več vrhov (Globalni vs. Lokalni MPP)
 
-- Vhodni razpon MPPT ≠ celoten Voc razpon – ključno pri načrtovanju!
+V primeru delnega zasenčenja se I-V krivulja popači in dobi več "grbin". 
+- Lokalni MPP: "Lažni" vrh, kjer se enostaven P&O algoritem lahko ustavi, misleč da je na vrhu.
+- Globalni MPP: Dejanska točka največje moči celotnega niza.
+- Sodobni inverterji imajo funkcijo "Global Scan" ali "Shade Fix", ki vsakih nekaj minut preveri celotno krivuljo, da se prepriča, ali ni kje drugje še višji vrh.
+
+Pri načrtovanju vedno poskrbi, da je napetost niza v vročem poletju (najnižja napetost) še vedno znotraj MPPT razpona, hkrati pa, da napetost v najhladnejši zimi ne preseže Max DC napetosti inverterja.
 
 ## 7. Stringing – dimenzioniranje
 - **Max string V** = Voc (STC) × koef. temp. (min. temp.) × N modulov < Vmax inverterja
