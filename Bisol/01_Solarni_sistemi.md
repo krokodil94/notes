@@ -244,8 +244,16 @@ Optimizer,Srednja,Odličen,Oboje (streha + stena)
 Zanimivost: Večina sodobnih string inverterjev ima danes že 2 ali 3 MPPT vhode. To pomeni, da lahko npr. 10 panelov na južni strani povežeš na en vhod, 10 na vzhodni pa na drugega, in bosta delovala neodvisno brez uporabe dragih optimizatorjev.
 
 ### MPPT – Maximum Power Point Tracking
+MPPT (m
 - Algoritem (P&O, InCond) neprestano išče točko max. moči
+
+
+
+  
 - Perturb & Observe: mala sprememba V → izmeri P → ponovi
+
+
+
 - Vhodni razpon MPPT ≠ celoten Voc razpon – ključno pri načrtovanju!
 
 ## 7. Stringing – dimenzioniranje
