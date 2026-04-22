@@ -281,15 +281,17 @@ Pri načrtovanju vedno poskrbi, da je napetost niza v vročem poletju (najnižja
 
 ## 7. Stringing – dimenzioniranje
 To so tri ključne enačbe, ki ločijo varno in učinkovito napravo od tiste, ki se bo bodisi pokvarila (previsoka napetost), ali pa se poleti sploh ne bo vklopila (prenizka napetost).
-- **Max string V** = Voc (STC) × koef. temp. (min. temp.) × N modulov < Vmax inverterja
-To je varnostna meja. Ta izračun preprečuje uničenje inverterja v mrzlih zimskih jutrih.
-- Temperaturni koeficient - Običajno je nehativen (npr -0.28%/stop. C). Pri izračunu ga upoštevamo tako, da se napetost z znižanjem temperature povečuje.
-- Tmin: Ne uporabi povprečne zimske temperature, ampak zgodovinski minimum na lokaciji (npr. -15 ali -20 stopinj v Sloveniji)
-- Pravilo: Ta vrednost mora biti vedno pod Max DC Input Voltage v tehničnem listu inverterja.
+  - **Max string V** = Voc (STC) × koef. temp. (min. temp.) × N modulov < Vmax inverterja
+  To je varnostna meja. Ta izračun preprečuje uničenje inverterja v mrzlih zimskih jutrih.
+  - Temperaturni koeficient - Običajno je nehativen (npr -0.28%/stop. C). Pri izračunu ga upoštevamo tako, da se napetost z znižanjem temperature povečuje.
+  - Tmin: Ne uporabi povprečne zimske temperature, ampak zgodovinski minimum na lokaciji (npr. -15 ali -20 stopinj v Sloveniji)
+  - Pravilo: Ta vrednost mora biti vedno pod Max DC Input Voltage v tehničnem listu inverterja.
 
 - **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT
 Ta izračun zagotavlja, da bo inverter deloval tudi v najhujši vročini, ko se paneli segrejejo na 60 stopinj ali več
-- Tmax
+  - Tmax: To je temperatura celice. V vročem poletjue celice dosežejo tudi okoli 70 stopinj.
+  - Vloga: Če ta napetost pade pod Vmin MPPT (spodnji prag delovnega območja), bo inverter izgubil točko maksimalne moči ali pa se bo celo izklopil, čeprav sonce močno sije.
+  - Nasvet: vedno ciljaj na sredino MPPT območja za optimalen izkoristek.
 - **Število vzporednih stringov** = Imax inverterja / Isc stringa
 
 ## 8. Izgube sistema
