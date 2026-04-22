@@ -304,6 +304,13 @@ Panel z Voc = 40V, in inverter z Vmax = 1000V.
 Teoretični max: 1000/40 = 25 panelov
 Zimski popravek: Zaradi mraza napetost zraste za cca 15-20%
 Varna meja: 25 * 0.85 = 21 panelov ->to je realna zgornja meja
+
+Povzetek: 
+Parameter,Kateri podatek gledaš?,Kdaj je kritično?,Cilj načrtovanja
+Max Napetost,Voc​ (Open Circuit),Pozimi (mraz),Ne skuri inverterja!
+Min Napetost,Vmp​ (Max Power),Poleti (vročina),Ostani v MPPT območju!
+Max Tok,Isc​ (Short Circuit),Ob polnem obsevanju,Ne pregrevaj vhodov!
+
 ## 8. Izgube sistema
 | Vzrok              | Tipična izguba |
 |--------------------|----------------|
