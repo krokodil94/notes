@@ -288,8 +288,8 @@ To je varnostna meja. Ta izračun preprečuje uničenje inverterja v mrzlih zims
 - Pravilo: Ta vrednost mora biti vedno pod Max DC Input Voltage v tehničnem listu inverterja.
 
 - **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT
-
-
+Ta izračun zagotavlja, da bo inverter deloval tudi v najhujši vročini, ko se paneli segrejejo na 60 stopinj ali več
+- Tmax
 - **Število vzporednih stringov** = Imax inverterja / Isc stringa
 
 ## 8. Izgube sistema
