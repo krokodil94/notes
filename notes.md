@@ -60,7 +60,7 @@ Ko scrollam po pdfju, se strani ne updejtajo avtomatsko. Poleg tega se še vedno
 cisco packettracer : klemenstanic@gmail.com Kle3men123!
 
 
-
+claude --resume f0e50e2c-67f2-4600-bc59-8e83a90c90ce
 
 
 
