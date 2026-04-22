@@ -42,6 +42,13 @@ NB
 
 ## 3. BMS – Battery Management System
 BMS so "možgani" baterijskega sistema. Brez njega je LFP baterija le skupek nevarnih kemikalij; z njim pa postane varna, pametna in dolgotrajna komponenta.
+
+Zakaj celice sploh divergirajo?
+  Nobena celica v tovarni ni izdelana 100% identično. Ena ima morda 1000mAh kapacitete, druga pa 995mAh. Pri serijski vezavi skozi vse teče isti tok. Brez balansiranja bi se zgodilo:
+  - Šibka celica se prva napolni do vrha (npr. 3,65V)
+  - BMS mora prekiniti polnjenje celotnega paketa, čeprav so ostale celice le pri 95%.
+  - Pri praznenju se ista šibka celica prva izprazni, BMS pa spet izklopi vse, čeprav je v drugih še energija.
+  - REZULTAT JE DA KAPACITETO BATERIJE VEDNO DOLOČA NJENA NAJŠIBKEJŠA CELICA.
 ### Funkcije BMS
 ```
 Merjenje:    Napetost vsake celice, tok, temperatura
