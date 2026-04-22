@@ -280,7 +280,10 @@ V primeru delnega zasenčenja se I-V krivulja popači in dobi več "grbin".
 Pri načrtovanju vedno poskrbi, da je napetost niza v vročem poletju (najnižja napetost) še vedno znotraj MPPT razpona, hkrati pa, da napetost v najhladnejši zimi ne preseže Max DC napetosti inverterja.
 
 ## 7. Stringing – dimenzioniranje
+To so tri ključne enačbe, ki ločijo varno in učinkovito napravo od tiste, ki se bo bodisi pokvarila (previsoka napetost), ali pa se poleti sploh ne bo vklopila (prenizka napetost).
 - **Max string V** = Voc (STC) × koef. temp. (min. temp.) × N modulov < Vmax inverterja
+
+  
 - **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT
 - **Število vzporednih stringov** = Imax inverterja / Isc stringa
 
