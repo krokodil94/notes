@@ -6,7 +6,7 @@
 | Kemija | Polno ime | Varnost | Energijska gostota | Tipična uporaba |
 |--------|-----------|---------|-------------------|----------------|
 | **LFP** | LiFePO₄ | ★★★★★ | srednja | Stacionarni BESS, dolga življ. doba |
-| **NMC**-Nikelj-mangan-kobalt | LiNiMnCoO₂ | ★★★ | visoka | EV, manjši BESS |
+| **NMC**-Nikelj-mangan-kobalt | LiNiMnCoO₂ | ★★★ | visoka | EV, manjši BESS | - ima višjo energijsko gostoto (več energije v manjšem/lažjem ohišju), to pri hišni bateriji, ki stoji v kleti/garaži ni ključno. Pomembnejši dejavniki so:
 | **NCA** | LiNiCoAlO₂ | ★★ | visoka | Tesla Powerwall |
 | **LTO** | Li₄Ti₅O₁₂ | ★★★★★ | nizka | Hitro polnjenje, dolga življ. |
 
