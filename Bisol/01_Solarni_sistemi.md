@@ -7,8 +7,6 @@
 - 1 celica ≈ 0.5–0.6 V; moduli serija/vzporedno za višje napetosti/tokove
 
 Čisti silicij je slab prevodnik. Da postane uporaben za fotonapetostni efekt, ga moramo namenoma "onesnažiti". (proces imenovan doping)
-
-
 - N-tip (negativni): Siliciju dodamo fosfor, ki ima en elektron več. To ustvari presežek prostih elektronov.
 - P-tip (pozitivni): Siliciju dodamo boron, ki ima en elektron manj. To ustvari "vtičnice" ali luknje, ki čakajo na elektrone
 
