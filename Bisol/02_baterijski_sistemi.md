@@ -28,12 +28,14 @@ NB
   - LFP tipično: 0.5C–1C kontinuirno
   - C rate določa, ali bo baterija zmožna napajati močne porabnike (npr. toplotno črpalko ali indukcijo). Če imaš 10kWh baterijo z 0.5C, lahko iz nje vlečeš maksimalno 5kW moči.
   - Če v tistem trenutku hiša potrebuje 7kW, bo razlika (2 kW) baterija morala vzeti iz omrežja, čeprav je "Polna"
+  - Preveriti je potrebno, če je izhodna moč razsmernika usklajena s C-rate-om baterijskega bloka
 - **DoD** – Depth of Discharge: koliko % kapacitete uporabimo
   - LFP: do 80–90% DoD
   - Svinčene: max 50% DoD
 - **SoC** – State of Charge (0–100%)
 - **SoH** – State of Health: staranje kapacitete (100% = novo)
 - **Round-trip efficiency**: LFP ≈ 95–98%; svinčene ≈ 80–85%
+  - To je skriti strošek. Pove nam, koliko energije "izgine" v obliki toplote med kemičnimi procesi polnjenja in praznjenja.
 - **Ciklično življenje**: LFP > 4000–6000 ciklov; svinčene ≈ 500–1200
 
 ## 3. BMS – Battery Management System
