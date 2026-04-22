@@ -26,6 +26,7 @@ NB
   - 1C = polna kapaciteta v 1 uri
   - 0.5C = v 2 urah, 2C = v 30 min
   - LFP tipično: 0.5C–1C kontinuirno
+  - C rate določa, ali bo baterija zmožna napajati močne porabnike (npr. toplotno črpalko ali indukcijo).
 - **DoD** – Depth of Discharge: koliko % kapacitete uporabimo
   - LFP: do 80–90% DoD
   - Svinčene: max 50% DoD
