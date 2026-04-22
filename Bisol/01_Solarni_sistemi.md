@@ -282,8 +282,8 @@ Pri načrtovanju vedno poskrbi, da je napetost niza v vročem poletju (najnižja
 ## 7. Stringing – dimenzioniranje
 To so tri ključne enačbe, ki ločijo varno in učinkovito napravo od tiste, ki se bo bodisi pokvarila (previsoka napetost), ali pa se poleti sploh ne bo vklopila (prenizka napetost).
 - **Max string V** = Voc (STC) × koef. temp. (min. temp.) × N modulov < Vmax inverterja
-
-  
+To je varnostna meja. Ta izračun preprečuje uničenje inverterja v mrzlih zimskih jutrih.
+- Temperaturni koeficient -
 - **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT
 - **Število vzporednih stringov** = Imax inverterja / Isc stringa
 
