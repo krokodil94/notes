@@ -8,7 +8,8 @@
 | **LFP** | LiFePO₄ | ★★★★★ | srednja | Stacionarni BESS, dolga življ. doba |
 | **NMC**-Nikelj-mangan-kobalt | LiNiMnCoO₂ | ★★★ | visoka | EV, manjši BESS | - ima višjo energijsko gostoto (več energije v manjšem/lažjem ohišju), to pri hišni bateriji, ki stoji v kleti/garaži ni ključno. Pomembnejši dejavniki so:
 - Varnost(Termični pobeg): LPF baterije imajo bistveno višjo temperaturo samovžiga kot NMC ali NCA. Tudi v primeru mehanske poškodbe je verjetnost požara minimalna.
-- Življenska doba (Cikli): LPF zdrži od 3.000 do 6.000 ciklov, medtem ko se NMC običajno začne degradirati po 1000-2000 ciklih. 
+- Življenska doba (Cikli): LPF zdrži od 3.000 do 6.000 ciklov, medtem ko se NMC običajno začne degradirati po 1000-2000 ciklih.
+- LPF ne vsebuje kobalta, katerega pridobivanje je etično in okoljsko sporno.
 | **NCA** | LiNiCoAlO₂ | ★★ | visoka | Tesla Powerwall |
 | **LTO** | Li₄Ti₅O₁₂ | ★★★★★ | nizka | Hitro polnjenje, dolga življ. |
 
