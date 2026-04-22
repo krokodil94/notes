@@ -11,7 +11,7 @@
 - P-tip (pozitivni): Siliciju dodamo boron, ki ima en elektron manj. To ustvari "vtičnice" ali luknje, ki čakajo na elektrone
 
 Ko ti dve plasti staknemo skupaj, se na stičišču zgodi:
-- Elektroni z N-strani skočijo v luknje na P-strani. To ustvari siromašno območje, kjer nastane močna notranje električno polje.
+- Elektroni z N-strani skočijo v luknje na P-strani. To ustvari siromašno območje, kjer nastane močno notranje električno polje.
 - To polje deluje kot "enosmerni ventil": dovoli pretok v eno smer, ne pa nazaj.
 
 Ko foton(delec svetlobe) zadane sončno celico, svojo energijo preda elektronu v siliciju.
