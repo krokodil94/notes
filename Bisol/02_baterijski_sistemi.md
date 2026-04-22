@@ -15,8 +15,7 @@ Slabša pri zelo nizkih temperaturah.
 LastnostLFP (LiFePO₄)NMC (LiNiMnCoO₂)Nevarnost vžigaZelo nizkaSrednja (potrebuje odličen BMS)Število ciklov6.000+~2.000Cena na kWhNižjaVišjaObmočje praznjenja (DoD)Do 100%Priporočljivo do 80-90%
 
 | **NCA** | LiNiCoAlO₂ | ★★ | visoka | Tesla Powerwall | - Tesla uporablja, ker potrebuje maksimalno energijo v omejenem prostoru, vendar setudi oni pri stacionarnih hranilnikih in osnovnih modelih vozil vse bolj selijo na LFP.
-| **LTO** | Li₄Ti₅O₁₂ | ★★★★★ | nizka | Hitro polnjenje, dolga življ. |
-
+| **LTO** | Li₄Ti₅O₁₂ | ★★★★★ | nizka | Hitro polnjenje, dolga življ. | - dokaj eksotična, je neverjetno varen in hiter, a zaradi visoke cene(do 3x dražji od LFP) v standardnih solarnih sistemih skoraj nikoli ne pride v poštev. - litij-titanat
 **BISOL verjetno uporablja LFP** – industrijski standard za stacionarne aplikacije.
 NB
 ### Svinčene (še prisotne v starejših sistemih)
