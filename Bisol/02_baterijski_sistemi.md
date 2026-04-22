@@ -35,7 +35,8 @@ NB
 - **SoC** – State of Charge (0–100%)
 - **SoH** – State of Health: staranje kapacitete (100% = novo)
 - **Round-trip efficiency**: LFP ≈ 95–98%; svinčene ≈ 80–85%
-  - To je skriti strošek. Pove nam, koliko energije "izgine" v obliki toplote med kemičnimi procesi polnjenja in praznjenja.
+  - To je skriti strošek. Pove nam, koliko energije "izgine" v obliki toplote med kemičnimi procesi polnjenja in praznjenja. LPF(95%): Na vsakih 100kWh, ki jih shraniš, jih dobiš nazaj 95.
+  - 
 - **Ciklično življenje**: LFP > 4000–6000 ciklov; svinčene ≈ 500–1200
 
 ## 3. BMS – Battery Management System
