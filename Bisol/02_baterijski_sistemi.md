@@ -55,12 +55,15 @@ Merjenje:    Napetost vsake celice, tok, temperatura
 Zaščita:     Overcharge, over-discharge, overcurrent, overtemp, short circuit
 Balansiranje: Pasivno (disipacija) / Aktivno (prenos energije)
 Komunikacija: CAN bus, RS485/Modbus, CANopen, BACnet
+  Closed-loop sistem: Razsmernik "ve", kaj pravi BMS. To drastično podaljša življensko dobo. 
+  Open-loop sistem: Razsmernik samo meri napetost baterije. To je manj natančno in lahko vodi do hitrejše degradacije.
 Poročanje:   SoC, SoH, alarmi, history
 ```
 
 ### Balansiranje celic
-- **Pasivno** – presežna energija se sipa kot toplota (poceni, izgube)
-- **Aktivno** – energija se prenaša med celicami (drago, učinkovito)
+Večina komercialnih hišnih baterij uporablja pasivno balansiranje, ker je cenovno ugodnejše in povsem zadostuje za LFP kemijo, ki je stabilna.
+- **Pasivno**(toplotna disipacija) – presežna energija se sipa kot toplota (poceni, izgube) - Ko celica doseže zgornjo mejo, BMS vklopi upor, ki "skuri" odvečni naboj v toploto, medtem ko se ostale celice še polnijo.
+- **Aktivno**(prenos naboja) – energija se prenaša med celicami (drago, učinkovito) - BMS uporabi pretvornik, ki vzame energijo iz najbolj polne celice in jo dobesedno "prelije" v tist z najnižjo napetostjo. To je tehnološki vrhunec, ki ga najdemo v sistemih, kjer so izkoristki kritični 
 - Brez balansiranja: celice divergirajo → zmanjšana kapaciteta → BMS zaustavi prezgodaj
 
 ## 4. Topologije BESS
