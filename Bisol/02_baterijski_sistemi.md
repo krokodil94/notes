@@ -18,9 +18,7 @@ LastnostLFP (LiFePO₄)NMC (LiNiMnCoO₂)Nevarnost vžigaZelo nizkaSrednja (potr
 | **LTO** | Li₄Ti₅O₁₂ | ★★★★★ | nizka | Hitro polnjenje, dolga življ. | - dokaj eksotična, je neverjetno varen in hiter, a zaradi visoke cene(do 3x dražji od LFP) v standardnih solarnih sistemih skoraj nikoli ne pride v poštev. - litij-titanat
 **BISOL verjetno uporablja LFP** – industrijski standard za stacionarne aplikacije.
 NB
-### Svinčene (še prisotne v starejših sistemih)
-- **AGM** – absorbent glass mat; vzdrževanje-prosto
-- **OPzV/OPzS** – gel/tabularne; dolga življenjska doba, drago
+
 
 ## 2. Ključni parametri baterije
 - **Kapaciteta**: kWh (energija) ali Ah @ nominalna napetost
