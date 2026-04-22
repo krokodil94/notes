@@ -25,7 +25,7 @@ Ti ločeni elektroni si obupno želijo nazaj k svojim luknjam, vendar jim notran
 Ena celica proizvede približno 0.5-0.6V. To je fizikalna omejitev silicija. Za polnjenje 12V akumulatorja bi potreboval vsaj 36 celic vezanih zaporedno.
 Tok je odvisen predvsem od velikosti celice in intenzivnosti svetlobe. Za večji tok celice vežemi vzporedno.
   
-Sončna celica je osnovni gradnik in proizvede 0.5V. Fotovoltaični modul.
+Sončna celica je osnovni gradnik in proizvede 0.5V. 
 Fotovoltaični modul je skupina 60-72 celic v enem okvirju in proizvede 30-45V.
 PV niz je več modulov povezanih na strehi in proizvede 300-800V.
 
