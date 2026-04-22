@@ -6,12 +6,12 @@
 | Kemija | Polno ime | Varnost | Energijska gostota | Tipična uporaba |
 |--------|-----------|---------|-------------------|----------------|
 | **LFP** | LiFePO₄ | ★★★★★ | srednja | Stacionarni BESS, dolga življ. doba |
-| **NMC** | LiNiMnCoO₂ | ★★★ | visoka | EV, manjši BESS |
+| **NMC**-Nikelj-mangan-kobalt | LiNiMnCoO₂ | ★★★ | visoka | EV, manjši BESS |
 | **NCA** | LiNiCoAlO₂ | ★★ | visoka | Tesla Powerwall |
 | **LTO** | Li₄Ti₅O₁₂ | ★★★★★ | nizka | Hitro polnjenje, dolga življ. |
 
 **BISOL verjetno uporablja LFP** – industrijski standard za stacionarne aplikacije.
-
+NB
 ### Svinčene (še prisotne v starejših sistemih)
 - **AGM** – absorbent glass mat; vzdrževanje-prosto
 - **OPzV/OPzS** – gel/tabularne; dolga življenjska doba, drago
