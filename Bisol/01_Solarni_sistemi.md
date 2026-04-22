@@ -294,9 +294,8 @@ Ta izračun zagotavlja, da bo inverter deloval tudi v najhujši vročini, ko se 
   - Nasvet: vedno ciljaj na sredino MPPT območja za optimalen izkoristek.
 
 - **Število vzporednih stringov** = Imax inverterja / Isc stringa - Tokovna omejitev (vzporedno vezanje)
-- 
-- T
-
+Pri večjih sistemih pogosto vežemo dva ali več stringov vzporedno na isti MPPT vhod.
+  -Napetost ostane ista, tok se sešteva: Itotal = Nstrings*Isc
 ## 8. Izgube sistema
 | Vzrok              | Tipična izguba |
 |--------------------|----------------|
