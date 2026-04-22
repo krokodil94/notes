@@ -5,12 +5,16 @@
 ### Litij-ionske (dominantne v solarnih aplikacijah)
 | Kemija | Polno ime | Varnost | Energijska gostota | Tipična uporaba |
 |--------|-----------|---------|-------------------|----------------|
-| **LFP** | LiFePO₄ | ★★★★★ | srednja | Stacionarni BESS, dolga življ. doba |
+| **LFP** | LiFePO₄ | ★★★★★ | srednja | Stacionarni BESS, dolga življ. doba | - spada v družino Li-ion baterij - Litij-Železo-Fosfat. Napetost cca 3.2V.
+Slabša pri zelo nizkih temperaturah.
 | **NMC**-Nikelj-mangan-kobalt | LiNiMnCoO₂ | ★★★ | visoka | EV, manjši BESS | - ima višjo energijsko gostoto (več energije v manjšem/lažjem ohišju), to pri hišni bateriji, ki stoji v kleti/garaži ni ključno. Pomembnejši dejavniki so:
 - Varnost(Termični pobeg): LPF baterije imajo bistveno višjo temperaturo samovžiga kot NMC ali NCA. Tudi v primeru mehanske poškodbe je verjetnost požara minimalna.
 - Življenska doba (Cikli): LPF zdrži od 3.000 do 6.000 ciklov, medtem ko se NMC običajno začne degradirati po 1000-2000 ciklih.
 - LPF ne vsebuje kobalta, katerega pridobivanje je etično in okoljsko sporno.
-| **NCA** | LiNiCoAlO₂ | ★★ | visoka | Tesla Powerwall |
+
+LastnostLFP (LiFePO₄)NMC (LiNiMnCoO₂)Nevarnost vžigaZelo nizkaSrednja (potrebuje odličen BMS)Število ciklov6.000+~2.000Cena na kWhNižjaVišjaObmočje praznjenja (DoD)Do 100%Priporočljivo do 80-90%
+
+| **NCA** | LiNiCoAlO₂ | ★★ | visoka | Tesla Powerwall | - Tesla uporablja, ker potrebuje maksimalno energijo v omejenem prostoru, vendar setudi oni pri stacionarnih hranilnikih in osnovnih modelih vozil vse bolj selijo na LFP.
 | **LTO** | Li₄Ti₅O₁₂ | ★★★★★ | nizka | Hitro polnjenje, dolga življ. |
 
 **BISOL verjetno uporablja LFP** – industrijski standard za stacionarne aplikacije.
