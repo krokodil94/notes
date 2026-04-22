@@ -284,7 +284,8 @@ To so tri ključne enačbe, ki ločijo varno in učinkovito napravo od tiste, ki
 - **Max string V** = Voc (STC) × koef. temp. (min. temp.) × N modulov < Vmax inverterja
 To je varnostna meja. Ta izračun preprečuje uničenje inverterja v mrzlih zimskih jutrih.
 - Temperaturni koeficient - Običajno je nehativen (npr -0.28%/stop. C). Pri izračunu ga upoštevamo tako, da se napetost z znižanjem temperature povečuje.
-- 
+- Tmin: Ne uporabi povprečne zimske temperature, ampak zgodovinski minimum na lokaciji (npr. -15 ali -20 stopinj v Sloveniji)
+- Pravilo: Ta vrednost mora biti vedno pod Max DC Input Voltage v tehničnem listu inverterja. 
 - **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT
 - **Število vzporednih stringov** = Imax inverterja / Isc stringa
 
