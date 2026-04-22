@@ -287,12 +287,15 @@ To so tri ključne enačbe, ki ločijo varno in učinkovito napravo od tiste, ki
   - Tmin: Ne uporabi povprečne zimske temperature, ampak zgodovinski minimum na lokaciji (npr. -15 ali -20 stopinj v Sloveniji)
   - Pravilo: Ta vrednost mora biti vedno pod Max DC Input Voltage v tehničnem listu inverterja.
 
-- **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT
+- **Min string V** = Vmp × koef. temp. (max. temp.) × N > Vmin MPPT - Operativna meja
 Ta izračun zagotavlja, da bo inverter deloval tudi v najhujši vročini, ko se paneli segrejejo na 60 stopinj ali več
   - Tmax: To je temperatura celice. V vročem poletjue celice dosežejo tudi okoli 70 stopinj.
   - Vloga: Če ta napetost pade pod Vmin MPPT (spodnji prag delovnega območja), bo inverter izgubil točko maksimalne moči ali pa se bo celo izklopil, čeprav sonce močno sije.
   - Nasvet: vedno ciljaj na sredino MPPT območja za optimalen izkoristek.
-- **Število vzporednih stringov** = Imax inverterja / Isc stringa
+
+- **Število vzporednih stringov** = Imax inverterja / Isc stringa - Tokovna omejitev (vzporedno vezanje)
+- 
+- T
 
 ## 8. Izgube sistema
 | Vzrok              | Tipična izguba |
