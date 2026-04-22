@@ -34,6 +34,7 @@ NB
   - Svinčene: max 50% DoD
 - **SoC** – State of Charge (0–100%)
 - **SoH** – State of Health: staranje kapacitete (100% = novo)
+  - To je tisti parameter, ki ga bomo spremljali čez 5-8 let. Večina proizvajalcev jamči, da bo SoH po 10 letih še vedno nad 70-80%. Ko SoH pade pod to mejo, baterija ni neuporabna, le njena dejanska kapaciteta se zmanjša. (npr. iz 10 kWh na 7kWh)
 - **Round-trip efficiency**: LFP ≈ 95–98%; svinčene ≈ 80–85%
   - To je skriti strošek. Pove nam, koliko energije "izgine" v obliki toplote med kemičnimi procesi polnjenja in praznjenja. LPF(95%): Na vsakih 100kWh, ki jih shraniš, jih dobiš nazaj 95.
   - 
