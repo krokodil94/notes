@@ -41,7 +41,7 @@ NB
 - **Ciklično življenje**: LFP > 4000–6000 ciklov; svinčene ≈ 500–1200
 
 ## 3. BMS – Battery Management System
-
+BMS so "možgani" baterijskega sistema. Brez njega je LFP baterija le skupek nevarnih kemikalij; z njim pa postane varna, pametna in dolgotrajna komponenta.
 ### Funkcije BMS
 ```
 Merjenje:    Napetost vsake celice, tok, temperatura
