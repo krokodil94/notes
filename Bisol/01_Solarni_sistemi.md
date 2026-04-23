@@ -84,7 +84,7 @@ Moduli → String kabel → DC Combiner Box → Inverter → AC panel → Omrež
 1. Moduli (sončni paneli)
 
 To so generatorji energije. Prevajajo sončno sevanje v enosmerni električni tok (DC).
-Vloga: Proizvodnja surove električne energije. Več panelov se veže zaporedno v "string", da dibomi dovolj visoko napetost za učinkovito delo inverterja. Več panelov se veže zaporedno v "string", da dobimo dovolj visoko napetost za učinkovito delo inverterja.
+Vloga: Proizvodnja surove električne energije. Več panelov se veže zaporedno v "string", da dobimo dovolj visoko napetost za učinkovito delo inverterja. 
 
 2. String kabel (solarni kabel)
 
