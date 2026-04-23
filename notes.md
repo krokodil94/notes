@@ -81,7 +81,7 @@ claude --resume f0e50e2c-67f2-4600-bc59-8e83a90c90ce
 
   Note: after each Windows reboot, re-run usbipd attach --wsl --busid 5-4 from Windows to re-attach the USB adapter.
 
-✻ Brewed for 1m 11s · 2 shells still running
 
 
-claude --resume "telemach-ftth-interview-prep"
+
+claude --resume f0e50e2c-67f2-4600-bc59-8e83a90c90ce
