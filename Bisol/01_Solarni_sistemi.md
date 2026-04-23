@@ -57,11 +57,10 @@ Nevarnost pozimi (Mraz = Visoka napetost) - To je kritična točka za vsakega pr
 Posledica: Če nisi pustil dovolj rezerve, lahko napetostni sunek ob mrzlem jutru trajno skuri inverter.
 Pravilo: Pri izračunu števila panelov v nizu se vedno uporabi najnižja zgodovinska temperatura na tisti lokaciji.
 
-- Nižja temperatura → višja napetost → pozor pri dimenzioniranju inverterja!
 
 V tehničnih listih opaziš dve meritvi: STC in NOCT. 
 STC - Standard Test Conditions - Laboratorijski pogoji (25 stopinj, 1000 W/m2). Ti pogoji so v praksi skoraj nemogoči, saj se črn panel na soncu takoj segreje čez 25 stopinj.
-- NOCT – Nominal Operating Cell Temperature (tipično 45°C) - Pove nam, na kakšno temperaturo se bo celica segrela v realnih pogojih.
+NOCT – Nominal Operating Cell Temperature (tipično 45°C) - Pove nam, na kakšno temperaturo se bo celica segrela v realnih pogojih.
   - Temperatura zraka: 20 stopinj
   - Sonce: 800 W/m2
   - Veter: 1m/s (ki hladi panele)
