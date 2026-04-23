@@ -115,7 +115,6 @@ Tukaj se poti srečajo. Izmenični tok iz inverterja vstopi v tvojo hišno inšt
   - Prednostna poraba: Energija iz sonca najprej napaja tvoje trenutne porabnike
   - Dvosmerno merjenje: Tukaj je nameščen pametni števec, ki beleži koliko energije si vzel iz omrežja in koliko viškov si vanj oddal.
 
-
 7. Omrežje
 
 V grid-tied sistemu omrežje deluje kot tvoj stabilizator.
