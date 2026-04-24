@@ -92,3 +92,10 @@ claude --resume f0e50e2c-67f2-4600-bc59-8e83a90c90ce
 
 
 Lahko bi dodal na obsidian web še to, da ostane tma kjer si ostal nazadnje. Npr na tisti strani pdfja
+
+
+
+
+
+
+claude --resume f0e50e2c-67f2-4600-bc59-8e83a90c90ce
