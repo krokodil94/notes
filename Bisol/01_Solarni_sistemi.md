@@ -1,19 +1,4 @@
-# Solarni PV sistemi – Osnove
 
-## 1. Fotonapetostni efekt
-
-
-Fotovoltaični modul je skupina 60-72 celic v enem okvirju in proizvede 30-45V.
-PV niz je več modulov povezanih na strehi in proizvede 300-800V.
-
-## 2. Tipi solarnih modulov
-
-| Tip | Izkoristek | Opomba |
-|------------------|--------|---------------------------------|
-| Monokristalni Si | 20–23% | Najboljši izkoristek, najdražji |
-| Polikristalni Si | 16–19% | Kompromis cena/izkoristek       |
-| Tankoplastni     | 10–14% | Slabši izkoristek, fleksibilni  |
-| Bifacial         | +5–25% | Spredaj + zadaj                 |
 
 ## 3. Električne karakteristike modula
 - **Voc** – napetost odprtega tokokroga (no-load)
