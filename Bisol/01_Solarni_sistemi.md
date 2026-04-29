@@ -7,10 +7,14 @@
 - 1 celica ≈ 0.5–0.6 V; moduli serija/vzporedno za višje napetosti/tokove
 
 
-- Elektroni z N-strani skočijo v luknje na P-strani. To ustvari siromašno območje, kjer nastane močno notranje električno polje.
-- To polje deluje kot "enosmerni ventil": dovoli pretok v eno smer, ne pa nazaj.
 
-Ko foton(delec svetlobe) zadane sončno celico, svojo energijo preda elektronu v siliciju.
+
+
+
+
+
+
+
 - Če je energija fotona dovolj visoka (večja od t.i energijske reže), elektron "odskoči" iz svoje vezi.
 - Nastane par elektron-luknja.
 - Zaradi prej omenjenega električnega polja v p-n spoju so ti prosti elektroni prisiljeni potovati proti N-pasti, luknje pa proti P-plasti.
