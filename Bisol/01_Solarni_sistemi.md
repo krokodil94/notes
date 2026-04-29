@@ -1,13 +1,5 @@
 
 
-## 3. Električne karakteristike modula
-- **Voc** – napetost odprtega tokokroga (no-load)
-- **Isc** – kratkostični tok
-- **Vmp / Imp** – napetost/tok pri max. moči
-- **Pmax = Vmp × Imp**
-- **Fill Factor (FF)** = Pmax / (Voc × Isc); idealno > 0.75
-- **STC** – Standard Test Conditions: 1000 W/m², 25°C, AM 1.5
-
 ## 4. Temperaturni koeficienti
 Pri fotonapetostnih sistemih je temperatura paradoksalen faktor: Čeprav potrebujemo sonce(toploto), je vročina dejansko sovražnik učinkovitosti. 
   - Vzbujanje elektronov: Ko se silicij segreje, elektroni že zaradi toplote postanejo "nemirni": To zmanjša razliko v energijskih nivojih med p-n spojem.
