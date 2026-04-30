@@ -199,11 +199,18 @@ Ključna razlika v shemi (Smart Meter)
 V hibridni shemi je nujen še en element, ki ga nisi narisal: Pametni števec (Smart Meter), ki je nameščen tik ob glavnih varovalkah hiše.
 Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" elektriko. Brez tega podatka ne bi vedel, kdaj mora začeti prazniti baterijo, da ustavi uvoz iz omrežja.
 
+## 6. Inverterji
+- **String inverter** – 1 MPPT na string; en shadow → vse prizadeto
+- **Central inverter** – za velike elektrarne (>100 kW); centraliziran
+- **Micro inverter** – 1/modul; dražji, boljši pri senci
+- **Power optimizer** – modul-level DC/DC; centralni inverter ostane
 
 
-
-
-
+  1. String Inverter (Nizni razsmernik)
+  To je klasična in najbolj razširjena tehnologija. Več panelov povežemo zaporedno v eno dolgo "verigo" (niz), ki se konča v inverterju na steni.
+  Problem sence: Ker so paneli vezani zaporedno, delujejo kot stare novoletne lučke. Če en panel prekrije senca dimnika, se upor v njem poveča, kar upočasni pretok elektronov skozi celoten niz.
+  Prednosti: Najcenejša rešitev, visoka zanesljivost (manj elektronike na vroči strehi), enostavno vzdrževanje.
+  Idealno za: Strehe brez senc, kjer so vsi paneli obrnjeni v isto smer.
 
 
 
