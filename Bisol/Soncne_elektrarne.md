@@ -130,8 +130,59 @@ Ponoči/pozimi: Ko sonca ni, energijo črpaš nazaj iz omrežja.
 
 Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
 
+Tukaj ni varnostne mreže javnega omrežja, zato mora biti sistem popolnoma samostojen in sposoben preživeti energetsko sušo.
+
+1. Moduli
+
+Pri off-grid sistemih je kjučno pre-dimenzioniranje. Ker ne moreš uvažati energije iz omrežja, morajo paneli tudi ob slabem vremenu proizvesti dovolj, da pokrijejo porabo in hkrati napolnijo baterije.
+
+2. Charge controller (Polnilni regulator) je ključna komponenta, ki je pri grid-tied sistemu sploh ne poznamo. Njegova naloga je, da energijo iz panelov varno in učinkovito "stisne" v baterijo.
+
+Poznamo dva tipa:
+- PWM (Pulse Width Modulation): Starejša, cenejša tehnologija. Deluje kot stiskalo, ki se hitro vklaplja in izklaplja. Je manj učinkovito, saj napetost panelov "povozi" na napetost baterije. ( Izgubljaš energijo).
+- MPPT: Sodobna in pametna izbira. Elektronsko pretvori višjo napetost panelov v nižjo napetost za polnjenje baterije, pri tem pa poveča tok. Je do 30% bolj učinkovita kot PWM še posebej v hladnem vrmeenu.
+
+3. Baterija je srce in hkrati najdražji del off-grid sistema. Shranjuje energijo za čas, ko ni sonca.
+  - LiFePO4 (Litij - Železo - fosfat) - Danes standard - lahko izprazniš do 90%, zdržijo 10x več ciklov in so varnejše.
+    
+4. Inverter
+
+V off-grid sistemu ima inverter drugačno vlogo kot v omrežnem:
+- Ustvarjanje lastne mreže: Sam določa frekvenco(50Hz) in napetosti (230V), saj nima omrežja, po katerem bi se zgledoval.
+- Visoki zagonski tokovi: Ker napaja naprave direktno, mora biti sposoben prenestki kratkotrajne sunke(npr. ko se vklopi hladilnik ali vodna črpalka), ki so lahko 2-3x večji od njegove nazivne moči.
+- Vgrajen polnilnik (opcijsko): Veliko off-grid inverterjev ima tudi vhod za generator(agregat), da lahko napolniš baterije, če je sonca premalo več dni zapored.
+
+5. Porabniki
+
+- DC porabniki: Nekatere naprave lahko priklopimo direktno na reuglator ali baterijo, in se s tem izognemo izgubam, ki nastanejo pri pretvorbi v 230V.
+
+Lastnost,Grid-tied (Omrežni),Off-grid (Otočni)
+Baterija,Opcijska (za večjo avtonomijo),Nujna
+Izpad omrežja,Elektrarna neha delovati,Deluje nemoteno
+Načrtovanje,Glede na letno porabo,Glede na največjo dnevno porabo
+Viški,Oddajaš v omrežje,Ostanejo neizkoriščeni (ko je baterija polna)
+
+Pomemben nasvet: Pri off-grid sistemih je kritičen podatek "Days of Autonomy" (dnevi avtonomije). Pove nam, koliko dni lahko hiša živi samo iz baterij, če je zunaj popolna tema (npr. sneg na panelih). Običajno se projektira za 2–3 dni.
 
 
+---
+
+
+
+### Hibridni
+```
+Moduli → Hibridni inverter ←→ Baterija
+              ↕
+           Omrežje / Porabniki
+```
+
+Hibridni sistem je "najbolše iz obeh svetov". Združuje zanesljivost omrežne povezave z neodvisnostjo otočnega sistema. Danes je to "zlati standard" za družinske hiše, saj omogoča maksimalno oskrbo.
+
+1. Hibridni inverter - ni le navaden razsmernik, ampak kompleksna naprava, ki upravlja s tremi viri energije hkrati: Soncem, baterijo in omrežjem. V njem se nahajajo:
+
+- MPPT regulator za panele
+- Baterijski pomnilnik (dvosmerni: polni baterijo iz sonca, in prazni baterijo za hišo).
+- EMS (Energy management system): Možgani, ki se vsako sekundo odločajo, kam bo šla energija.
 
 
 
