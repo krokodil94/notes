@@ -93,3 +93,4 @@ To so generatorji energije. Proizvajajo sončno sevanje v enosmerni električni 
 2, String kabel (solarni kabel)
 
 - UV odporni
+- Temperaturno vzdržljivi
