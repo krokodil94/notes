@@ -245,3 +245,17 @@ Točka maksimalne moči (MPP) je tisto "koleno" na krivulji, kjer je zmnožek P=
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
