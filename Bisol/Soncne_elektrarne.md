@@ -188,9 +188,16 @@ Hibridni sistem je "najbolše iz obeh svetov". Združuje zanesljivost omrežne p
   - Vloga: shranjuje viške čez dan za porabo zvečer in ponoči.
   - Rezerva: Hibridni sistemi omogočajo nastavitev "rezervne kapacitete", ki se je nikoli ne dotakneš, razen če zmanjka elektrike v omrežju.
 
+3. Načini delovanja (Logika sistema): Hibridni sistem deluje v treh glavnih načinih:
+
+   - Samooskrba - sonce napaja hišo - viški polnijo baterijo - ko je baterija polna gredo viški v omrežje.
+   - Backup mode(EPS/UPS): Ob izpadu omrežja se inverter v milisekundah fizično loči od zunanjega omrežja( da ne pošilja toka ven) in ustvari lastno "otočno" mrežo za nujne porabnike v hiši
+   - Time of use (Tarifno delovanje) - Če imaš poceni in drago tarifo, lahko inverterju ukažeš, naj polni baterijo iz omrežja ponoči, ko je poceni in jo prazno podnevi, ko je draga.
 
 
-
+Ključna razlika v shemi (Smart Meter)
+V hibridni shemi je nujen še en element, ki ga nisi narisal: Pametni števec (Smart Meter), ki je nameščen tik ob glavnih varovalkah hiše.
+Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" elektriko. Brez tega podatka ne bi vedel, kdaj mora začeti prazniti baterijo, da ustavi uvoz iz omrežja.
 
 
 
