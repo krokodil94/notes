@@ -72,3 +72,8 @@ Ker je temperatura tako pomembna, se v praksi uporablja nekaj trikov:
 1. Zračna reža: Paneli na strehi ne smejo biti nalepljeni direktno na kritino. Potrebujejo vsaj 10-15cm razmika, da pod njimi kroži zrak.
 2. Plavajoče elektrarne: Postavljanje panelov na vodo, kjer izhlapevanje vode naravno hladi module.
 3. Barva okvirja: Črni okvirji so estetski, a se segrejejo za kakšno stopinjo več kot srebrni
+
+
+---
+
+## 5. Komponente sistema
