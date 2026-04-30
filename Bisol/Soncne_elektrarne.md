@@ -235,7 +235,7 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
 
 Zanimivost: Večina sodobnih string inverterjev ima danes že 2 ali 3 MPPT vhode. To pomeni, da lahko npr. 10 panelov na južni strani povežeš na en vhod, 10 na vzhodni pa na drugega, in bosta delovala neodvisno brez uporabe dragih optimizatorjev.
 
-
+### MPPT – Maximum Power Point Tracking
 
 
 
