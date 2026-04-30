@@ -237,7 +237,10 @@ Zanimivost: Večina sodobnih string inverterjev ima danes že 2 ali 3 MPPT vhode
 
 ### MPPT – Maximum Power Point Tracking
 
+Brez MPPT bi bili solarni sistemi le dragi in neučinkoviti grelniki silicija. Ker sonce ni konstanten vir energije, MPPT deluje kot dinamični vmesnik, ki "lovi" fizikalne ekstreme.
 
+Sončna celica ima specifično I-V karakteristiko (razmerje med tokom in napetostjo). Če s panela črpaš preveč toka, napetost strmoglavo pade. Če je napetost previsoka, tok pade.
+Točka maksimalne moči (MPP) je tisto "koleno" na krivulji, kjer je zmnožek P=UI največji. Ta točka se nenehno premika glede na osvetljenost in temperaturo.
 
 
 
