@@ -233,7 +233,7 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
   MLPE (Module-Level Power Electronics): Omogoča spremljanje delovanja vsakega posameznega panela preko aplikacije.
   Prednosti: Cenejši od mikro-inverterjev, a rešujejo problem sence skoraj enako dobro.
 
-
+Zanimivost: Večina sodobnih string inverterjev ima danes že 2 ali 3 MPPT vhode. To pomeni, da lahko npr. 10 panelov na južni strani povežeš na en vhod, 10 na vzhodni pa na drugega, in bosta delovala neodvisno brez uporabe dragih optimizatorjev.
 
 
 
