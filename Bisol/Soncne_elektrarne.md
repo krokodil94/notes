@@ -185,6 +185,22 @@ Hibridni sistem je "najbolše iz obeh svetov". Združuje zanesljivost omrežne p
 - EMS (Energy management system): Možgani, ki se vsako sekundo odločajo, kam bo šla energija.
 
 2. Baterija (visokonapetostna shramba) - Pri hibridnih sistemih se pogosto uporablja visokonapetostne baterije(150-450V), kar poveča izkoristek pretvorbe, saj je napetost bližje tisti v omrežju.
+  - Vloga: shranjuje viške čez dan za porabo zvečer in ponoči.
+  - Rezerva: Hibridni sistemi omogočajo nastavitev "rezervne kapacitete", ki se je nikoli ne dotakneš, razen če zmanjka elektrike v omrežju.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
