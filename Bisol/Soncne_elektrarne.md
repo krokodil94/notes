@@ -77,3 +77,19 @@ Ker je temperatura tako pomembna, se v praksi uporablja nekaj trikov:
 ---
 
 ## 5. Komponente sistema
+
+### Grid-tied (omrežni)
+
+```
+Moduli → String kabel → DC Combiner Box → Inverter → AC panel → Omrežje
+                                              ↑
+                                         MPPT regulator (v inverterju)
+```
+
+1. Moduli (sončni paneli)
+
+To so generatorji energije. Proizvajajo sončno sevanje v enosmerni električni tok. Več panelov se veže zaporedno v "string", da dobimo dovolj visoko napetost za učinkovito delo inverterja.
+
+2, String kabel (solarni kabel)
+
+- UV odporni
