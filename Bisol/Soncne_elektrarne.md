@@ -212,7 +212,12 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
   Prednosti: Najcenejša rešitev, visoka zanesljivost (manj elektronike na vroči strehi), enostavno vzdrževanje.
   Idealno za: Strehe brez senc, kjer so vsi paneli obrnjeni v isto smer.
 
-
+  2. Central inverter (Centralni razsmernik)
+  
+  To so "veliki bratje" string inverterjev. Niso namenjeni hišam, ampak ogromnim poljem panelov.
+  Zasnova: Namesto da bi imeli 50 malih inverterjev, imamo eno ogromno omaro (velikosti kontejnerja), kamor se stekajo vsi nizi.
+  Moč: Običajno od 100kW pa vse do več MW.
+  Prednosti: Nižji stroški na vat moči pri velikih projektih, lažje upravljanje za elektroenergetski sistem.
 
 
 
