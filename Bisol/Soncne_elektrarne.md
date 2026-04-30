@@ -219,7 +219,19 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
   Moč: Običajno od 100kW pa vse do več MW.
   Prednosti: Nižji stroški na vat moči pri velikih projektih, lažje upravljanje za elektroenergetski sistem.
 
-
+  3. Micro Inverter (mikro razsmernik)
+  Tukaj vsak panel dobi svoj mali inverter, nameščen neposredno pod njim. Iz strehe ne pride DC tok, ampak že pripravljen AC (230V).
+  
+  Individualni MPPT: Vsak panel dela neodvisno. Če na enega pade senca, ostalih 19 dela s 100% močjo.
+  Prednosti: Najboljši izkoristek pri kompleksnih strehah (več smeri, dosti dimnikov/kukerlov), večja varnost (ni visoke DC napetosti na strehi).
+  Slabost: Visoka cena in dejstvo, da imaš občutljivo elektroniko izpostavljeno vročini neposredno pod paneli.
+  
+  
+  4. Power Optimizer (Močnostni optimizatorji)
+  To je hibridna rešitev (npr. SolarEdge). Pod vsak panel damo DC/DC pretvornik (optimizator), na steni pa še vedno ostane en osrednji inverter.
+  Kako deluje: Optimizator prilagodi napetost in tok posameznega panela tako, da ta ne ovira niza, tudi če je v senci.
+  MLPE (Module-Level Power Electronics): Omogoča spremljanje delovanja vsakega posameznega panela preko aplikacije.
+  Prednosti: Cenejši od mikro-inverterjev, a rešujejo problem sence skoraj enako dobro.
 
 
 
