@@ -184,6 +184,7 @@ Hibridni sistem je "najbolše iz obeh svetov". Združuje zanesljivost omrežne p
 - Baterijski pomnilnik (dvosmerni: polni baterijo iz sonca, in prazni baterijo za hišo).
 - EMS (Energy management system): Možgani, ki se vsako sekundo odločajo, kam bo šla energija.
 
+2. Baterija (visokonapetostna shramba) - Pri hibridnih sistemih se pogosto uporablja visokonapetostne baterije(150-450V), kar poveča izkoristek pretvorbe, saj je napetost bližje tisti v omrežju.
 
 
 
