@@ -94,3 +94,50 @@ To so generatorji energije. Proizvajajo sončno sevanje v enosmerni električni 
 
 - UV odporni
 - Temperaturno vzdržljivi
+- Dvojno izolirani: Zaradi varnosti, saj prenašajo visoke napetosti (tudi do 1000 V).
+
+3. DC Combiner box
+
+Če imaš na strehi več nizov se ti kabli srečajo tukaj. Vsebuje varovalke za vsak niz posebej in prenapetostno zaščito (SPD), ki ščiti inverter pred udarom strele. Običajno vsebuje glavno DC ločilno stikalo, ki omogoča, da varno izklopiš panele od ostalega sistema.
+
+4. MPPT Regulator (Maximum Power Point Tracking)
+
+To so "možgani" sistema. ki so danes skoraj vedno integrirani neposredno v inverterju. 
+Vloga: Sonce se čez dan spreminja (oblaki, kot sevanja). MPPT nenehno(večkrat na sekundo) prilagaja razmerje med napetostjo in tokom tako, da iz panelov iztisne maksimalno moč.
+
+5. Inverter (Razsmernik)
+
+Srce sistema. Njegova glavna naloga je pretvorba DC(enosmernega toka) iz panelov v AC(izmenični tok, 230V/400V), ki ga uporabljajo gospodinjski aparati.
+Sinhronizacija: Inverter mora svojo frekvenco (50 Hz) in fazo popolnoma uskladiti z javnim omrežjem. 
+Varnost: Če v javnem omrežju zmanjka elektrike, se mora omrežni inverter takoj izklopiti. To preprečuje, da bi elektrarna pošiljala elektriko v žice, na katerih morda ravno takrad delajo monterji elektro podjetja.
+
+6. AC panel (Elektro omarica z varovalkami)
+
+Tukaj se poti srečajo. Izmenični tok iz inverterja vstopi v tvojo hišno inštalacijo.
+Prednostna poraba: Energija iz sonca najprej napaja tvoje trenutne porabnike
+Dvosmerno merjenje: Tukaj je nameščen pametni števec, ki beleži koliko energije iz omrežja si vzel in koliko viškov si vanjo oddal.
+
+7. Omrežje
+
+V grid tied sistemu deluje kot tvoj stabilizator.
+Podnevi: Viški energije odtekajo v omrežje sosedom.
+Ponoči/pozimi: Ko sonca ni, energijo črpaš nazaj iz omrežja.
+
+
+---
+
+### Off-grid
+
+Moduli → Charge Controller (MPPT/PWM) → Baterija → Inverter → Porabniki
+
+
+
+
+
+
+
+
+
+
+
+
