@@ -240,3 +240,5 @@ Zanimivost: Večina sodobnih string inverterjev ima danes že 2 ali 3 MPPT vhode
 
 
 
+
+
