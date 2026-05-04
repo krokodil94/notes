@@ -101,4 +101,5 @@ Lahko bi dodal na obsidian web še to, da ostane tma kjer si ostal nazadnje. Npr
 claude --resume f0e50e2c-67f2-4600-bc59-8e83a90c90ce
 
 
-Oracle ssh 2222
+v obsidian web bi dodal, da lahko prilimaš linke od spletnih strani, in ti spletno stran avtomatsko pretvori v pdf in ti ga shrani.
+Popravi focusapp (instagram npr ima nastavleno 60s, vendar ko klikneš je samo 5s)
