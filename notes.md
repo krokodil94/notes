@@ -101,5 +101,5 @@ Lahko bi dodal na obsidian web še to, da ostane tma kjer si ostal nazadnje. Npr
 claude --resume f0e50e2c-67f2-4600-bc59-8e83a90c90ce
 
 Focusapp -deploy na appstore?
-Razvit tool ki automatsko proizvaja muske - video -summer 2026 hits etc. 
+Razvit tool ki automatsko proizvaja muske - video -summer 2026 hits etc.  - ena opcija je ai music (suno) druga epidemicsound - licenca za musko
 tool ki auto generira objavo za ig/fb(AI) in ti jo pošlje prek spleta
