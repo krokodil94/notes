@@ -294,3 +294,16 @@ Pri večjih sistemih pogosto vežemo dva ali več stringov vzporedno na isti MPP
   -Napetost ostane ista, tok se sešteva: Itotal = Nstrings*Isc
   -Omejitev: Ta seštevek mora biti nižji od Max Input CUrrent (Idc,max) na posameznem MPPT vhodu inverterja.
   -Pozor na "Isc PV": Nekateri inverterji imajo navedeno tudi kratkostično tokovno mejo, ki je ne smeš preseči, da ob morebitni napaki ne pride do poškodb vezja,
+
+Praktičen primer:
+Panel z Voc = 40V, in inverter z Vmax = 1000V.
+Teoretični max: 1000/40 = 25 panelov
+Zimski popravek: Zaradi mraza napetost zraste za cca 15-20%
+Varna meja: 25 * 0.85 = 21 panelov ->to je realna zgornja meja
+
+
+Povzetek: 
+Parameter,Kateri podatek gledaš?,Kdaj je kritično?,Cilj načrtovanja
+Max Napetost,Voc​ (Open Circuit),Pozimi (mraz),Ne skuri inverterja!
+Min Napetost,Vmp​ (Max Power),Poleti (vročina),Ostani v MPPT območju!
+Max Tok,Isc​ (Short Circuit),Ob polnem obsevanju,Ne pregrevaj vhodov!
