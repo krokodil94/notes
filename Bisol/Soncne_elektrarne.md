@@ -199,6 +199,10 @@ Ključna razlika v shemi (Smart Meter)
 V hibridni shemi je nujen še en element, ki ga nisi narisal: Pametni števec (Smart Meter), ki je nameščen tik ob glavnih varovalkah hiše.
 Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" elektriko. Brez tega podatka ne bi vedel, kdaj mora začeti prazniti baterijo, da ustavi uvoz iz omrežja.
 
+
+---
+
+
 ## 6. Inverterji
 - **String inverter** – 1 MPPT na string; en shadow → vse prizadeto
 - **Central inverter** – za velike elektrarne (>100 kW); centraliziran
@@ -219,6 +223,10 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
   Moč: Običajno od 100kW pa vse do več MW.
   Prednosti: Nižji stroški na vat moči pri velikih projektih, lažje upravljanje za elektroenergetski sistem.
 
+
+---
+
+
   3. Micro Inverter (mikro razsmernik)
   Tukaj vsak panel dobi svoj mali inverter, nameščen neposredno pod njim. Iz strehe ne pride DC tok, ampak že pripravljen AC (230V).
   
@@ -234,6 +242,10 @@ Hibridni inverter mora vedeti, ali tvoja hiša trenutno "uvaža" ali "izvaža" e
   Prednosti: Cenejši od mikro-inverterjev, a rešujejo problem sence skoraj enako dobro.
 
 Zanimivost: Večina sodobnih string inverterjev ima danes že 2 ali 3 MPPT vhode. To pomeni, da lahko npr. 10 panelov na južni strani povežeš na en vhod, 10 na vzhodni pa na drugega, in bosta delovala neodvisno brez uporabe dragih optimizatorjev.
+
+
+---
+
 
 ### MPPT – Maximum Power Point Tracking
 
@@ -251,6 +263,10 @@ Slabost: Okoli točke MPP vedno malce "oscilira", namesto da bi se popolnoma ust
 -Incremental Conductance(InCond): Bolj napreden algoritem, ki temelji na matematiki odvoda (dP/dV).
 Algoritem meri inkrementalno prevodnost in neposredno ve, ali je dosegel vrh krivulje.
 Prednosti: Ko doseže MPP, se tam ustali in ne niha. Hitreje se odziva na spremembe vremena, a zahteva več procesorske moči.
+
+
+---
+
 
 MPPT Voltage Range (Operativno območje)
 To je območje napetosti (npr. 150-800V), v katerem je inverter sposoben izvajati MPPT algoritem.
@@ -271,6 +287,10 @@ V primeru delnega zasenčenja se I-V krivulja popači in dobi več "grbin".
 - Sodobni inverterji imajo funkcijo "Global Scan" ali "Shade Fix", ki vsakih nekaj minut preveri celotno krivuljo, da se prepriča, ali ni kje drugje še višji vrh.
 
 Pri načrtovanju vedno poskrbi, da je napetost niza v vročem poletju (najnižja napetost) še vedno znotraj MPPT razpona, hkrati pa, da napetost v najhladnejši zimi ne preseže Max DC napetosti inverterja.
+
+
+---
+
 
 ## 7. Stringing – dimenzioniranje
 
@@ -307,3 +327,32 @@ Parameter,Kateri podatek gledaš?,Kdaj je kritično?,Cilj načrtovanja
 Max Napetost,Voc​ (Open Circuit),Pozimi (mraz),Ne skuri inverterja!
 Min Napetost,Vmp​ (Max Power),Poleti (vročina),Ostani v MPPT območju!
 Max Tok,Isc​ (Short Circuit),Ob polnem obsevanju,Ne pregrevaj vhodov!
+
+
+---
+
+
+
+## 8. Izgube sistema
+| Vzrok              | Tipična izguba |
+|--------------------|----------------|
+| Temperatura modula |  5–10%         |
+| Senčenje           | variabilno     |
+| Umazanija          |    1–5%        |
+| Kabelske izgube    |    1–3%        |
+| Inverter izkoristek|    2–5%        |
+| Mismatch modulov   |    1–2%        |
+
+**PR (Performance Ratio)** = dejanska produkcija / teoretična produkcija; dober sistem > 80%
+
+
+
+---
+
+## 9. Varnostni sistemi
+- **DC disconnect** – ločitev od modulov
+- **AC disconnect** – ločitev od omrežja
+- **Anti-islanding** – inverter zaustavi ob izpadu omrežja (VDE-AR-N 4105, EN 50549)
+- **Surge Protection Device (SPD)** – strela/prenapetost
+- **AFCI** – Arc Fault Circuit Interrupter (požarna varnost DC)
+- **Fuse/breaker** per string
