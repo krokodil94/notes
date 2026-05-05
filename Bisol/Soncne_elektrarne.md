@@ -258,6 +258,8 @@ To je območje napetosti (npr. 150-800V), v katerem je inverter sposoben izvajat
 - Če je napetost nad zgornjo mejo, bo inverter še vedno deloval, vendar ne bo mogel izvleči maksimalne moči(začel bo omejevati moč)
 
 
+Max DC Input Voltage (Vmax ali Voc meja)
+To je absolutna varnostna meja, ki je ne smeš preseči niti za milivolt.  Pozimi pri nizkih temperaturah napetost niza Voc naraste. Če niz panelov v teoriji daje 950V pri 25 stopinjih, bo pozimi pri mrazu zlahka presegel 1000V in uničil vhodno stopnjo inverterja.
 
 
 
