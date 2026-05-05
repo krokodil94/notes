@@ -272,6 +272,6 @@ V primeru delnega zasenčenja se I-V krivulja popači in dobi več "grbin".
 
 Pri načrtovanju vedno poskrbi, da je napetost niza v vročem poletju (najnižja napetost) še vedno znotraj MPPT razpona, hkrati pa, da napetost v najhladnejši zimi ne preseže Max DC napetosti inverterja.
 
-
+## 7. Stringing – dimenzioniranje
 
 
