@@ -242,8 +242,15 @@ Brez MPPT bi bili solarni sistemi le dragi in neučinkoviti grelniki silicija. K
 Sončna celica ima specifično I-V karakteristiko (razmerje med tokom in napetostjo). Če s panela črpaš preveč toka, napetost strmoglavo pade. Če je napetost previsoka, tok pade.
 Točka maksimalne moči (MPP) je tisto "koleno" na krivulji, kjer je zmnožek P=UI največji. Ta točka se nenehno premika glede na osvetljenost in temperaturo.
 
+Algoritmi:
+- P&O(Perturb & Observe/ Poskusi & opazuj) je najpogostejši algoritem zaradi svoje preprostosti.
+1. Perturb (Sprememba): Regulator malenkost spremeni (zviša ali zniža) delovno napetost panela.
+2. Observe(Opazuj): Izmeri moč. Če je moč večja kot prej, nadaljuje v isti smeri. Če je moč padla, spremeni smer.
+Slabost: Okoli točke MPP vedno malce "oscilira", namesto da bi se popolnoma ustavil. Ob hitrih spremembah vremena se lahko za trenutek "izgubi".
 
-
+-Incremental Conductance(InCond): Bolj napreden algoritem, ki temelji na matematiki odvoda (dP/dV).
+Algoritem meri inkrementalno prevodnost in neposredno ve, ali je dosegel vrh krivulje.
+Prednosti: Ko doseže MPP, se tam ustali in ne niha. Hitreje se odziva na spremembe vremena, a zahteva več procesorske moči.
 
 
 
