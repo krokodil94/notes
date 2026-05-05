@@ -252,7 +252,10 @@ Slabost: Okoli točke MPP vedno malce "oscilira", namesto da bi se popolnoma ust
 Algoritem meri inkrementalno prevodnost in neposredno ve, ali je dosegel vrh krivulje.
 Prednosti: Ko doseže MPP, se tam ustali in ne niha. Hitreje se odziva na spremembe vremena, a zahteva več procesorske moči.
 
-
+MPPT Voltage Range (Operativno območje)
+To je območje napetosti (npr. 150-800V), v katerem je inverter sposoben izvajati MPPT algoritem.
+- Če je napetost niza pod spodnjo mejo, se inverter sploh ne bo vklopil.
+- Če je napetost nad zgornjo mejo, bo inverter še vedno deloval, vendar ne bo mogel izvleči maksimalne moči(začel bo omejevati moč)
 
 
 
