@@ -266,9 +266,11 @@ Težava: Več vrhov (Globalni vs. Lokalni MPP)
 
 
 V primeru delnega zasenčenja se I-V krivulja popači in dobi več "grbin".
+- Lokalni MPP: "Lažni" vrh, kjer se enostaven P&O algoritem lahko ustavi, misleč da je na vrhu.
+- Globalni MPP: Dejanska točka največje moči celotnega niza.
+- Sodobni inverterji imajo funkcijo "Global Scan" ali "Shade Fix", ki vsakih nekaj minut preveri celotno krivuljo, da se prepriča, ali ni kje drugje še višji vrh.
 
-
-
+Pri načrtovanju vedno poskrbi, da je napetost niza v vročem poletju (najnižja napetost) še vedno znotraj MPPT razpona, hkrati pa, da napetost v najhladnejši zimi ne preseže Max DC napetosti inverterja.
 
 
 
