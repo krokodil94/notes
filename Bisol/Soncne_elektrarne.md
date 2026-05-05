@@ -262,7 +262,7 @@ Max DC Input Voltage (Vmax ali Voc meja)
 To je absolutna varnostna meja, ki je ne smeš preseči niti za milivolt.  Pozimi pri nizkih temperaturah napetost niza Voc naraste. Če niz panelov v teoriji daje 950V pri 25 stopinjih, bo pozimi pri mrazu zlahka presegel 1000V in uničil vhodno stopnjo inverterja.
 
 
-
+Težava: Več vrhov (Globalni vs. Lokalni MPP)
 
 
 
