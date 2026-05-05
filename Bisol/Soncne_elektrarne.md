@@ -265,6 +265,8 @@ To je absolutna varnostna meja, ki je ne smeš preseči niti za milivolt.  Pozim
 Težava: Več vrhov (Globalni vs. Lokalni MPP)
 
 
+V primeru delnega zasenčenja se I-V krivulja popači in dobi več "grbin".
+
 
 
 
